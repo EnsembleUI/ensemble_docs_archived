@@ -3,12 +3,21 @@ sidebar_position: 1
 slug: /
 ---
 
-# Intro
+# Introduction
 
-With Ensemble, you can build interactive and native front-ends. You create apps by defining them using Ensemble's declarative language, where you can specify the widget tree, interactions, API calls, events, etc. In short, anything you need to build a front-end, you define in Ensemble. The same definition can be targetted at iOS, Android, web, and desktop apps.
+With Ensemble, you can build interactive and native front-ends. You create apps by defining them using Ensemble's declarative language, written in YAML. This language is purpose-built for front-end development so you can specify the widget tree, interactions, API calls, events, etc. In short, anything you need to build a front-end, you define in Ensemble. The same definition can be targetted at iOS, Android, web, and desktop apps.
+
+Ensemble apps are interpretted at runtime. In other words, Ensemble never generates code. This approach provides the following benefits:
+
+1. **Standardize development of native apps around one technology** - You can target the same definition across platforms. Ensemble also enables customization per platform.
+2. **Instant update of native apps** - Ensemble apps can load the screen definitions locally or from a server. By putting them on the server, you can push updates to clients instantly.
+3. **QA Automation** - The declerative approach allows Ensemble to automate the QA.
+4. **No more framework upgrades** - As new native technologies are released, we update Ensemble's runtime libraries, freeing you from spending resources to stay on latest framework releases.
 
 
-#### Got any questions or feature requests? [Open an issue on Github](https://github.com/EnsembleUI/ensemble/issues/new).
+## Got any questions or feature requests? 
+
+[Open an issue on Github](https://github.com/EnsembleUI/ensemble/issues/new).
 
 
 ## Let's create a ToDo app
