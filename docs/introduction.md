@@ -28,11 +28,28 @@ Get started by creating a new app in [Ensemble Studio](https://studio.ensembleui
 2. Click Create new app
 3. Enter a name for your app and click Create app
 
-### 1. Add widgets to the View
+### 1. Add a text input
 
-`View` is the root object for a screen. Nest the content of the screen under the `children` property. Let's remove the current children and add a `TextInput` and set the `id` property to `newTaskField`.
+`View` is the root object for a screen. Nest the content of the screen under the `children` property. Let's remove the current children and add a `TextInput`. Each widget takes a set of properities. For our text input, we'll define the following:
 
-Add another widget, a `Button`, and set its `label` to Add. Click Save to see your changes in the preview.
+```yaml
+View:
+  title: Home
+  type: Column
+  styles: { padding: 20, gap: 20 }
+  children:
+    - TextInput:
+        label: New task
+        hintText: Enter a task
+        required: true
+        id: newTaskField
+```
+
+Click Save to see your changes in the preview.
+
+### 2. Add a button
+
+After the text inout, add a `Button`, and set its `label` property.
 
 Here's what you should have so far:
 
@@ -43,6 +60,9 @@ View:
   styles: { padding: 20, gap: 20 }
   children:
     - TextInput:
+        label: New task
+        hintText: Enter a task
+        required: true
         id: newTaskField
     - Button:
         label: Add
@@ -53,9 +73,9 @@ Which looks like this:
 ![To do step 1](/img/todo_app_1.jpg)
 
 
-### 2. Define APIs
+### 3. Define APIs
 
-You can define APIs you want to call within Ensemble. Each API definition starts with a name that can be referenced elsewhere. We'll use Airtable as the backend, and add two APIs to get and create tasks.
+You can define APIs you want to call within Ensemble. Each API definition starts with a name that can be referenced elsewhere (e.g. when a button is pressed). We'll use Airtable as the backend, and add two APIs to get and create tasks.
 
 ```yaml
 API:
@@ -76,9 +96,9 @@ API:
       ]
 ```
 
-Note that for the `createToDo` API, we're referencing the value of `newTaskField`.
+Note that for the `createToDo` API, we're referencing the value of the text input, using the id we defined `newTaskField`.
 
-### 3. Call API on button tap
+### 4. Call API on button tap
 
 Now, we can call the API when the button is pressed. We do that by setting the `opTap` property on the button.
 
@@ -94,9 +114,9 @@ Save your changes, and try it out by entering a new todo and clicking the Add bu
 [https://airtable.com/shrYy4pqloELiJNOm](https://airtable.com/shrYy4pqloELiJNOm)
 
 
-#### 4. Add a template for rending ToDo items
+### 5. Add a template for rending ToDo items
 
-Let's create a simple list of Todos. We do that by using a 'Column' widget, and setting the `itemTemplate` property. `itemTemplate` allows us to loop through an array of data and render the results. It takes the following properiteis:
+Let's create a simple list of Todos. We do that by using a 'Column' widget, and setting the `item-template` property. `item-template` allows us to loop through an array of data and render the results. It takes the following properiteis:
 
 * `data`: We point this to the API that provides the data. Since Airtable nest the API response body in `records`, we set the value to `$(getToDos.body.records)`
 * `name`, we set this to `todoItem`, so we can reference the data items
@@ -145,9 +165,9 @@ API:
 ```
 
 
-### 5. Call getToDos on page load
+### 6. Call getToDos on page load
 
-`Action` is another root level object, and it includes a `onPageLoad` property. Add the following at the bottom of your screen definition, and save your changes:
+`Action` is another root level object where we can define interactions, such as `onPageLoad`. Let's call the `getToDos` API when the page loads by adding the following after the APIs.
 
 ```yaml
 Action:
@@ -156,13 +176,14 @@ Action:
     name: getToDos
 ```
 
-You should now see the ToDo item you created earlier in the preview.
+Save your changes. You should now see the ToDo item you created earlier in the preview.
 
 ![To do step 5](/img/todo_app_2.jpg)
 
 
-### 6. Call getToDos after a new item is added
-Each action takes a `onResponse` property so you can chain actions together. Let's update the add button to call getToDos after adding a new item:
+### 7. Call getToDos after a new item is added
+
+Each action takes a `onResponse` property so you can chain actions together. Let's update the add button to call `getToDos` after adding a new item:
 
 ```yaml
     - Button:
@@ -175,4 +196,65 @@ Each action takes a `onResponse` property so you can chain actions together. Let
             name: getToDos
 ```
 
-Test it by adding a new item. The result should appear in the list.
+Test it by adding a new item. The result should appear in the list right away.
+
+### 8. Marking tasks as completed
+
+Finally, we want to update the `completed` field when the switch is updated. Similar to a button that takes a `onTap` property, the switch takes a `onChange` property. We'll use this property to trigger a new API call, `updateToDo`.
+
+According to Airtable's documentation, they expect a `PATCH` request with a body like this:
+
+```json
+"records": [
+  {
+    "id": "recITO3bj1LsZj4O8", // This is the id of the record
+    "fields": {
+      "completed": true // We want this to be the value of the switch
+    }
+  }
+]
+```
+
+We construct this request body in under the switch itself, by specifying the `input` the goes along with the `action`.
+
+```yaml
+- Switch:
+    value: $(todoItem.fields.completed)
+    trailingText: $(todoItem.fields.desc)
+    onChange:
+      action: invokeAPI
+      name: updateToDo
+      inputs:
+        payload:
+          "records": [{
+            "id": "$(todoItem.id)",
+            "fields": {
+              "completed": "$(this.value)"
+            }
+          }]
+      onResponse:
+        action: invokeAPI
+        name: getToDos
+```
+
+Note that again we're chaning `getToDos` API call to make sure we get the updated records after a change.
+
+The switch is calling an API with name of `updateToDo`. Let's define it:
+
+```yaml
+updateToDo:
+  authorization: none
+  uri: 'https://api.airtable.com/v0/appDbkGS4VOiPVQR5/ToDo?api_key=keyyWz426zsnMKavb'
+  method: 'PATCH'
+  inputs: [payload]
+  body: $(payload)
+```
+
+That's it! Save it, try it out, and verify your changes in Airtable:
+
+[https://airtable.com/shrYy4pqloELiJNOm](https://airtable.com/shrYy4pqloELiJNOm)
+
+## Up for a few exercises?
+
+We designed a few exercises so you can try Ensemble on your own. No code to copy/paste this time 😉
+
