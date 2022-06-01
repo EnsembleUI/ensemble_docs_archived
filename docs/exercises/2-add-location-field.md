@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 2. Set task location
+# 2. Add location field
 
 We got a new requirement to store a location for each task. Our backend team already added the `location` field. Here's what you need to do:
 

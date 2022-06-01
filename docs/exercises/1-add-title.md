@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # 1. Add a title
 
-Our UX designer is not happy because we forgot to add a title above the list. Add "My tasks" above the list. We also got the following styling requirements from the designer:
+Our UX designer is not happy because we forgot to add a title. Add "My tasks" above the list. We also got the following styling requirements from the designer:
 
-* font size is 22
-* font weight is bold
+* Font size is 22
+* Font weight is bold
 
 ### Here's the expected outcome
 
