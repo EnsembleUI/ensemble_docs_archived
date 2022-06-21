@@ -90,7 +90,7 @@ API:
     body:
       "records": [{
         "fields": {
-          "desc": $(newTaskField.value),
+          "desc": ${newTaskField.value},
           "completed": false
         }}
       ]
@@ -118,7 +118,7 @@ Save your changes, and try it out by entering a new todo and clicking the Add bu
 
 Let's create a simple list of Todos. We do that by using a 'Column' widget, and setting the `item-template` property. `item-template` allows us to loop through an array of data and render the results. It takes the following properiteis:
 
-* `data`: We point this to the API that provides the data. Since Airtable nest the API response body in `records`, we set the value to `$(getToDos.body.records)`
+* `data`: We point this to the API that provides the data. Since Airtable nest the API response body in `records`, we set the value to `${getToDos.body.records}`
 * `name`, we set this to `todoItem`, so we can reference the data items
 * `template`, which is where we define the widgets to render for each item. We'll use a `Switch` widget for displaying each ToDo item.
 
@@ -139,12 +139,12 @@ View:
           name: createToDo
     - Column:
         item-template:
-          data: $(getToDos.body.records)
+          data: ${getToDos.body.records}
           name: todoItem
           template:
             Switch:
-                value: $(todoItem.fields.completed)
-                trailingText: $(todoItem.fields.desc)
+                value: ${todoItem.fields.completed}
+                trailingText: ${todoItem.fields.desc}
                 
 API:
   getToDos:
@@ -158,7 +158,7 @@ API:
     body:
       "records": [{
         "fields": {
-          "desc": $(newTaskField.value),
+          "desc": ${newTaskField.value},
           "completed": false
         }}
       ]
@@ -219,17 +219,17 @@ We construct this request body in under the switch itself, by specifying the `in
 
 ```yaml
 - Switch:
-    value: $(todoItem.fields.completed)
-    trailingText: $(todoItem.fields.desc)
+    value: ${todoItem.fields.completed}
+    trailingText: ${todoItem.fields.desc}
     onChange:
       action: invokeAPI
       name: updateToDo
       inputs:
         payload:
           "records": [{
-            "id": "$(todoItem.id)",
+            "id": "${todoItem.id}",
             "fields": {
-              "completed": "$(this.value)"
+              "completed": "${this.value}"
             }
           }]
       onResponse:
@@ -247,7 +247,7 @@ updateToDo:
   uri: 'https://api.airtable.com/v0/appDbkGS4VOiPVQR5/ToDo?api_key=keyyWz426zsnMKavb'
   method: 'PATCH'
   inputs: [payload]
-  body: $(payload)
+  body: ${payload}
 ```
 
 That's it! Save it, try it out, and verify your changes in Airtable:

@@ -46,7 +46,7 @@ View:
         styles: { fontSize: 22, fontWeight: bold }
     - Column:
         item-template:
-          data: $(getToDos.body.records)
+          data: ${getToDos.body.records}
           name: todoItem
           template:
             Row:
@@ -57,27 +57,27 @@ View:
                     children:
                       - Switch:
                           styles: { }
-                          value: $(todoItem.fields.completed)
+                          value: ${todoItem.fields.completed}
                           onChange:
                             action: invokeAPI
                             name: updateToDo
                             inputs:
                               payload:
                                 "records": [{
-                                    "id": "$(todoItem.id)",
+                                    "id": "${todoItem.id}",
                                     "fields": {
-                                      "completed": "$(this.value)"
+                                      "completed": "${this.value}"
                                     }
                                   }]
                             onResponse:
                               action: invokeAPI
                               name: getToDos
                 - Text:
-                    text: $(todoItem.fields.desc) 
+                    text: ${todoItem.fields.desc}
                     styles: { fontWeight: bold }
                 - Spacer
                 - Text:
-                    text: $(todoItem.fields.location)
+                    text: ${todoItem.fields.location}
                 
                           
 API:
@@ -92,8 +92,8 @@ API:
     body:
       "records": [{
         "fields": {
-          "desc": $(newTaskDesc.value),
-          "location": $(newTaskLocation.value),
+          "desc": ${newTaskDesc.value},
+          "location": ${newTaskLocation.value},
           "completed": false
         }}
       ]
@@ -102,7 +102,7 @@ API:
     uri: 'https://api.airtable.com/v0/appDbkGS4VOiPVQR5/ToDo?api_key=keyyWz426zsnMKavb'
     method: 'PATCH'
     inputs: [payload]
-    body: $(payload)
+    body: ${payload}
 
 Action:
   onPageLoad:
