@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# 2. Add location field
+# 3. Add location field
 
 We got a new requirement to store a location for each task. Our backend team already added the `location` field. Here's what you need to do:
 
@@ -12,4 +12,4 @@ We got a new requirement to store a location for each task. Our backend team alr
 
 ### Here's the expected outcome
 
-<img src="/img/exercise_2.jpg" alt="Exercise 1" width="300"/>
+<img src="/img/exercise_3.png" alt="Exercise 3" width="300"/>

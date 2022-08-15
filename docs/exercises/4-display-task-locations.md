@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# 3. Display task locations
+# 4. Display task locations
 
 Last step is to display the task location.
 
@@ -16,4 +16,4 @@ Last step is to display the task location.
 
 ### Here's the expected outcome
 
-<img src="/img/exercise_3.jpg" alt="Exercise 1" width="300"/>
+<img src="/img/exercise_4.png" alt="Exercise 4" width="300"/>

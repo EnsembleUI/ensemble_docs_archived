@@ -12,7 +12,7 @@ Hopefully you got through all 3 exercises. No worries if you didn't. We're enhan
 
 ```yaml
 View:
-  title: Home
+  title: ToDo app
   type: Column  
   styles: { padding: 20, gap: 20 }
   children:
