@@ -10,22 +10,7 @@ Currently, Ensemble does not support the following:
 
 #### Widgets
 
-See the supported widgets in [Kitchen Sink app](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screens). The following widgets are on our roadmap:
-
-* Slider
-* Dialogs and pop ups
-* Taps
-* Tooltips
-* Webview
-* Mapview
-* Markdown content
-
-#### Layouts
-
-Currently we support rows and columns. Following layout widgets will be supported soon:
-
-* Responsive width and height
-* Z-stack, for displaying content on top of each other
+See the supported widgets in [Kitchen Sink app](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screens).
 
 #### Connecting to APIs
 
@@ -35,4 +20,3 @@ Currently we support rows and columns. Following layout widgets will be supporte
 #### Device-level capabilities
 
 For native iOS and Android apps, Ensemble does not support tapping into device location, camera, etc.
-

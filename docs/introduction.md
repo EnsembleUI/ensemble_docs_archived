@@ -35,14 +35,16 @@ Get started by creating a new app in [Ensemble Studio](https://studio.ensembleui
 ```yaml
 View:
   title: Home
-  type: Column
-  styles: { padding: 20, gap: 20 }
-  children:
-    - TextInput:
-        label: New task
-        hintText: Enter a task
-        required: true
-        id: newTaskField
+  Column:
+    styles: 
+      padding: 20
+      gap: 20
+    children:
+      - TextInput:
+          label: New task
+          hintText: Enter a task
+          required: true
+          id: newTaskField
 ```
 
 Click Save to see your changes in the preview.
@@ -56,16 +58,18 @@ Here's what you should have so far:
 ```yaml
 View:
   title: Home
-  type: Column
-  styles: { padding: 20, gap: 20 }
-  children:
-    - TextInput:
-        label: New task
-        hintText: Enter a task
-        required: true
-        id: newTaskField
-    - Button:
-        label: Add
+  Column:
+    styles: 
+      padding: 20
+      gap: 20
+    children:
+      - TextInput:
+          label: New task
+          hintText: Enter a task
+          required: true
+          id: newTaskField
+      - Button:
+          label: Add
 ```
 
 Which looks like this:
@@ -120,31 +124,36 @@ Let's create a simple list of Todos. We do that by using a 'Column' widget, and 
 
 * `data`: We point this to the API that provides the data. Since Airtable nest the API response body in `records`, we set the value to `${getToDos.body.records}`
 * `name`, we set this to `todoItem`, so we can reference the data items
-* `template`, which is where we define the widgets to render for each item. We'll use a `Switch` widget for displaying each ToDo item.
+* `template`, which is where we define the widgets to render for each item. We'll use a `Checkbox` widget for displaying each ToDo item.
 
 Here's everything we should have so far:
 
 ```yaml
 View:
   title: Home
-  type: Column
-  styles: { padding: 20, gap: 20 }
-  children:
-    - TextInput:
-        id: newTaskField
-    - Button:
-        label: Add
-        onTap:
-          action: invokeAPI
-          name: createToDo
-    - Column:
-        item-template:
-          data: ${getToDos.body.records}
-          name: todoItem
-          template:
-            Switch:
-                value: ${todoItem.fields.completed}
-                trailingText: ${todoItem.fields.desc}
+  Column:  
+    styles: 
+      padding: 20
+      gap: 20
+    children:
+      - TextInput:
+          label: New task
+          hintText: Enter a task
+          required: true
+          id: newTaskField
+      - Button:
+          label: Add
+          onTap:
+            action: invokeAPI
+            name: createToDo
+      - Column:
+          item-template:
+            data: ${getToDos.body.records}
+            name: todoItem
+            template:
+              Checkbox::
+                  value: ${item.fields.completed}
+                  trailingText: ${item.fields.desc}
                 
 API:
   getToDos:
@@ -165,13 +174,14 @@ API:
 ```
 
 
-### 6. Call getToDos on page load
+### 6. Call getToDos on load
 
-`Action` is another root level object where we can define interactions, such as `onPageLoad`. Let's call the `getToDos` API when the page loads by adding the following after the APIs.
+Let's call the `getToDos` API when the view loads by adding `onLoad` to the `View`.
 
 ```yaml
-Action:
-  onPageLoad:
+View:
+  title: Home
+  onLoad:
     action: invokeAPI
     name: getToDos
 ```
@@ -186,21 +196,21 @@ Save your changes. You should now see the ToDo item you created earlier in the p
 Each action takes a `onResponse` property so you can chain actions together. Let's update the add button to call `getToDos` after adding a new item:
 
 ```yaml
-    - Button:
-        label: Add
-        onTap:
-          action: invokeAPI
-          name: createToDo
-          onResponse:
+      - Button:
+          label: Add
+          onTap:
             action: invokeAPI
-            name: getToDos
+            name: createToDo
+            onResponse:
+              action: invokeAPI
+              name: getToDos
 ```
 
 Test it by adding a new item. The result should appear in the list right away.
 
 ### 8. Marking tasks as completed
 
-Finally, we want to update the `completed` field when the switch is updated. Similar to a button that takes a `onTap` property, the switch takes a `onChange` property. We'll use this property to trigger a new API call, `updateToDo`.
+Finally, we want to update the `completed` field when the checkbox is toggled. Similar to a button that takes a `onTap` property, the checkbox takes a `onChange` property. We'll use this property to trigger a new API call, `updateToDo`.
 
 According to Airtable's documentation, they expect a `PATCH` request with a body like this:
 
@@ -209,37 +219,35 @@ According to Airtable's documentation, they expect a `PATCH` request with a body
   {
     "id": "recITO3bj1LsZj4O8", // This is the id of the record
     "fields": {
-      "completed": true // We want this to be the value of the switch
+      "completed": true // We want this to be the value of the checkbox
     }
   }
 ]
 ```
 
-We construct this request body in under the switch itself, by specifying the `input` the goes along with the `action`.
+We construct this request body in under the checkbox itself, by specifying the `input` the goes along with the `action`.
 
 ```yaml
-- Switch:
-    value: ${todoItem.fields.completed}
-    trailingText: ${todoItem.fields.desc}
+- Checkbox:
+    value: ${item.fields.completed}
+    trailingText: ${item.fields.desc}
     onChange:
       action: invokeAPI
       name: updateToDo
       inputs:
         payload:
-          "records": [{
-            "id": "${todoItem.id}",
-            "fields": {
-              "completed": "${this.value}"
-            }
-          }]
+          records:
+            - id: "${item.id}"
+              fields:
+                completed: "${this.value}"              
       onResponse:
         action: invokeAPI
         name: getToDos
 ```
 
-Note that again we're chaning `getToDos` API call to make sure we get the updated records after a change.
+Note that again we're chaining `getToDos` API call to make sure we get the updated records after a change.
 
-The switch is calling an API with name of `updateToDo`. Let's define it:
+The checkbox is calling an API with name of `updateToDo`. Let's define it:
 
 ```yaml
 updateToDo:
