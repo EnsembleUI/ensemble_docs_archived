@@ -9,8 +9,8 @@ Our UX designer is not happy because we forgot to add a header. Using the `Text`
 * Font size is 22
 * Font weight is bold
 
-The properties you need to set on `Text` widget are `text` and `styles`.
+The properties you need to set on the `Text` widget are `text` and `styles`. `styles` will have two properties: `fontSize` and `fontWeight`.
 
 ### Here's the expected outcome
 
-<img src="/img/exercise_2.png" alt="Exercise 2" width="300"/>
+<img src="/img/exercise_2.jpg" alt="Exercise 2" width="300"/>

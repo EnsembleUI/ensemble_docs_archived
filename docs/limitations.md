@@ -16,7 +16,3 @@ See the supported widgets in [Kitchen Sink app](https://studio.ensembleui.com/ap
 
 * OAuth authentication
 * GraphQL
-
-#### Device-level capabilities
-
-For native iOS and Android apps, Ensemble does not support tapping into device location, camera, etc.

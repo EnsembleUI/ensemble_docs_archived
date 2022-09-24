@@ -9,4 +9,4 @@ The current app's title displayed in the top bar is `Home`. Update it to `ToDo a
 
 ### Here's the expected outcome
 
-<img src="/img/exercise_1.png" alt="Exercise 1" width="300"/>
+<img src="/img/exercise_1.jpg" alt="Exercise 1" width="300"/>

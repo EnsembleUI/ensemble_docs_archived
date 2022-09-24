@@ -8,4 +8,4 @@ First, clone the [ToDo demo app](https://studio.ensembleui.com/app/31a0ce97-5e34
 
 Skip if you already followed the [introduction](../) and made your own app.
 
-<img src="/img/exercise_0.jpg" alt="Duplicate app" />
+<img src="/img/exercise_0.png" alt="Duplicate app" />
