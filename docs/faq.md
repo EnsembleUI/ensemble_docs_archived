@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # FAQs
@@ -21,3 +21,6 @@ We're working through supporting more widgets, API types, etc. To help us priori
 
 ---
 
+### What backend system can I use with Ensemble?
+
+Short answer is any, as long as they expose REST APIs. We expect to support GraphQL soon.

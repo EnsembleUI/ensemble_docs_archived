@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Limitations
@@ -13,6 +13,8 @@ Currently, Ensemble does not support the following:
 See the supported widgets in [Kitchen Sink app](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screens).
 
 #### Connecting to APIs
+
+We have the following on our roadmap:
 
 * OAuth authentication
 * GraphQL
