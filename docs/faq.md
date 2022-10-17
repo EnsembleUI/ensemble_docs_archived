@@ -24,3 +24,18 @@ We're working through supporting more widgets, API types, etc. To help us priori
 ### What backend system can I use with Ensemble?
 
 Short answer is any, as long as they expose REST APIs. We expect to support GraphQL soon.
+
+
+---
+
+### Are Ensemble apps rendered via native iOS & Android or they are based on the web?
+
+Ensemble updates the UI dynamically in a pure native app (no webviews). That's the core differentiation of the platform. We believe that webviews do not perform well and are ideal for user interaction.
+
+---
+
+### Isn’t updating apps on the fly against Apple App Store and Google Play Store policies?
+
+Ensemble’s architecture is based on 'Server driven UI' - SDUI. Uber, Doordash, Spotify, DeliveryHero, Workday and many others have built their own proprietary SDUIs. Ensemble brings it for everyone to use. Regarding Apple and Google Policies - SDUI customizes the user interface of your app based on the response from a server but it does not change the code. Most modern apps are already using some basic form of SDUI today.
+
+
