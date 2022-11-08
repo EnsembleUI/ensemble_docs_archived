@@ -73,11 +73,6 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://discord.gg/R8Csg5ajz2',
-            label: 'Discord',
-            position: 'right',
-          },
-          {
             href: 'https://github.com/EnsembleUI/ensemble',
             label: 'GitHub',
             position: 'right',
