@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # How did it go?
 
 Hopefully you got through all exercises. No worries if you didn't. We're enhancing the Studio experience and Ensemble docs. Your feedback would help us achieve that faster.
