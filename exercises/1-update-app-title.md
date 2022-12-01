@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # 1. Update the title
 
 The current app's title displayed in the top bar is `Home`. Update it to `ToDo app` and save. Verify the app title is updated.
@@ -9,4 +5,4 @@ The current app's title displayed in the top bar is `Home`. Update it to `ToDo a
 
 ### Here's the expected outcome
 
-<img src="/img/exercise_1.jpg" alt="Exercise 1" width="300"/>
+<img src="/images/exercise_1.jpg" alt="Exercise 1" width="300"/>

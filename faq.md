@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # FAQs
 
 ### What do I need to know to use Ensemble?
