@@ -1,4 +1,4 @@
-* [Home](./README)
+* [Introduction](./home)
 
 * [Overview Video](./overview-video)
 
