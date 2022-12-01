@@ -15,19 +15,18 @@
     window.$docsify = {
       el: "#app",
       repo: 'https://github.com/EnsembleUI/ensemble_docs',
+      logo: 'images/logo.svg',
+      themeColor: '#059ACD',
       loadSidebar: true,
       homepage: 'home.md',
       subMaxLevel: 1,
       search: 'auto',
       search: {
-        maxAge: 86400000, // Expiration time, the default one day
         paths: 'auto',
-        placeholder: 'Type to search',
-        noData: 'No Results!',
-        // Headline depth, 1 - 6
+        placeholder: 'Search...',
+        noData: 'No Results',
         depth: 6,
-        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-     }
+     },
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
