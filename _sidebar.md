@@ -1,10 +1,12 @@
-* [HOME](./)
+* [Home](./introduction)
 
-* [Tutorials](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
+* [Overview Video](./overview-video)
 
-* [About](./about/index)
+* [exercises](./exercises/index)
+  * [Prerequisite](./exercises/0-prerequisite)
+  * [Update the title](./exercises/1-update-app-title)
+  * [Add a header](./exercises/2-add-header)
 
-* [Contact](./contact/index)
+* [FAQs](./faq)
+
+* [Limitations](./limitations)
