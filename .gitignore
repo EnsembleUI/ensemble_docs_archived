@@ -11,3 +11,4 @@ yarn-error.log*
 .DS_STORE
 _book/**
 node_modules
+.idea
