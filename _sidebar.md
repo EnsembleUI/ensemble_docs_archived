@@ -10,6 +10,12 @@
   * [Store data locally](./getting-started/7-storage)
   * [Display list of items](./getting-started/8-item-template)
   * [Style widgets](./getting-started/9-styling)
+* [User Interface](./user-interface/intro)
+  * [Page Structure](./user-interface/1-page-structure)
+  * [Widgets](./user-interface/2-widgets.md)
+  * [Layouts](./user-interface/3-layouts.md)
+
+
 
 
 <!-- * [Exercises](./exercises/index)
