@@ -1,6 +1,7 @@
 # Ensemble Page Structure
 
 An Ensemble app comprises a series of pages and assets. Each page starts with a `View`, followed by an optional `header`, an optional `menu`, and a single widget for the body.
+
 <img src="/images/page_structure_0.png" alt="Page Skeleton" height="700"/>
 
 ## Header

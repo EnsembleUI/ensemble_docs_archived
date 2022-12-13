@@ -18,8 +18,9 @@
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
-  - [Deploying your App](deploy/1-deploy-app.md)
-
+  - [Preparing your App](deploy/1-prepare-app.md)
+  - [Deploy to iOS TestFlight](deploy/2-ios-app.md)
+  - [Deploy to Google Play Store](deploy/3-android-app.md)
 
 
 
