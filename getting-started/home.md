@@ -26,4 +26,4 @@ Ensemble never generates code from your app definitions. The backend serve these
 
 ## Ready to build an app?
 
-Follow [our guide](./getting-started) to create a simple ToDo app in less than 15 minutes.
+Follow [our guide]() to create a simple ToDo app in less than 15 minutes.
