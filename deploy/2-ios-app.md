@@ -21,7 +21,7 @@ If this is a brand-new app, you first need to register a unique Bundle ID and a 
   * Under `Info`, find the `Bundle display name` key and update its value to your desire name (e.g. My First App). This is the name that shows up once your App has been installed. This doesn't have to exactly match your App Name, and can be shorter so its name is not cut off under the App icon.
   <img src="/images/deploy_ios_3.png" alt="Add App" style="border: solid 1px lightgrey" />
 
-* Run `flutter build ipa --no-sound-null-safety --no-tree-shake-icons`. This will create the ipa file at /build/ios/ipa/my_first_app.ipa.
+* Run `flutter build ipa --no-tree-shake-icons`. This will create the ipa file at /build/ios/ipa/my_first_app.ipa.
 * Download Apple’s [Transporter](https://apps.apple.com/us/app/transporter/id1450874784?mt=12) and login with the same Apple account. Drop the ipa file into the Transporter App then click Deliver.
   * This may take 5-10 minutes AFTER upload completes before the build shows up under `Your App Name > TestFlight` tab, plus another 10-15 minutes to complete processing.
 * Click to manage Apple's app compliance by answering the questions.
