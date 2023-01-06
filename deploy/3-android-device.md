@@ -2,9 +2,8 @@
 
 * Make sure you completed the [Preparing your App](/deploy/1-prepare-app.md) step, then navigate to the folder created (e.g. my_first_app).
 * Run `flutter create --platforms=android .` (note the period at the end)
-* Run `flutter build apk --split-per-abi --no-tree-shake-icons` to build the APKs (destination is /build/app/outputs/flutter-apk/).
-* Connect your Android device to your computer, then run `adb install build/app/outputs/flutter-apk/app.apk`.
-  * Note: you may need to select the right APK depending on your device (e.g. ARM vs x86).
+* Run `flutter build apk --no-tree-shake-icons` to build the APKs (destination is /build/app/outputs/flutter-apk/).
+* Connect your Android device to your computer, then run `adb install build/app/outputs/flutter-apk/app-release.apk`.
 
 
 ### Customizing your App
