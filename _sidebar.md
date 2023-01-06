@@ -15,6 +15,8 @@
     - [Page Structure](build/user-interface/1-page-structure)
     - [Widgets](build/user-interface/2-widgets.md)
     - [Layouts](build/user-interface/3-layouts.md)
+  - Extending your App
+    - [Using local assets](build/extend/1-local-assets.md)
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
