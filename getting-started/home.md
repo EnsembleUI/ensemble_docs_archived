@@ -1,8 +1,8 @@
 # Welcome to Ensemble
 
-Ensemble is a declerative platform for building native front-ends.
+Ensemble is a declarative platform for building native front-ends.
 
-With Ensemble, you create apps by defining them using a declarative language. Ensemble renders your app by interpretting this definition at runtime. This is acheived using Ensemble's client libraries. These libraries are native to the platform, which means your app will be rendered natively. In other words, it's not a web view. Ensemble's declarative language is purpose-built for front-end development so you can specify the widget tree, interactions, API calls, events, etc. In short, anything you need to build a front-end, you define in Ensemble. The same definition can be targetted at iOS, Android, web, and desktop apps.
+With Ensemble, you create apps by defining them using a declarative language. Ensemble renders your app by interpreting this definition at runtime. This is achieved using Ensemble's client libraries. These libraries are native to the platform, which means your app will be rendered natively. In other words, it's not a web view. Ensemble's declarative language is purpose-built for front-end development so you can specify the widget tree, interactions, API calls, events, etc. In short, anything you need to build a front-end, you define in Ensemble. The same definition can be targeted at iOS, Android, web, and desktop apps.
 
 Ensemble never generates code from your app definitions. The backend serve these definitions as-is to the client. This approach provides the following benefits:
 
