@@ -21,6 +21,7 @@
   - [Preview your App](test/1-preview-app.md)
 - Deploy
   - [Preparing your App](deploy/1-prepare-app.md)
+  - [Prepare for production](deploy/5-prepare-for-production.md)
   - [Deploy to iOS TestFlight](deploy/2-ios-appstore.md)
   - [Deploy to Android devices](deploy/3-android-device.md)
   - [Deploy to Google Play Store](deploy/4-android-play-store.md)
