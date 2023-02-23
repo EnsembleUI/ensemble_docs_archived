@@ -23,13 +23,6 @@ Below are the snippet per capability to insert for iOS and Android respectively.
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>e.g. This app needs access to your location to ....</string>
 ```
-```xml
-<!-- accuracy equivalent to a city block -->
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-<!-- or request more accurate location -->
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-```
 
 **Camera**
 ```xml
