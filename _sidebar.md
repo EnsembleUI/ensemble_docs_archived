@@ -14,6 +14,8 @@
   - Item Template
     - [Interaction with API](./handle-data/item-template/1-interaction-with-api)
     - [Filter Data](./handle-data/item-template/2-filter-data)
+  - Local Storage
+    - [Local Storage](./handle-data/local-storage/1-local-storage.md)
 
 - Build
   - User Interface
