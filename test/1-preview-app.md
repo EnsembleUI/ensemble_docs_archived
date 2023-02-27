@@ -19,7 +19,7 @@ Now follow these steps to preview your app:
 1. Log in to Ensemble Studio.
 2. Click on the app you want to preview.
 3. Click Settings on the left sidebar. Here you find the app ID and a QR code.
-4. Open Ensemble Preview app and select the option to scan QR code from step 4.
+4. Open Ensemble Preview app and select the option to scan the QR code on the settings page.
 
 <img src="/images/app-qr-code-example.jpg" alt="Get app qr code" height="300"/>
 
