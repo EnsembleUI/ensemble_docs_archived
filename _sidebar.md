@@ -10,6 +10,11 @@
   - [Display list of items](./getting-started/8-item-template)
   - [Style widgets](./getting-started/9-styling)
 
+- Handle Data
+  - Item Template
+    - [Interaction with API](./handle-data/item-template/1-interaction-with-api)
+    - [Filter Data](./handle-data/item-template/2-filter-data)
+
 - Build
   - User Interface
     - [Page Structure](build/user-interface/1-page-structure)
