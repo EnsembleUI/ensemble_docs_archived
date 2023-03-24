@@ -9,14 +9,6 @@ With Ensemble, you create front-ends by defining them using a declarative langua
 [Open an issue on Github](https://github.com/EnsembleUI/ensemble/issues/new).
 
 
-## See it in action
-
-<figure class="video-container">
-  <iframe src="https://www.youtube.com/embed/iH9RQQtRkLI" frameborder="0" allowfullscreen width="100%" style="
-    height: 540px;"></iframe>
-</figure>
-
-
 ## Ready to build an app?
 
 Follow [our guide]() to create a simple ToDo app in less than 15 minutes.
