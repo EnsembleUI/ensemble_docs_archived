@@ -1,12 +1,12 @@
 - Getting started
   - [Overview](getting-started/home.md)
-  - [Create an app](./getting-started/1-create-app)
+  - [Create the UI for an app](./getting-started/1-create-app)
   - [Make an edit](./getting-started/2-edit)
   - [Ensemble syntax](./getting-started/3-ensemble-syntax)
   - [Create a Form](./getting-started/4-form)
-  - [Handle events](./getting-started/5-actions)
-  - [Write code](./getting-started/6-code)
-  - [Store data locally](./getting-started/7-storage)
+  <!-- - [Handle events](./getting-started/5-actions)-->
+  <!-- - [Write code](./getting-started/6-code)-->
+  <!-- - [Store data locally](./getting-started/7-storage) -->
   - [Display list of items](./getting-started/8-item-template)
   - [Style widgets](./getting-started/9-styling)
 
