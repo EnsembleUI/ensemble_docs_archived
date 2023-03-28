@@ -51,42 +51,43 @@ View:
       }
 
   # starting widget for this view
-  Column:
-    styles: 
-      padding: 20
-      backgroundColor: white
-    children:
-      - Form:
-          styles:
-            gap: 10
-          onSubmit:
-            action: executeCode
-            body: |
-              //@code
-              var items = ensemble.storage.todoItems;
-              items.push(newTodo.value);
-              ensemble.storage.todoItems = items;
-
-              // clear the text field's value
-              newTodo.value = '';
-
-          children:
-            - TextInput:
-                id: newTodo
-                label: New task
-                hintText: Enter task name
-                required: true
-            - Button:
-                label: Add
-                submitForm: true
-
-      - Column:
-          styles:
-            margin: 20 0
-          item-template:
-            data: ${ensemble.storage.todoItems}
-            name: item
-            template:
-              Checkbox:
-                trailingText: ${item}
+  body:
+      Column:
+        styles: 
+          padding: 20
+          backgroundColor: white
+        children:
+          - Form:
+              styles:
+                gap: 10
+              onSubmit:
+                action: executeCode
+                body: |
+                  //@code
+                  var items = ensemble.storage.todoItems;
+                  items.push(newTodo.value);
+                  ensemble.storage.todoItems = items;
+    
+                  // clear the text field's value
+                  newTodo.value = '';
+    
+              children:
+                - TextInput:
+                    id: newTodo
+                    label: New task
+                    hintText: Enter task name
+                    required: true
+                - Button:
+                    label: Add
+                    submitForm: true
+    
+          - Column:
+              styles:
+                margin: 20 0
+              item-template:
+                data: ${ensemble.storage.todoItems}
+                name: item
+                template:
+                  Checkbox:
+                    trailingText: ${item}
 ```

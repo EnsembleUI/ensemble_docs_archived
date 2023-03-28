@@ -39,6 +39,7 @@ View:
         page: Profile
   
   # this is the body widget   
-  Column:
-    ...
+  body:
+    Column:
+      ...
 ```

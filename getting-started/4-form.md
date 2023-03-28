@@ -16,15 +16,16 @@ View:
   styles:
     scrollableView: true
 
-  # starting widget for this view
-  Column:
-    styles: 
-      padding: 20
-      backgroundColor: white
-    children:
-      - Form:
-          children:
-            - TextInput
+  # widget for this View
+  body:
+    Column:
+      styles: 
+        padding: 20
+        backgroundColor: white
+      children:
+        - Form:
+            children:
+              - TextInput
 ```
 
 **What is that dash?**
