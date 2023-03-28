@@ -9,7 +9,7 @@ Because Ensemble docs are created directly from the markdown in this repo, you c
 ## Contributing to the docs by forking this repo
 
 1. Fork and clone this repo.
-2. Install docsify: `sudo npm install -g docsify-cli`.
+2. Install docsify: `sudo npm install -g docsify-cli`
 3. Startup the local docsify server with `docsify serve .` from the root of this repo.
 4. Edit the markdown and verify your changes on the localhost url outputted from the `docsify serve` command.
 5. Put up a pull request to this repo

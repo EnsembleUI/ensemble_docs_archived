@@ -1,27 +1,10 @@
 # Welcome to Ensemble
 
-Ensemble is a declarative platform for building native front-ends.
+Ensemble is a declarative platform for collaboratively building modern user interfaces.
 
-With Ensemble, you create apps by defining them using a declarative language. Ensemble renders your app by interpreting this definition at runtime. This is achieved using Ensemble's client libraries. These libraries are native to the platform, which means your app will be rendered natively. In other words, it's not a web view. Ensemble's declarative language is purpose-built for front-end development so you can specify the widget tree, interactions, API calls, events, etc. In short, anything you need to build a front-end, you define in Ensemble. The same definition can be targeted at iOS, Android, web, and desktop apps.
+With Ensemble, you create user interfaces by defining them using a declarative language. Ensemble is designed to focus on the visual and interactive aspects of your application, allowing you to specify the widget tree, interactions, events, and more. This user-centric approach makes it ideal for designing and prototyping user interfaces across multiple platforms, including iOS, Android, web, and desktop apps. By using Ensemble's client libraries, your application's user interface can be rendered consistently, ensuring a seamless user experience across all devices.
 
-Ensemble never generates code from your app definitions. The backend serve these definitions as-is to the client. This approach provides the following benefits:
-
-
-1. **Instant update of native apps** - Ensemble apps can load the screen definitions locally or from a server. By putting them on the server, you can push updates to clients instantly.
-2. **No more framework upgrades** - As new native technologies are released, we update Ensemble's runtime libraries, freeing you from spending resources to stay on latest framework releases.
-3. **Standardize development of native apps around one technology** - You can target the same definition across iOS, Android, and web, and deliver native apps. Ensemble also enables customization per platform.
-
-## Got any questions or feature requests? 
-
-[Open an issue on Github](https://github.com/EnsembleUI/ensemble/issues/new).
-
-
-## See it in action
-
-<figure class="video-container">
-  <iframe src="https://www.youtube.com/embed/iH9RQQtRkLI" frameborder="0" allowfullscreen width="100%" style="
-    height: 540px;"></iframe>
-</figure>
+You can get feedback on your UI from your stakeholders through the Ensemble Preview apps on Apple Appstore. Once ready, you can use Ensemble SDK to help you develop your app anyway you like and submit it to Apple Appstore for approval.
 
 
 ## Ready to build an app?
