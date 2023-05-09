@@ -8,15 +8,68 @@ Ensemble's javascript is a limited subset of the javascript you may be used to. 
 
 ## The Code block
 ## Where is Javascript code used?
+### To handle events. 
+Specified as the `executeCode` action. 
+Example - 
+```js
+    Button:
+      label: Click Me
+      onTap:
+        executeCode:
+          body: |
+            //@code
+            myText.text = 'tapped out';
+  ```
+
 ### Handling events
 ### Inline Expressions and bindings
-## Referencing Ensemble widgets inside javascript
+
+## Referencing Ensemble widgets and their properties inside javascript
+All widgets on a screen can be referenced within the code block by their `id` field. This also means that ids need to be unique on a screen. Don't set id on your re-usable custom widgets. 
+No need to call a function, simply use the id of the widget and start accessing its properties. For example, if your widget has `id: myText`, you can reference it in code block or inside an expression as just `myText`. See below. 
+```js
+  Column:
+    styles:
+      padding: 24
+      gap: 8
+    children:
+      - Text:
+          id: myText
+          text: Hi there!
+      - Button:
+          label: Click Me
+          onTap:
+            executeCode:
+              body: |
+                //@code
+                myText.text = 'tapped out';
+```
+
+Widgets within an item-template can be referenced by their index in the array using the `this.selectedItemIndex` syntax. 
+For example. 
+```js
+  ListView:
+    id: listView
+    onItemTap:
+      navigateScreen:
+        name: ListView - Detail Page
+        inputs:
+          doc_type: ${getPeople.body.users[this.selectedItemIndex]}              
+    styles: {expanded: true }
+    item-template:
+      data: ${getPeople.body.users}
+      name: users
+      template:
+        MyRow:
+          inputs:
+            p: ${users}
+```
 
 ## Core Libraries
 - String
 - Boolean
 - Numbers
-- Date
+- [Date](Date.md)
 - Map/Object
 - console
 - Math
