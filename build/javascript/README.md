@@ -103,9 +103,8 @@ For example.
 ```
 
 ## Core Libraries
-- String
-- Boolean
-- Numbers
+- [String](String.md)
+- [Numbers](Numbers.md)
 - [Date](Date.md)
 - Map/Object
 - console
