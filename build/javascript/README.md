@@ -41,7 +41,7 @@ Example 1: set widget property in API response
               //@code
               myText.text = 'Got Response!';
 ```
-Example 2: processing response and setting it for `item-template`
+Example 2: processing response and setting it for the `item-template` that are bound to this API to use
 ```js
     API:
       getDummyData:
