@@ -6,9 +6,16 @@ Ensemble's javascript is a limited subset of the javascript you may be used to. 
 - Only supports ES5. Which means that it does *not* support any of the ES6 features listed [here](https://www.w3schools.com/js/js_es6.asp). There is *no* support for arrow function synatx (=>), let keyword and many other features you may be used to. 
 - Limited to what's provided outside the box. No support for importing libraries. 
 
-## The Code block
 ## Where is Javascript code used?
-### To handle events. 
+Javascript is the language to build your logic in Ensemble. It is used either as code blocks or as inline expressions. We discuss both below. 
+
+### Code Block
+Each code block must start with `//@code` as the first line. This tells the platform to process the text as code. 
+- Use code blocks to handling events or processing API responses. 
+- Each code block must be in the `body` of the `executeCode` action. 
+
+See below the two use cases where code blocks are used. 
+#### Handling Events 
 Specified as the `executeCode` action. 
 Example - 
 ```js
@@ -20,9 +27,39 @@ Example -
             //@code
             myText.text = 'tapped out';
   ```
+#### Process API responses
+Another common place code blocks are used is when the API response has to be handled to extract values to be set on widgets or response to be set so that one or more `item-template` on the page may get the data in the format that they expect. See both examples below. 
+Example 1: set widget property in API response
+```js
+    API:
+      getDummyData:
+        uri: https://dummyjson.com/users/1
+        method: GET
+        onResponse:
+          executeCode:
+            body: |
+              //@code
+              myText.text = 'Got Response!';
+```
+Example 2: processing response and setting it for `item-template`
+```js
+    API:
+      getDummyData:
+        uri: https://dummyjson.com/users/1
+        method: GET
+        onResponse:
+          executeCode:
+            body: |
+              //@code
+              //this will replace the response and be used by the item-templates that bind to this API
+              response.body.data = [{"field1:"value1"}];  
+```
 
-### Handling events
 ### Inline Expressions and bindings
+Use inline expressions for dynamically assigning values to widget properties. Inline expressions automatically update the properties of widgets by `binding` them to API responses or template data. 
+
+
+
 
 ## Referencing Ensemble widgets and their properties inside javascript
 All widgets on a screen can be referenced within the code block by their `id` field. This also means that ids need to be unique on a screen. Don't set id on your re-usable custom widgets. 
@@ -80,4 +117,8 @@ For example.
 - JSON
 - btoa
 - atob
+- ensemble (storage, calling actions and more)
+
+## Common Errors and Logging/Debugging
+
 
