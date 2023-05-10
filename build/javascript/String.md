@@ -2,6 +2,9 @@
 
 This document covers JavaScript String functions available in Ensemble with examples. Each function is briefly explained and followed by an example demonstrating its usage.
 
+- Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
+- or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
+
 ### indexOf
 
 The `indexOf()` method returns the index of the first occurrence of the specified value in a string.
