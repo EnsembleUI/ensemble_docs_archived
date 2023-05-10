@@ -17,6 +17,8 @@
     - [Layouts](build/user-interface/3-layouts.md)
   - Extending your App
     - [Using local assets](build/extend/1-local-assets.md)
+  - Define Logic using Javascript
+    - [Ensemble Javascript](build/javascript/README.md)
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
