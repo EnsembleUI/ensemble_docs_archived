@@ -104,7 +104,7 @@ console.log(upperCaseStr); // "HELLO, WORLD!"
 
 ### match
 
-The `match()` method retrieves the result of matching a string against a regular expression.
+The `match()` method retrieves the result of matching a string against a regular expression and returns null in case there is no match. 
 
 **Example:**
 
@@ -112,12 +112,12 @@ The `match()` method retrieves the result of matching a string against a regular
 var str = "Hello, world!";
 var regex = /world/;
 var result = str.match(regex);
-console.log(result[0]); // "world"
+console.log(result); // "world"
 ```
 
 ### matchAll
 
-The `matchAll()` method returns an iterator of all results matching a string against a regular expression, including capturing groups.
+The `matchAll()` method returns an array of all the matched strings or an empty array in case there is no match. 
 
 **Example:**
 
@@ -125,7 +125,8 @@ The `matchAll()` method returns an iterator of all results matching a string aga
 var str = "Hello, world! world!";
 var regex = /world/g;
 var matches = str.matchAll(regex);
-Array.from(matches, m => m[0]); // ["world", "world"]
+console.log(matches[0]); // "world"
+console.log(matches[1]); // "world"
 ```
 
 ### padStart
