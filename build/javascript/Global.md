@@ -1,7 +1,7 @@
 - Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
 - or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
-For `parseInt`, `parseFloat`, see [String.tryParseInt](String.md#tryparseint) and [String.tryParseDouble](String.md#tryparsedouble) respectively.
+For `parseInt`, `parseFloat`, see [String.tryParseInt](/build/javascript/String) and [String.tryParseDouble](/build/javascript/String) respectively.
 
 ### console.log
 
