@@ -1,6 +1,6 @@
 # Limitations
 
-We're expanding the use cases that can be built with Ensemble. Feel free to <a href='mailto:hello@ensembleui.com'>get in touch </a> with us to discuss your requirements so we can prioritize upcoming features.
+We're expanding the use cases that can be built with Ensemble. Feel free to <a href='mailto:hello@ensembleui.com'>get in touch </a> with us to discuss your requirements so we can prioritize upcoming features. Remember to join our [discord server](https://discord.gg/k4CJeuRc).
 
 Currently, Ensemble does not support the following:
 
