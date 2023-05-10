@@ -21,33 +21,6 @@ console.log(pattern.test(str)); // Output: false
 str = "hello, how are you?";
 console.log(pattern.test(str)); // Output: true
 ```
-
-### parseFloat
-
-The `parseFloat()` function is used to parse a string and return a floating-point number. If the string cannot be converted to a number, it returns `NaN`.
-
-**Example:**
-
-```javascript
-var str = "3.14";
-console.log(parseFloat(str)); // Output: 3.14
-```
-
-### parseInt
-
-The `parseInt()` function is used to parse a string and return an integer. If the string cannot be converted to a number, it returns `NaN`.
-
-**Example:**
-
-```javascript
-var str = "42";
-console.log(parseInt(str)); // Output: 42
-```
-
-### parseDouble
-
-There is no `parseDouble` function in JavaScript. Instead, you can use `parseFloat()` to parse a string and return a floating-point number.
-
 ### btoa
 
 The `btoa()` function is used to encode a string in base64 format. It takes a string as input and returns a base64 encoded string.
