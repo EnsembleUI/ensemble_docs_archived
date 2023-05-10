@@ -1,6 +1,9 @@
 # JavaScript Date
 The Date object is a built-in JavaScript object that represents a single moment in time, based on the number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
+- Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
+- or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
+
 ## Constructors
 
 ### Date()
