@@ -1,3 +1,5 @@
+For `parseInt`, `parseDouble`, see [String](String.d) functions.
+
 ### console.log
 
 The `console.log()` function is used to print messages to the console. It can be used for debugging purposes or to display information.
