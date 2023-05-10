@@ -107,8 +107,8 @@ For example.
 ```
 
 ## Core Libraries
-- [The `ensemble` object](build/javascript/Ensemble.md)
-- [String](String.md)
+- [The `ensemble` object](/build/javascript/Ensemble)
+- [String](/build/javascript/String)
 - [Numbers](Numbers.md)
 - [Date](Date.md)
 - [Object and Array](MapAndArray.md)
