@@ -111,7 +111,7 @@ For example.
 - [String](String.md)
 - [Numbers](Numbers.md)
 - [Date](Date.md)
-- [Object and Array] (MapAndArray.md)
+- [Object and Array](MapAndArray.md)
 - [Globals](Global.md)
 - [Math](Math.md)
 - [JSON](JSON.md)
