@@ -18,7 +18,7 @@
   - Extending your App
     - [Using local assets](build/extend/1-local-assets.md)
   - Define Logic using Javascript
-    - [Intro - When and How to use](build/javascript/README.md)
+    - [Intro - Limitations, When and How to use](build/javascript/README.md)
     - [The `ensemble` object](build/javascript/Ensemble)
     - [String](build/javascript/String)
     - [Numbers](build/javascript/Numbers)
