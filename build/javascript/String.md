@@ -2,6 +2,7 @@
 
 This document covers JavaScript String functions available in Ensemble with examples. Each function is briefly explained and followed by an example demonstrating its usage.
 
+- [Code:String in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/bf9e503e-286b-437a-a692-14d0d5814918) has examples for using the String functions. Copy it into your own app and play around. 
 - Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
 - or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
