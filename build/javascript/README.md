@@ -7,7 +7,8 @@ Following are the key limitations of the javascript in Ensemble.
 - Only supports ES5. Which means that it does *not* support any of the ES6 features listed [here](https://www.w3schools.com/js/js_es6.asp). There is *no* support for arrow function synatx (=>), let keyword and many other features you may be used to. 
 - No support for importing libraries. Limited to what's provided outside the box. 
 - No support for `.prototype` or defining new objects. This may come in the future. 
-- 
+
+Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of these capabilities. 
 
 ## Where is Javascript code used?
 Javascript is the language to build your logic in Ensemble. It is used either as code blocks or as inline expressions. We discuss both below. 
