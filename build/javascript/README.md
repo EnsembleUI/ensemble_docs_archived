@@ -62,7 +62,7 @@ Example 2: processing response and setting it for the `item-template` that are b
 ### Inline Expressions and bindings
 Use inline expressions for dynamically assigning values to widget properties. Inline expressions automatically update the properties of widgets by `binding` them to API responses or template data. 
 
-
+More details coming soon... TBD
 
 
 ## Referencing Ensemble widgets and their properties inside javascript
@@ -109,14 +109,14 @@ For example.
 ## Core Libraries
 - [The `ensemble` object](/build/javascript/Ensemble)
 - [String](/build/javascript/String)
-- [Numbers](Numbers.md)
-- [Date](Date.md)
-- [Object and Array](MapAndArray.md)
-- [Globals](Global.md)
-- [Math](Math.md)
-- [JSON](JSON.md)
-- [JsonPath](JsonPath.md)
+- [Numbers](/build/javascript/Numbers)
+- [Date](/build/javascript/Date)
+- [Object and Array](/build/javascript/MapAndArray)
+- [Globals](/build/javascript/Global)
+- [Math](/build/javascript/Math)
+- [JSON](/build/javascript/JSON)
+- [JsonPath](/build/javascript/JsonPath)
 
 ## Common Errors and Logging/Debugging
-
+TBD
 
