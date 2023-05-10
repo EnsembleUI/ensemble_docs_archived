@@ -2,6 +2,8 @@
 Any property of a javascript object may be accessed using either the parenthesis `['propname']` or the dot `myObj.propname`. 
 
 - It the property does not exist on the object, it will return null. Exception will *not* be thrown. 
+- Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
+- or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
 ## Methods
 
@@ -30,6 +32,9 @@ console.log(result); // Outputs: ["J"]
 ```
 # Array
 Arrays behave exactly as they would in regular javascript. You can access an item in the array with the index e.g. `myArray[0]`
+- Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
+- or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
+
 ## Methods
 ### map
 
