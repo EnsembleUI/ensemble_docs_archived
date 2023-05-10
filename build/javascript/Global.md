@@ -18,6 +18,8 @@ The `regexp.test()` function is used to test if a given string matches a regular
 var pattern = /hello/;
 var str = "Hello, World!";
 console.log(pattern.test(str)); // Output: false
+str = "hello, how are you?";
+console.log(pattern.test(str)); // Output: true
 ```
 
 ### parseFloat
