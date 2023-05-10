@@ -18,7 +18,16 @@
   - Extending your App
     - [Using local assets](build/extend/1-local-assets.md)
   - Define Logic using Javascript
-    - [Ensemble Javascript](build/javascript/README.md)
+    - [Intro - When and How to use](build/javascript/README.md)
+      - [The `ensemble` object](build/javascript/Ensemble)
+      - [String](build/javascript/String)
+      - [Numbers](build/javascript/Numbers)
+      - [Date](build/javascript/Date)
+      - [Object and Array](build/javascript/MapAndArray)
+      - [Globals](build/javascript/Global)
+      - [Math](build/javascript/Math)
+      - [JSON](build/javascript/JSON)
+      - [JsonPath](build/javascript/JsonPath)
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
