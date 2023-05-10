@@ -1,4 +1,4 @@
-For `parseInt`, `parseDouble`, see [String](String.d) functions.
+For `parseInt`, `parseDouble`, see [String](String.md) functions.
 
 ### console.log
 
