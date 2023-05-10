@@ -1,4 +1,4 @@
-For `parseInt`, `parseDouble`, see [String](String.md) functions.
+For `parseInt`, `parseDouble`, see [String.tryParseInt](String.md#tryparseint) and [String.tryParseDouble](String.md#tryparsedouble) respectively.
 
 ### console.log
 
