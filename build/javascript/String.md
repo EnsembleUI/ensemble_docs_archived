@@ -131,26 +131,42 @@ console.log(matches[1]); // "world"
 
 ### padStart
 
-The `padStart()` method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length.
+The `padStart()` method pads the current string with another string (multiple times, if needed) on the left until the resulting string reaches the given length. 
+
+- If width is already smaller than or equal to `this.length`, no padding is added. A negative `width` is treated as zero.
+- The second argument (string to be padded with) is optional. When not specified, space is used for padding
+- If padding has length different from 1, the result will not have length width. This may be useful for cases where the padding is a longer string representing a single character, like "&nbsp;" or "\u{10002}". In that case, the user should make sure that this.length is the correct measure of the string's length.
 
 **Example:**
 
 ```javascript
 var str = "world";
-var paddedStr = str.padStart(10, "Hello, ");
-console.log(paddedStr); // "Hello, world"
+var paddedStr = str.padStart(6, "Hello");
+console.log(paddedStr); // "Helloworld"
+paddedStr = str.padStart(10, "Hello");
+console.log(paddedStr); // "HelloHelloHelloHelloHelloworld"
+paddedStr = str.padStart(8, "<");
+console.log(paddedStr); // "<<<world"
 ```
 
 ### padEnd
 
-The `padEnd()` method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length.
+The `padEnd()` method pads the current string with another string (multiple times, if needed) on the right until the resulting string reaches the given length. 
+
+- If width is already smaller than or equal to `this.length`, no padding is added. A negative `width` is treated as zero.
+- The second argument (string to be padded with) is optional. When not specified, space is used for padding
+- If padding has length different from 1, the result will not have length width. This may be useful for cases where the padding is a longer string representing a single character, like "&nbsp;" or "\u{10002}". In that case, the user should make sure that this.length is the correct measure of the string's length.
 
 **Example:**
 
 ```javascript
-var str = "Hello";
-var paddedStr = str.padEnd(12, ", world!");
-console.log(paddedStr); // "Hello, world!"
+var str = "world";
+var paddedStr = str.padEnd(6, "Hello");
+console.log(paddedStr); // "worldHello"
+paddedStr = str.padEnd(10, "Hello");
+console.log(paddedStr); // "worldHelloHelloHelloHelloHello"
+paddedStr = str.padEnd(8, "<");
+console.log(paddedStr); // "world<<<"
 ```
 
 ### substring
