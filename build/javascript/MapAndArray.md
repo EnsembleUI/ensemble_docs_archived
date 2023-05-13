@@ -233,6 +233,32 @@ The `includes()` method determines whether an array includes a certain element, 
 **Parameters:**
 
 - `searchElement`: The element to search for.
-- `fromIndex` (optional): The position in this array at which to begin searching for `searchElement
+- `fromIndex` (optional): The position in this array at which to begin searching for `searchElement`
 
+**Example:**
 
+```javascript
+var numbers = [1, 4, 9];
+var found = numbers.includes(1)
+console.log(found); // true
+```
+
+### at
+
+The `at()` method returns the element at specified index.
+
+**Parameters:**
+
+- `index`: The index to get element for.
+
+**Return value:**
+
+The element at specified index.
+
+**Example:**
+
+```javascript
+var numbers = [1, 4, 9];
+var element = numbers.at(1)
+console.log(element); // 4
+```
