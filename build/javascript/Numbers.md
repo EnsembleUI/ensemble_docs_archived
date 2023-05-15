@@ -9,12 +9,12 @@ The `toFixed()` method in JavaScript is used to format a number using fixed-poin
 **Syntax:**
 
 ```javascript
-numObj.toFixed([digits]);
+numObj.toFixed(digits);
 ```
 
 **Parameters:**
 
-- `digits` (Optional): An integer specifying the number of digits to appear after the decimal point. The default value is 0.
+- `digits`: An integer specifying the number of digits to appear after the decimal point. This is required unlike in js where it is optional. 
 
 **Example:**
 
