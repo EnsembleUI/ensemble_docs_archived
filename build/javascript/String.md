@@ -6,6 +6,18 @@ This document covers JavaScript String functions available in Ensemble with exam
 - Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
 - or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
+### length
+
+The `length` property returns the length of the string
+
+**Example:**
+
+```javascript
+var str = "Hello";
+var len = str.length;
+console.log(len); // 5
+```
+
 ### indexOf
 
 The `indexOf()` method returns the index of the first occurrence of the specified value in a string.
