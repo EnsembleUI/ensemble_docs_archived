@@ -15,9 +15,9 @@
     - [Page Structure](build/user-interface/1-page-structure)
     - [Widgets](build/user-interface/2-widgets.md)
     - [Layouts](build/user-interface/3-layouts.md)
-  - Extending your App
+  - Extend your App
     - [Using local assets](build/extend/1-local-assets.md)
-  - Define Logic using Javascript
+  - Define logic using Javascript
     - [Intro - Limitations, When and How to use](build/javascript/README.md)
     - [The `ensemble` object](build/javascript/Ensemble)
     - [String](build/javascript/String)
@@ -28,6 +28,8 @@
     - [Math](build/javascript/Math)
     - [JSON](build/javascript/JSON)
     - [JsonPath](build/javascript/JsonPath)
+  - [Widget reference](build/widget-reference/directory)
+
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
