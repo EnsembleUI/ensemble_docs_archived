@@ -13,17 +13,41 @@ To trigger validation of a Form's children inputs, add a Button widget with the 
 View:
   body:
     Form:
+      onSubmit:
+        invokeAPI:
+          name: addAccount
+          inputs:
+            name: ${name.value}
+            email: ${email.value}
+        onResponse:
+          # perform additional action here
+        onError:
+          # perform additional action here
       children:
         - TextInput:
-            label: Name
+            id: name
+            label: First and last name
             required: true
         - TextInput:
-            label: email
+            id: email
+            label: Email
             required: true
             inputType: email
         - Button:
             label: Submit
             validateForm: true
+            submitForm: true
+
+API:
+  addAccount:
+    inputs:
+      - name
+      - email
+    method: POST
+    uri: https://sample.api/user
+    body:
+      name: ${name}
+      email: ${email}
 ```
 
 ### Styling
