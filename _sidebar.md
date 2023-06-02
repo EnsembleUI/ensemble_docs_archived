@@ -21,6 +21,7 @@
   - Actions and Events
     - [invokeAPI](./make-it-interactive/actions-and-events/1-invokeAPI.md)
     - [executeCode](./make-it-interactive/actions-and-events/2-executeCode.md)
+    - [openCamera](./make-it-interactive/actions-and-events/3-openCamera.md)
 
 - Build
   - User Interface
