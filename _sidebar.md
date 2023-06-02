@@ -31,18 +31,18 @@
 
   - Handle Data
     - Item Template
-      - [Interaction with API](handle-data/item-template/1-interaction-with-api)
-      - [Filter Data](handle-data/item-template/2-filter-data)
+      - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
+      - [Filter Data](build/handle-data/item-template/2-filter-data)
     - Local Storage
-      - [Local Storage](handle-data/local-storage/1-local-storage.md)
+      - [Local Storage](build/handle-data/local-storage/1-local-storage.md)
 
   - Make it interactive
     - Actions and Events
-      - [invokeAPI](make-it-interactive/actions-and-events/1-invokeAPI.md)
-      - [executeCode](make-it-interactive/actions-and-events/2-executeCode.md)
-      - [openCamera](make-it-interactive/actions-and-events/3-openCamera.md)
-      - [openUrl](make-it-interactive/actions-and-events/4-openUrl.md)
-      - [startTimer](make-it-interactive/actions-and-events/5-startTimer.md)
+      - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI.md)
+      - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode.md)
+      - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera.md)
+      - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl.md)
+      - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer.md)
 
 
 - Test
