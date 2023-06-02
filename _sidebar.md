@@ -17,6 +17,10 @@
   - Local Storage
     - [Local Storage](./handle-data/local-storage/1-local-storage.md)
 
+- Make it interactive
+  - Actions and Events
+    - [invokeAPI](./make-it-interactive/actions-and-events/1-invokeAPI.md)
+
 - Build
   - User Interface
     - [Page Structure](build/user-interface/1-page-structure)
