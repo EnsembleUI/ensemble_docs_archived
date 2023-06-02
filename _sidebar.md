@@ -20,6 +20,7 @@
 - Make it interactive
   - Actions and Events
     - [invokeAPI](./make-it-interactive/actions-and-events/1-invokeAPI.md)
+    - [executeCode](./make-it-interactive/actions-and-events/2-executeCode.md)
 
 - Build
   - User Interface
