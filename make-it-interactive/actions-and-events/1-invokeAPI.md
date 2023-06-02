@@ -1,6 +1,10 @@
 # Action: invokeAPI
 
-**invokeAPI** is used for calling an API. You can call an API on a button tap or on page load. First you have to declare an API, for that go to the end of the page and declare you API like this
+
+To check out examples of the invokeAPI action, go to the [Ensemble Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/e546b0d8-3220-4217-bd5c-181118154073).
+
+**invokeAPI** is used for calling an API. You can call an API on events such as a button tap or on screen load. First, you have to declare an API:
+
 ```yaml
 API:
   getPeople:
@@ -8,26 +12,17 @@ API:
     method: GET
 ```
 
-Now to call an API on page load, inside the View block and onLoad and then call the API like this
+Now to call the API on screen load, use the `onLoad` property of the view:
 
 ```yaml
 View:
-  header:
-    title: "Action: invokeAPI"
-  styles:
-    scrollableView: true
-
-  onLoad: # This will call the API on page load
+  onLoad:
     invokeAPI:
       name: getPeople
-
   body:
     Column:
       styles: { gap: 16, padding: 24 }
       children:
-        ## Example 1
-        - Text:
-            text: GET on load and display a value
         - Text:
             text: ${getPeople.body.results.length} records were retrieved from API
         - Markdown:
@@ -43,21 +38,14 @@ API:
     method: GET
 ```
 
-To call an API on button tap, inside the body add a Button with onTap property and then call the API like this
+To call an API on button tap, inside the body add a Button with `onTap` property:
 
 ```yaml
 View:
-  header:
-    title: "Action: invokeAPI"
-  styles:
-    scrollableView: true
-
   body:
     Column:
       styles: { gap: 16, padding: 24 }
       children:
-        - Text:
-            text: GET and bind to an item-template
         - Button:
             label: Call API
             onTap:
@@ -65,7 +53,7 @@ View:
                 name: getPeople
         - Column:
             item-template:
-              data: ${getPeople2.body.results}
+              data: ${getPeople.body.results}
               name: item
               template:
                 Text:
@@ -77,21 +65,17 @@ API:
     method: GET
 ```
 
+## POST calls
+
 You can also create a POST request and pass parameters to the API like this
 
 ```yaml
 View:
-  header:
-    title: "Action: invokeAPI"
-  styles:
-    scrollableView: true
 
   body:
     Column:
       styles: { gap: 16, padding: 24 }
       children:
-        - Text:
-            text: 3. POST with custom body
         - Button:
             label: Call API
             onTap:
@@ -118,7 +102,9 @@ API:
             desc: "${name}"
 ```
 
-To handle Errors, you can use the onError property like this
+## Handing errors
+
+To handle Errors, you can use the `onError` property:
 
 ```yaml
         - Text:
@@ -147,11 +133,11 @@ API:
       records: "this is not what the API expects"
 ```
 
-To call an API in code block, you can use the invokeAPI function like this
+## Use in code
+
+You can also call an API in code block.
 
 ```yaml
-        - Text:
-            text: 5. Call API in code
         - Button:
             label: Call API
             onTap:
@@ -171,4 +157,14 @@ API:
     method: GET
 ```
 
-To check out the implementation of invokeAPI, go to the [Ensemble Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/e546b0d8-3220-4217-bd5c-181118154073).
+## Properties
+
+| Property | Type | Description |
+| :---------------- | :------- | :------- |
+| method     | String  | The HTTP method of the request, such as `GET`, `POST`, `DELETE`, `PUT`, `PATCH`     |
+| uri        | String  | The URI for the request             |
+| body       | Object  | The request body                    |
+| headers    | Object  | The headers for the request         |
+| onResponse | Action  | The action to handle the response   |
+| onError    | Action  | The action to handle errors         |
+| inputs     | Array   | The input values                    |
