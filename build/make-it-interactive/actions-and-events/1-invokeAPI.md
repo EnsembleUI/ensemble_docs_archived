@@ -157,10 +157,19 @@ API:
     method: GET
 ```
 
-## Properties
+## Properties for invokeAPI
 
 | Property | Type | Description |
-| :---------------- | :------- | :------- |
+| :------- | :--- | :---------- |
+| name     | String  | Name of the API defined in the API section |
+| inputs   | Object  | Key value pairs ofinputs to be passed to API definition |
+| onResponse | Action  | The action to handle the response   |
+| onError    | Action  | The action to handle errors         |
+
+## Properties for an API definition
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 | method     | String  | The HTTP method of the request, such as `GET`, `POST`, `DELETE`, `PUT`, `PATCH`     |
 | uri        | String  | The URI for the request             |
 | body       | Object  | The request body                    |
