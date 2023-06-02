@@ -10,21 +10,6 @@
   - [Display list of items](./getting-started/8-item-template)
   - [Style widgets](./getting-started/9-styling)
 
-- Handle Data
-  - Item Template
-    - [Interaction with API](./handle-data/item-template/1-interaction-with-api)
-    - [Filter Data](./handle-data/item-template/2-filter-data)
-  - Local Storage
-    - [Local Storage](./handle-data/local-storage/1-local-storage.md)
-
-- Make it interactive
-  - Actions and Events
-    - [invokeAPI](./make-it-interactive/actions-and-events/1-invokeAPI.md)
-    - [executeCode](./make-it-interactive/actions-and-events/2-executeCode.md)
-    - [openCamera](./make-it-interactive/actions-and-events/3-openCamera.md)
-    - [openUrl](./make-it-interactive/actions-and-events/4-openUrl.md)
-    - [startTimer](./make-it-interactive/actions-and-events/5-startTimer.md)
-
 - Build
   - User Interface
     - [Page Structure](build/user-interface/1-page-structure)
@@ -43,7 +28,22 @@
     - [Math](build/javascript/Math)
     - [JSON](build/javascript/JSON)
     - [JsonPath](build/javascript/JsonPath)
-  - [Widget reference](build/widget-reference/directory)
+
+  - Handle Data
+    - Item Template
+      - [Interaction with API](handle-data/item-template/1-interaction-with-api)
+      - [Filter Data](handle-data/item-template/2-filter-data)
+    - Local Storage
+      - [Local Storage](handle-data/local-storage/1-local-storage.md)
+
+  - Make it interactive
+    - Actions and Events
+      - [invokeAPI](make-it-interactive/actions-and-events/1-invokeAPI.md)
+      - [executeCode](make-it-interactive/actions-and-events/2-executeCode.md)
+      - [openCamera](make-it-interactive/actions-and-events/3-openCamera.md)
+      - [openUrl](make-it-interactive/actions-and-events/4-openUrl.md)
+      - [startTimer](make-it-interactive/actions-and-events/5-startTimer.md)
+
 
 - Test
   - [Preview your App](test/1-preview-app.md)
@@ -52,7 +52,7 @@
   - [Deploy to Android devices](deploy/3-android-device.md)
   - [Deploy to Google Play Store](deploy/4-android-play-store.md)
 
-
+- [Widget reference](widget-reference/directory)
 
 <!-- * [Exercises](./exercises/index)
   * [Prerequisite](./exercises/0-prerequisite)
