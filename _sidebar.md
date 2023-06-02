@@ -23,6 +23,7 @@
     - [executeCode](./make-it-interactive/actions-and-events/2-executeCode.md)
     - [openCamera](./make-it-interactive/actions-and-events/3-openCamera.md)
     - [openUrl](./make-it-interactive/actions-and-events/4-openUrl.md)
+    - [startTimer](./make-it-interactive/actions-and-events/5-startTimer.md)
 
 - Build
   - User Interface
