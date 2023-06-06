@@ -39,9 +39,9 @@ Ensemble widgets enable you to build both simple and complex applications.
 
 | Widget   | Documentation | Kitchen sink example |
 |----------|---------------|----------------------|
-| Form     | [Link](/build/widget-reference/form) | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3107baf6-dfc3-42cd-b617-61c37b31f31e) |
+| Form     | [Link](/widget-reference/form) | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3107baf6-dfc3-42cd-b617-61c37b31f31e) |
 | TextInput| Coming soon | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/abc081b1-bcb4-4db6-ae55-7987cb6c418e) |
-| Button   | [Link](/build/widget-reference/button) | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/09c1087b-f9ee-4a8c-9286-e0e881184c07) |
+| Button   | [Link](/widget-reference/button) | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/09c1087b-f9ee-4a8c-9286-e0e881184c07) |
 | Dropdown | Coming soon | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/fb8d28a2-834e-40a9-8419-155272fb0191) |
 | AutoComplete | Coming soon | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3tBTU9CUTu0IegpytNYa) |
 | Checkbox | Coming soon | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/21f43d9b-db21-40fe-9c2f-806267e6c412) |
