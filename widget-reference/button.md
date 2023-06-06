@@ -2,6 +2,8 @@
 
 A control that can execute an action on tap or click.
 
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/09c1087b-f9ee-4a8c-9286-e0e881184c07)
+
 ## Properties
 
 | Property     | Type    | Description                                                                                                         |

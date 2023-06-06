@@ -1,4 +1,8 @@
-# Markdown
+# Markdown widget
+
+The Markdown Render Widget empowers you to effortlessly render Markdown text, transforming it into beautifully formatted and structured content for your application.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/6b6d9c3d-359b-4768-99a5-3f087a64387c)
 
 ## Properties
 

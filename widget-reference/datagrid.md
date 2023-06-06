@@ -1,5 +1,9 @@
 # DataGrid
 
+The DataGrid Widget enables the seamless rendering of data grids, facilitating the organized display and manipulation of tabular data within your application for effective data representation and interaction.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/c5940e18-f2c1-4318-8e68-a678a6ae7247)
+
 ## Properties
 
 | Property         | Type    | Description                                         |

@@ -1,5 +1,9 @@
 # Row
 
+The Row Widget enables effortless horizontal layout of children elements, facilitating clean and compact designs that seamlessly align content within your application.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/4bd0d453-c243-429d-a562-93cbc9db38e3)
+
 ## Properties
 
 | Property      | Type   | Description                      |
@@ -10,11 +14,11 @@
 
 ### item-template
 
-| Property | Type      | Description                                                        |
-| :------- | :-------- | :----------------------------------------------------------------- |
-| data     | string    | Bind to an array of data from an API response or a variable        |
-| name     | string    | Set the name to reference as you iterate through the array of data |
-| template | undefined | The widget to render for each item                                 |
+| Property | Type   | Description                                                        |
+| :------- | :----- | :----------------------------------------------------------------- |
+| data     | string | Bind to an array of data from an API response or a variable        |
+| name     | string | Set the name to reference as you iterate through the array of data |
+| template |        | The widget to render for each item                                 |
 
 ### styles
 

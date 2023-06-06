@@ -1,5 +1,9 @@
 # Flex
 
+The Flex Widget is a versatile layout option that dynamically switches between Row or Column based on the direction property, offering flexible and responsive designs that adapt to different screen sizes.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/R3KgxV3UPWb4TjoiPI0U)
+
 ## Properties
 
 | Property      | Type   | Description                      |
@@ -22,8 +26,8 @@
 
 ### item-template
 
-| Property | Type      | Description                                                        |
-| :------- | :-------- | :----------------------------------------------------------------- |
-| data     | string    | Bind to an array of data from an API response or a variable        |
-| name     | string    | Set the name to reference as you iterate through the array of data |
-| template | undefined | The widget to render for each item                                 |
+| Property | Type   | Description                                                        |
+| :------- | :----- | :----------------------------------------------------------------- |
+| data     | string | Bind to an array of data from an API response or a variable        |
+| name     | string | Set the name to reference as you iterate through the array of data |
+| template |        | The widget to render for each item                                 |

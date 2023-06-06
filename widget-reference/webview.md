@@ -1,10 +1,14 @@
-# WebView
+# WebView widget
+
+The WebView Widget enables seamless integration of web content within native apps and web apps, providing a versatile and consistent browsing experience across platforms.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/22c8d57d-a906-4d11-873d-161fd6c56c0a)
 
 ## Properties
 
 | Property | Type   | Description               |
 | :------- | :----- | :------------------------ |
-| url      | string | undefined                 |
+| url      | string |                           |
 | styles   | object | [See properties](#styles) |
 
 ### styles

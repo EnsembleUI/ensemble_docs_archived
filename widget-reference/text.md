@@ -1,6 +1,8 @@
 # Text widget
 
-Display and style text.
+The Text Render Widget empowers you to effortlessly display and style text within your application, enabling clear communication and enhancing the overall design and readability.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/c87f8b09-58e2-4c2f-99a1-cbbe9e25e9a5?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
 
 ## Properties
 

@@ -1,4 +1,8 @@
-# Show Toast
+# Action:Show Toast
+
+The ShowToast Widget enables the display of informative toast messages, providing temporary and non-intrusive notifications or alerts within your application for important updates or messages.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/9a576805-019a-4bd3-953f-3c623fbfb905)
 
 ## Properties
 
@@ -30,12 +34,12 @@
 
 | Property        | Type             | Description                                                                                                                                          |
 | :-------------- | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| backgroundColor | undefined        | Toast's background color starting with '0xFF' for full opacity e.g 0xFFCCCCCC                                                                        |
+| backgroundColor |                  | Toast's background color starting with '0xFF' for full opacity e.g 0xFFCCCCCC                                                                        |
 | shadowColor     | string or number | Box shadow color starting with '0xFF' for full opacity.                                                                                              |
 | shadowRadius    | integer          | Toast's shadow radius. Minimum value is 0.                                                                                                           |
 | shadowOffset    | array            | Toast's shadow offset.                                                                                                                               |
-| borderRadius    | undefined        | Toast's border radius.                                                                                                                               |
+| borderRadius    |                  | Toast's border radius.                                                                                                                               |
 | expanded        | boolean          | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g stretch horizontally for parent of type Row) |
 | size            | integer          | Specifies the width (progress bar) or the diameter (circular progress indicator)                                                                     |
 | thickness       | integer          | Specifies the thickness of the indicator (for progress bar this is the height)                                                                       |
-| color           | undefined        | Progress indicator color.                                                                                                                            |
+| color           |                  | Progress indicator color.                                                                                                                            |

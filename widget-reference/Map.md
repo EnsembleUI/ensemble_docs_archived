@@ -1,4 +1,8 @@
-# Map Widget
+# Map widget
+
+The Map widget enables the display of _location markers_ and _overlays_, providing a dynamic visual representation of geographic data.
+
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/36e52d1a-39c5-4a6b-b064-2be6cfe3cf7b)
 
 ## Properties
 
@@ -18,18 +22,18 @@
 
 ### currentLocation
 
-| Property | Type      | Description                                                                                            |
-| :------- | :-------- | :----------------------------------------------------------------------------------------------------- |
-| enabled  | boolean   | If enabled, this will prompt the user for location access. User location will then be shown on the map |
-| widget   | undefined | The widget to render the user's location                                                               |
+| Property | Type    | Description                                                                                            |
+| :------- | :------ | :----------------------------------------------------------------------------------------------------- |
+| enabled  | boolean | If enabled, this will prompt the user for location access. User location will then be shown on the map |
+| widget   |         | The widget to render the user's location                                                               |
 
 ### markers
 
-| Property              | Type      | Description                                                                                       |
-| :-------------------- | :-------- | :------------------------------------------------------------------------------------------------ |
-| data                  | string    | undefined                                                                                         |
-| name                  | string    | undefined                                                                                         |
-| location              | object    | [See properties](#location)                                                                       |
-| widget                | undefined | The widget to render each marker                                                                  |
-| selectedWidget        | undefined | The widget to render a selected marker                                                            |
-| selectedWidgetOverlay | undefined | The widget to render as an overlay at the bottom of the map. Use this to convey more detail info. |
+| Property              | Type   | Description                                                                                       |
+| :-------------------- | :----- | :------------------------------------------------------------------------------------------------ |
+| data                  | string |                                                                                                   |
+| name                  | string |                                                                                                   |
+| location              | object | [See properties](#location)                                                                       |
+| widget                |        | The widget to render each marker                                                                  |
+| selectedWidget        |        | The widget to render a selected marker                                                            |
+| selectedWidgetOverlay |        | The widget to render as an overlay at the bottom of the map. Use this to convey more detail info. |
