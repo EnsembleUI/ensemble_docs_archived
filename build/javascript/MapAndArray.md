@@ -93,13 +93,13 @@ The `forEach()` method executes a provided function once for each array element 
 
 ```javascript
 var numbers = [1, 4, 9];
-numbers.forEach(function(num, index) {
-  console.log('Element at index ' + index + ' is ' + num);
+numbers.forEach(function(num) {
+  console.log('Element is ' + num);
 });
 // Output:
-// Element at index 0 is 1
-// Element at index 1 is 4
-// Element at index 2 is 9
+// Element is 1
+// Element is 4
+// Element is 9
 ```
 
 ### push
