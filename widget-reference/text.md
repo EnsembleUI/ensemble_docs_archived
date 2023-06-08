@@ -13,16 +13,128 @@ The Text Render Widget empowers you to effortlessly display and style text withi
 
 ### Styles
 
-| Property   | Type    | Description                                                                                                                                          | Values if enum                                                                          |
-| :--------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------- |
-| expanded   | boolean | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g stretch horizontally for parent of type Row) |                                                                                         |
-| width      | integer |                                                                                                                                                      |                                                                                         |
-| height     | integer |                                                                                                                                                      |                                                                                         |
-| font       | string  | Default built-in style for this text                                                                                                                 | `heading` `title` `subtitle`                                                            |
-| fontSize   | integer |                                                                                                                                                      |                                                                                         |
-| fontWeight | string  |                                                                                                                                                      | `light` `normal` `bold` `w100` `w200` `w300` `w400` `w500` `w600` `w700` `w800` `w900`  |
-| color      |         |                                                                                                                                                      |                                                                                         |
-| overflow   | string  | Set treatment of text longer than available space                                                                                                    | `wrap` `visible` `clip` `ellipsis`                                                      |
-| textAlign  | string  |                                                                                                                                                      | `start` `end` `center` `justify`                                                        |
-| textStyle  | string  |                                                                                                                                                      | `normal` `italic` `underline` `strikethrough` `italic_underline` `italic_strikethrough` |
-| lineHeight |         |                                                                                                                                                      |                                                                                         |
+| Property                     | Type           | Description                                                                                                                                                                                                                                                     | Values if enum                                                                                                          |
+| :--------------------------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| expanded                     | boolean        | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g. stretch horizontally for parent of type Row)                                                                                                           |                                                                                                                         |
+| visible                      | boolean        | Toggle a widget visibility on/off. Note that an invisible widget will not occupy UI space, unless the visibilityTransitionDuration is specified.                                                                                                                |                                                                                                                         |
+| visibilityTransitionDuration | number         | Specify the duration in seconds when a widget animates between visible and not visible state. Note that setting this value will cause the widget to still occupy the UI space even when it is not visible.                                                      |                                                                                                                         |
+| elevation                    | integer        | The z-coordinate at which to place this material relative to its parent. A non-zero value will show a shadow, with its size relative to the elevation value. Minimum value: 0, Maximum value: 24                                                                |                                                                                                                         |
+| elevationShadowColor         | object         | The shadow color for the. elevation. See [Colors](#color)                                                                                                                                                                                                       |                                                                                                                         |
+| elevationBorderRadius        | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                           |                                                                                                                         |
+| alignment                    | string         | The alignment of the widget relative to its parent.                                                                                                                                                                                                             | `topLeft`, `topCenter`, `topRight`, `centerLeft`, `center`, `centerRight`, `bottomLeft`, `bottomCenter`, `bottomRight`. |
+| stackPositionTop             | integer        | The distance of the child's top edge from the top of the stack. This is applicable only for Stack's children.                                                                                                                                                   |                                                                                                                         |
+| stackPositionBottom          | integer        | The distance that the child's bottom edge from the bottom of the stack. This is applicable only for Stack's children.                                                                                                                                           |                                                                                                                         |
+| stackPositionLeft            | integer        | The distance that the child's left edge from the left of the stack. This is applicable only for Stack's children.                                                                                                                                               |                                                                                                                         |
+| stackPositionRight           | integer        | The distance that the child's right edge from the right of the stack. This is applicable only for Stack's children.                                                                                                                                             |                                                                                                                         |
+| captureWebPointer            | boolean        | Applicable for Web only. When overlaying widgets on top of certain HTML container (e.g. Maps), the mouse click is captured by the HTML container, causing issue interacting with the widget. Use this to capture and maintain the mouse pointer on your widget. |                                                                                                                         |
+| BoxStyles                    | object         | [see properties](#box-styles)                                                                                                                                                                                                                                   |                                                                                                                         |
+| width                        | integer        |                                                                                                                                                                                                                                                                 |                                                                                                                         |
+| height                       | integer        |                                                                                                                                                                                                                                                                 |                                                                                                                         |
+| font                         | string         | Default built-in style for this text                                                                                                                                                                                                                            | `heading` `title` `subtitle`                                                                                            |
+| fontSize                     | integer        |                                                                                                                                                                                                                                                                 |                                                                                                                         |
+| fontWeight                   | string         | The thickness of the glyphs used to draw the text                                                                                                                                                                                                               | `light` `normal` `bold` `w100` `w200` `w300` `w400` `w500` `w600` `w700` `w800` `w900`                                  |
+| color                        | object         | The color specification for the text, icons, divider etc, which can be represented in different formats. It can be specified as a number, a predefined color name, or a hexadecimal value starting with '0x'. [see properties](#color)                          |                                                                                                                         |
+| overflow                     | string         | Set treatment of text longer than available space                                                                                                                                                                                                               | `wrap` `visible` `clip` `ellipsis`                                                                                      |
+| maxLines                     | integer        | The maximum number of lines to show at one time, wrapping if necessary. If this is 1 (the default), the text will not wrap, but will scroll horizontally instead.                                                                                               |                                                                                                                         |
+| textAlign                    | string         | Whether and how to align text horizontally.                                                                                                                                                                                                                     | `start` `end` `center` `justify`                                                                                        |
+| textStyle                    | string         | A linear decoration to draw near the text or whether to slant the glyphs in font.                                                                                                                                                                               | `normal` `italic` `underline` `strikethrough` `italic_underline` `italic_strikethrough`                                 |
+| lineHeight                   | object         | The line height of the text, which determines the vertical spacing between lines. It can be specified as a string, a number, or chosen from a set of predefined values [see properties](#lineheight)                                                            |                                                                                                                         |
+
+### Color
+
+| Type    | Description                                                                                                                                                                                         | Values if enum                                                                                                                            |
+| :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| integer |                                                                                                                                                                                                     |                                                                                                                                           |
+| string  |                                                                                                                                                                                                     | `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange` |
+| string  | We can write it using this format `^0x`. For instance: `0xFFFFFFFF` where first two _FF_ represent the _opacity_ of color wile rest simple represent white color. Its actually a hexadecimal format |                                                                                                                                           |
+
+### LineHeight
+
+| Type    | Values if enum                                  |
+| :------ | :---------------------------------------------- |
+| string  |                                                 |
+| integer |                                                 |
+| string  | `default` `1.0` `1.15` `1.25` `1.5` `2.0` `2.5` |
+
+### Box Styles
+
+The `boxStyles` schema defines a set of properties for styling a box. It consists of the following nested properties:
+
+- `boxStylesWithoutDimension`
+- `HasDimension`
+
+#### boxStylesWithoutDimension
+
+| Property      | Type           | Description                                                     |
+| ------------- | -------------- | --------------------------------------------------------------- |
+| margin        | string/integer | Margin with CSS-style notation                                  |
+| padding       | string/integer | Padding with CSS-style value                                    |
+| HasBackground | object         | Background styles for the box. [see properties](#hasbackground) |
+| HasBorder     | object         | Border styles for the box. [see properties](#hasborder)         |
+| HasShadow     | object         | Shadow styles for the box. [see properties](#hasshadow)         |
+
+##### HasBackground
+
+| Property           | Type   | Description                    |
+| ------------------ | ------ | ------------------------------ |
+| backgroundColor    | object | Background color of the box    |
+| backgroundImage    | object | Background image of the box    |
+| backgroundGradient | object | Background gradient of the box |
+
+###### backgroundColor
+
+| Property        | Type   | Description                                       |
+| --------------- | ------ | ------------------------------------------------- |
+| backgroundColor | object | Background color of the box. See [Colors](#color) |
+
+###### backgroundImage
+
+| Property  | Type   | Description                                                                                                         |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| source    | string | The Image URL to fill the background                                                                                |
+| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see properties](#fit) |
+| alignment | string | Alignment of the background image                                                                                   |
+
+###### backgroundGradient
+
+| Property | Type   | Description                                                    |
+| -------- | ------ | -------------------------------------------------------------- |
+| colors   | object | The list of colors used for the gradient. See [Colors](#color) |
+| start    | string | The starting position of the gradient                          |
+| end      | string | The ending position of the gradient                            |
+
+##### HasBorder
+
+| Property     | Type           | Description                                                                                                           |
+| ------------ | -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| borderRadius | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0. |
+| borderColor  | object         | See [Colors](#color)                                                                                                  |
+| borderWidth  | integer        | Thickness of the border. Minimum value should be 0.                                                                   |
+
+##### HasShadow
+
+| Property     | Type           | Description                                                                                                                                                                                                                        | Values if enum                      |
+| ------------ | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| shadowColor  | string/number  | See [Colors](#color)                                                                                                                                                                                                               |                                     |
+| shadowOffset | array          | The values in array define the horizontal and vertical offset of the shadow. Example: if the shadowOffset is set to [2, 4], the shadow will be offset by 2 pixels horizontally and 4 pixels vertically from its original position. |                                     |
+| shadowRadius | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                              |                                     |
+| shadowStyle  | string         | The blur style to apply on the shadow                                                                                                                                                                                              | `normal`, `solid`, `outer`, `inner` |
+
+#### HasDimension
+
+| Property | Type    | Description       |
+| -------- | ------- | ----------------- |
+| width    | integer | Width of the box  |
+| height   | integer | Height of the box |
+
+#### Fit
+
+| Value     | Description                                                                                         |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| fill      | Stretch our image to fill the dimension, and distorting the aspect ratio if needed                  |
+| contain   | Scale the image such that the entire image is contained within our dimension                        |
+| cover     | Scale the image to fill our dimension, clipping the image as needed                                 |
+| fitWidth  | Scale the image to fit the width, and clipping the height if needed                                 |
+| fitHeight | Scale the image to fit the height, and clipping the width if needed                                 |
+| none      | Center-Align the original image size, clipping the content if needed                                |
+| scaleDown | Center-Align the image and only scale down to fit. Image will not be scaled up to bigger dimension. |
