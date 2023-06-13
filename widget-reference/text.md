@@ -22,12 +22,23 @@ The Text Render Widget empowers you to effortlessly display and style text withi
 | elevationShadowColor         | object         | The shadow color for the. elevation. See [Colors](#color)                                                                                                                                                                                                       |                                                                                                                         |
 | elevationBorderRadius        | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                           |                                                                                                                         |
 | alignment                    | string         | The alignment of the widget relative to its parent.                                                                                                                                                                                                             | `topLeft`, `topCenter`, `topRight`, `centerLeft`, `center`, `centerRight`, `bottomLeft`, `bottomCenter`, `bottomRight`. |
+| borderRadius                 | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                           |                                                                                                                         |
+| borderColor                  | object         | See [Colors](#color)                                                                                                                                                                                                                                            |                                                                                                                         |
+| borderWidth                  | integer        | Thickness of the border. Minimum value should be 0.                                                                                                                                                                                                             |                                                                                                                         |
+| shadowColor                  | string/number  | See [Colors](#color)                                                                                                                                                                                                                                            |                                                                                                                         |
+| shadowOffset                 | array          | The values in array define the horizontal and vertical offset of the shadow. Example: if the shadowOffset is set to [2, 4], the shadow will be offset by 2 pixels horizontally and 4 pixels vertically from its original position.                              |                                                                                                                         |
+| shadowRadius                 | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                           |                                                                                                                         |
+| shadowStyle                  | string         | The blur style to apply on the shadow                                                                                                                                                                                                                           | `normal`, `solid`, `outer`, `inner`                                                                                     |
 | stackPositionTop             | integer        | The distance of the child's top edge from the top of the stack. This is applicable only for Stack's children.                                                                                                                                                   |                                                                                                                         |
 | stackPositionBottom          | integer        | The distance that the child's bottom edge from the bottom of the stack. This is applicable only for Stack's children.                                                                                                                                           |                                                                                                                         |
 | stackPositionLeft            | integer        | The distance that the child's left edge from the left of the stack. This is applicable only for Stack's children.                                                                                                                                               |                                                                                                                         |
 | stackPositionRight           | integer        | The distance that the child's right edge from the right of the stack. This is applicable only for Stack's children.                                                                                                                                             |                                                                                                                         |
 | captureWebPointer            | boolean        | Applicable for Web only. When overlaying widgets on top of certain HTML container (e.g. Maps), the mouse click is captured by the HTML container, causing issue interacting with the widget. Use this to capture and maintain the mouse pointer on your widget. |                                                                                                                         |
-| BoxStyles                    | object         | [see properties](#box-styles)                                                                                                                                                                                                                                   |                                                                                                                         |
+| backgroundImage              | object         | Background image of the box. [see properties](#backgroundImage)                                                                                                                                                                                                 |                                                                                                                         |
+| backgroundGradient           | object         | Background gradient of the box [see properties ](#backgroundGradient)                                                                                                                                                                                           |                                                                                                                         |
+| backgroundColor              | object         | Background color of the box. See [Colors](#color)                                                                                                                                                                                                               |                                                                                                                         |
+| margin                       | string/integer | Margin with CSS-style notation                                                                                                                                                                                                                                  |                                                                                                                         |
+| padding                      | string/integer | Padding with CSS-style value                                                                                                                                                                                                                                    |                                                                                                                         |
 | width                        | integer        |                                                                                                                                                                                                                                                                 |                                                                                                                         |
 | height                       | integer        |                                                                                                                                                                                                                                                                 |                                                                                                                         |
 | font                         | string         | Default built-in style for this text                                                                                                                                                                                                                            | `heading` `title` `subtitle`                                                                                            |
@@ -39,6 +50,7 @@ The Text Render Widget empowers you to effortlessly display and style text withi
 | textAlign                    | string         | Whether and how to align text horizontally.                                                                                                                                                                                                                     | `start` `end` `center` `justify`                                                                                        |
 | textStyle                    | string         | A linear decoration to draw near the text or whether to slant the glyphs in font.                                                                                                                                                                               | `normal` `italic` `underline` `strikethrough` `italic_underline` `italic_strikethrough`                                 |
 | lineHeight                   | object         | The line height of the text, which determines the vertical spacing between lines. It can be specified as a string, a number, or chosen from a set of predefined values [see properties](#lineheight)                                                            |                                                                                                                         |
+| visibilityTransitionDuration | integer        | Specify the duration in seconds when a widget animates between visible and not visible state. Note that setting this value will cause the widget to still occupy the UI space even when it is not visible.                                                      |                                                                                                                         |
 
 ### Color
 
@@ -56,46 +68,7 @@ The Text Render Widget empowers you to effortlessly display and style text withi
 | integer |                                                 |
 | string  | `default` `1.0` `1.15` `1.25` `1.5` `2.0` `2.5` |
 
-### Box Styles
-
-The `boxStyles` schema defines a set of properties for styling a box. It consists of the following nested properties:
-
-- `boxStylesWithoutDimension`
-- `HasDimension`
-
-#### boxStylesWithoutDimension
-
-| Property      | Type           | Description                                                     |
-| ------------- | -------------- | --------------------------------------------------------------- |
-| margin        | string/integer | Margin with CSS-style notation                                  |
-| padding       | string/integer | Padding with CSS-style value                                    |
-| HasBackground | object         | Background styles for the box. [see properties](#hasbackground) |
-| HasBorder     | object         | Border styles for the box. [see properties](#hasborder)         |
-| HasShadow     | object         | Shadow styles for the box. [see properties](#hasshadow)         |
-
-##### HasBackground
-
-| Property           | Type   | Description                    |
-| ------------------ | ------ | ------------------------------ |
-| backgroundColor    | object | Background color of the box    |
-| backgroundImage    | object | Background image of the box    |
-| backgroundGradient | object | Background gradient of the box |
-
-###### backgroundColor
-
-| Property        | Type   | Description                                       |
-| --------------- | ------ | ------------------------------------------------- |
-| backgroundColor | object | Background color of the box. See [Colors](#color) |
-
-###### backgroundImage
-
-| Property  | Type   | Description                                                                                                         |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
-| source    | string | The Image URL to fill the background                                                                                |
-| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see properties](#fit) |
-| alignment | string | Alignment of the background image                                                                                   |
-
-###### backgroundGradient
+### backgroundGradient
 
 | Property | Type   | Description                                                    |
 | -------- | ------ | -------------------------------------------------------------- |
@@ -103,29 +76,13 @@ The `boxStyles` schema defines a set of properties for styling a box. It consist
 | start    | string | The starting position of the gradient                          |
 | end      | string | The ending position of the gradient                            |
 
-##### HasBorder
+### backgroundImage
 
-| Property     | Type           | Description                                                                                                           |
-| ------------ | -------------- | --------------------------------------------------------------------------------------------------------------------- |
-| borderRadius | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0. |
-| borderColor  | object         | See [Colors](#color)                                                                                                  |
-| borderWidth  | integer        | Thickness of the border. Minimum value should be 0.                                                                   |
-
-##### HasShadow
-
-| Property     | Type           | Description                                                                                                                                                                                                                        | Values if enum                      |
-| ------------ | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| shadowColor  | string/number  | See [Colors](#color)                                                                                                                                                                                                               |                                     |
-| shadowOffset | array          | The values in array define the horizontal and vertical offset of the shadow. Example: if the shadowOffset is set to [2, 4], the shadow will be offset by 2 pixels horizontally and 4 pixels vertically from its original position. |                                     |
-| shadowRadius | string/integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                              |                                     |
-| shadowStyle  | string         | The blur style to apply on the shadow                                                                                                                                                                                              | `normal`, `solid`, `outer`, `inner` |
-
-#### HasDimension
-
-| Property | Type    | Description       |
-| -------- | ------- | ----------------- |
-| width    | integer | Width of the box  |
-| height   | integer | Height of the box |
+| Property  | Type   | Description                                                                                                         |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| source    | string | The Image URL to fill the background                                                                                |
+| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see properties](#fit) |
+| alignment | string | Alignment of the background image                                                                                   |
 
 #### Fit
 
