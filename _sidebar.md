@@ -33,21 +33,17 @@
     - [JsonPath](build/javascript/JsonPath)
 
   - Handle Data
+    - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
+    - [Filter Data](build/handle-data/item-template/2-filter-data)
+    - [Local Storage](build/handle-data/local-storage/1-local-storage.md)
 
-    - Item Template
-      - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
-      - [Filter Data](build/handle-data/item-template/2-filter-data)
-    - Local Storage
-      - [Local Storage](build/handle-data/local-storage/1-local-storage.md)
-
-  - Make it interactive
-    - Actions and Events
-      - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI.md)
-      - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode.md)
-      - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera.md)
-      - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl.md)
-      - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer.md)
-      - [shoeToast](build/make-it-interactive/actions-and-events/6-showToast.md)
+  - Make it interactive with Actions
+    - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI.md)
+    - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode.md)
+    - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera.md)
+    - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl.md)
+    - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer.md)
+    - [showToast](build/make-it-interactive/actions-and-events/6-showToast.md)
 
 - Test
   - [Preview your App](test/1-preview-app.md)
