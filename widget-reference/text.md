@@ -41,8 +41,8 @@ Display and style text within your application.
 | padding | string or integer | Padding with CSS-style value |
 | width | integer | The width property determines the horizontal size of an element, allowing control over its width dimension within the layout. |
 | height | integer | The height property determines the vertical size of an element, allowing control over its height dimension within the layout. |
-| backgroundImage | object | Background image of the box. [see properties](#backgroundImage) |
-| backgroundGradient | object | Background gradient of the box [see properties ](#backgroundGradient) |
+| backgroundImage | object | Background image of the box. [see properties](#styles.backgroundImage) |
+| backgroundGradient | object | Background gradient of the box [see properties ](#styles.backgroundGradient) |
 | backgroundColor | integer or string | Background color of the box. which can be represented in different formats. It can be specified as a number, a predefined color name, or a hexadecimal value starting with '0x'. `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange`                              |
 | expanded | boolean | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g. stretch horizontally for parent of type Row) |
 | visibilityTransitionDuration | number | Specify the duration in seconds when a widget animates between visible and not visible state. Note that setting this value will cause the widget to still occupy the UI space even when it is not visible. |
