@@ -1,6 +1,6 @@
-# Action:Show Toast
+# Action: showToast
 
-The ShowToast Widget enables the display of informative toast messages, providing temporary and non-intrusive notifications or alerts within your application for important updates or messages.
+The ShowToast enables the display of informative toast messages, providing temporary and non-intrusive notifications or alerts within your application for important updates or messages.
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/9a576805-019a-4bd3-953f-3c623fbfb905)
 
