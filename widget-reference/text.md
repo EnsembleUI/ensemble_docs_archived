@@ -60,7 +60,6 @@ The Text Render Widget empowers you to effortlessly display and style text withi
 | start    | string            | The starting position of the gradient                                                                                                                                                                                                                                                                                                      |
 | end      | string            | The ending position of the gradient                                                                                                                                                                                                                                                                                                        |
 
-### backgroundImage
 
 | Property  | Type   | Description                                                                                                         |
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -68,9 +67,10 @@ The Text Render Widget empowers you to effortlessly display and style text withi
 | fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see properties](#fit) |
 | alignment | string | Alignment of the background image                                                                                   |
 
+
 #### Fit
 
-| Property  | Description                                                                                         |
+
 | --------- | --------------------------------------------------------------------------------------------------- |
 | fill      | Stretch our image to fill the dimension, and distorting the aspect ratio if needed                  |
 | contain   | Scale the image such that the entire image is contained within our dimension                        |
