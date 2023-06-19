@@ -6,11 +6,12 @@ The Map widget enables the display of _location markers_ and _overlays_, providi
 
 ## Properties
 
-| Property        | Type   | Description                        |
-| :-------------- | :----- | :--------------------------------- |
-| styles          | object | [See properties](#styles)          |
-| currentLocation | object | [See properties](#currentLocation) |
-| markers         | object | [See properties](#markers)         |
+| Property     | Type   | Description                                                                                                                                        |
+| :----------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| styles       | object | [See properties](#styles)                                                                                                                          |
+| onCameraMove | action | Execute an Action when the map's bound has changed. The bound data is available using `event.data.bounds.<southwest/northeast>.<lat/lng>`.         |
+| onMapCreated | action | Execute an Action when the map's initial state has been rendered. Note that this may not mean the location and markers (if any) are available yet. |
+| markers      | object | [See properties](#markers)                                                                                                                         |
 
 ### styles
 
@@ -51,57 +52,50 @@ The Map widget enables the display of _location markers_ and _overlays_, providi
 | toolbarLeft                      | integer           | Offset the toolbar from the left edge of the map                                                                                                                                                                                                                                                                                              |
 | toolbarRight                     | integer           | Offset the toolbar from the right edge of the map                                                                                                                                                                                                                                                                                             |
 | mapType                          | String            | Allows users to select different map types `normal`, `satellite`, `terrain`, `hybrid`                                                                                                                                                                                                                                                         |
-| initialCameraPosition            | Object            | Represents the initial camera position on the map. [see properties](#initialcameraposition)                                                                                                                                                                                                                                                   |
+| initialCameraPosition            | Object            | Represents the initial camera position on the map. [see properties](#stylesinitialcameraposition)                                                                                                                                                                                                                                             |
 | markerOverlayMaxWidth            | Integer           | Specifies the maximum width of the marker overlay                                                                                                                                                                                                                                                                                             |
 | markerOverlayMaxHeight           | Integer           | Sets the maximum height of the marker overlay                                                                                                                                                                                                                                                                                                 |
 | scrollableMarkerOverlay          | Boolean           | Determines if swiping left/right within the overlay will navigate to next/previous marker                                                                                                                                                                                                                                                     |
 | dismissibleMarkerOverlay         | Boolean           | Enables swiping down to close the overlay                                                                                                                                                                                                                                                                                                     |
 | autoSelect                       | Boolean           | Automatically selects a marker when the markers are updated                                                                                                                                                                                                                                                                                   |
 
-### currentLocation
-
-| Property | Type    | Description                                                                                            |
-| :------- | :------ | :----------------------------------------------------------------------------------------------------- |
-| enabled  | boolean | If enabled, this will prompt the user for location access. User location will then be shown on the map |
-| widget   |         | The widget to render the user's location                                                               |
-
 ### markers
 
-| Property         | Type   | Description                                                                                            |
-| :--------------- | :----- | :----------------------------------------------------------------------------------------------------- |
-| data             | String | Binds the marker list to the data                                                                      |
-| name             | String | Gives a name to the marker                                                                             |
-| location         | object | [see properties](#location)                                                                            |
-| lat              | Number | Latitude coordinate of the marker                                                                      |
-| lng              | Number | Longitude coordinate of the marker                                                                     |
-| marker           | object | [see properties](#marker)                                                                              |
-| source           | string | The marker's image asset (URL or local asset)                                                          |
-| selectedMarker   | object | [see properties](#selectedMarker)                                                                      |
-| source           | string | The marker's image asset when selected (URL or local asset)                                            |
-| overlayWidget    | Widget | The widget to render as an overlay over the maps. Use this to convey more detail info for each marker. |
-| onMarkerTap      | action | Action to execute when tapping on the marker                                                           |
-| onMarkersUpdated | action | Action to execute when the markers have been updated and rendered                                      |
+| Property         | Type   | Description                                                                                                                                          |
+| :--------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data             | String | Binds the marker list to the data                                                                                                                    |
+| name             | String | Gives a name to the marker                                                                                                                           |
+| location         | object | Specifies the geographic coordinates (latitude and longitude) for the Maps widget to display a specific location. [see properties](#markerslocation) |
+| lat              | Number | Latitude coordinate of the marker                                                                                                                    |
+| lng              | Number | Longitude coordinate of the marker                                                                                                                   |
+| marker           | object | [see properties](#markersmarker)                                                                                                                     |
+| source           | string | The marker's image asset (URL or local asset)                                                                                                        |
+| selectedMarker   | object | [see properties](#selectedMarker)                                                                                                                    |
+| source           | string | The marker's image asset when selected (URL or local asset)                                                                                          |
+| overlayWidget    | Widget | The widget to render as an overlay over the maps. Use this to convey more detail info for each marker.                                               |
+| onMarkerTap      | action | Action to execute when tapping on the marker                                                                                                         |
+| onMarkersUpdated | action | Action to execute when the markers have been updated and rendered                                                                                    |
 
-#### location
+##### markers.location
 
 | Property | Type   | Description                 |
 | -------- | ------ | --------------------------- |
 | lat      | Number | The latitude of the marker  |
 | lng      | Number | The longitude of the marker |
 
-##### marker
+##### markers.marker
 
 | Property | Type   | Description                                                           |
 | :------- | :----- | :-------------------------------------------------------------------- |
 | source   | string | The marker's image asset. This can come from URL or from local asset. |
 
-##### selectedMarker
+##### markers.selectedMarker
 
 | Property | Type   | Description                                                                         |
 | :------- | :----- | :---------------------------------------------------------------------------------- |
 | source   | string | The marker's image asset when selected. This can come from URL or from local asset. |
 
-##### initialCameraPosition
+##### styles.initialCameraPosition
 
 | Property | Type    | Description          |
 | -------- | ------- | -------------------- |
