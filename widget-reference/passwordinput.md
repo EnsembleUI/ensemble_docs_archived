@@ -22,9 +22,8 @@ The PasswordInput Widget enables the rendering of secure password input fields, 
 | styles          | object  | [See properties](#styles)                                                                                                                                                                                |
 | validator       | object  | [See properties](#validator)                                                                                                                                                                             |
 | onKeyPress      | action  | On every keystroke, call Ensemble's built-in functions or execute code                                                                                                                                   |
-
-| keyboardAction | string | Specify the action key on native device's soft keyboard |
-| obscureToggle | boolean | enable the toggling between plain and obscure text. |
+| keyboardAction  | string  | Specify the action key on native device's soft keyboard                                                                                                                                                  |
+| obscureToggle   | boolean | enable the toggling between plain and obscure text.                                                                                                                                                      |
 
 ### icon
 
