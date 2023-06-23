@@ -13,6 +13,6 @@ The Stack Widget allows you to visually stack items on top of each other, provid
 
 ### styles
 
-| Property  | Type   | Description |
-| :-------- | :----- | :---------- |
-| alignment | string |             |
+| Property      | Type   | Description                                                                                                                                                                                                                                                                                      |
+| :------------ | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alignChildren | string | How to align the children within the stack such that their alignment points will be the same (default is topStart). Each child can override this with alignment property. `topLeft`, `topCenter`, `topRight`, `centerLeft`, `center`, `centerRight`, `bottomLeft`, `bottomCenter`, `bottomRight` |

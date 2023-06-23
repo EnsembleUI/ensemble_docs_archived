@@ -12,6 +12,6 @@ The Spacer Widget enables the creation of adjustable spacing between elements, o
 
 ### styles
 
-| Property | Type    | Description |
-| :------- | :------ | :---------- |
-| size     | integer |             |
+| Property | Type    | Description                                                                                                  |
+| :------- | :------ | :----------------------------------------------------------------------------------------------------------- |
+| size     | integer | Defines the dimensions or magnitude of an element, allowing control over its overall size within the layout. |

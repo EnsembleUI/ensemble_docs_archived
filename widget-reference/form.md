@@ -1,9 +1,8 @@
 # Form widget
- 
+
 Form is a wrapper widget for inputs such as TextInput, Dropdown, Checkbox, etc. Form enables you to perform validation and styling on inputs inside the Form.
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3107baf6-dfc3-42cd-b617-61c37b31f31e)
-
 
 ### Validation
 
@@ -77,19 +76,20 @@ View:
 
 ## Properties
 
-| Property | Type | Description |
-| :---------------- | :------- | :------- |
-| enabled | boolean | |
-| onSubmit | | Action to execute when the form is submitted |
-| children | array | List of widgets |
-| styles | object | |
+| Property | Type    | Description                                                               |
+| :------- | :------ | :------------------------------------------------------------------------ |
+| enabled  | boolean | Enables or disables the interactivity and input functionality of the Form |
+| onSubmit | action  | Action to execute when the form is submitted                              |
+| children | array   | List of widgets                                                           |
+| styles   | object  | [see properties](#styles)                                                 |
 
 ##### styles
-| Property | Type | Description |
-| :---------------- | :------- | :------- | 
-| labelPosition | string | Where the position the FormField's label `top` `start` `none` |
-| labelOverflow | string | Treatment of text longer than available space `wrap` `visible` `clip` `ellipsis` |
-| labelMaxWidth | integer | Cap the label's width, useful on larger screen. This property only works on labelPosition=start. |
-| width | integer | |
-| height | integer | |
-| gap | integer | Vertical gap to insert between the children (default is 10) |
+
+| Property      | Type    | Description                                                                                                                   |
+| :------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------- |
+| labelPosition | string  | Where the position the FormField's label `top` `start` `none`                                                                 |
+| labelOverflow | string  | Treatment of text longer than available space `wrap` `visible` `clip` `ellipsis`                                              |
+| labelMaxWidth | integer | Cap the label's width, useful on larger screen. This property only works on labelPosition=start.                              |
+| width         | integer | The width property determines the horizontal size of an element, allowing control over its width dimension within the layout. |
+| height        | integer | The height property determines the vertical size of an element, allowing control over its height dimension within the layout. |
+| gap           | integer | Vertical gap to insert between the children (default is 10)                                                                   |
