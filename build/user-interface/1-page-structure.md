@@ -93,11 +93,89 @@ Note: when the entire View is specified as scrollable, flexible background's hei
 
 ## Menu
 
-Ensemble currently supports three menu types:
+Ensemble provides support for five menu types that offer extensive customization options, including the ability to add custom items which are indeed `custom widgets`. These menu types allow users to meet their unique design needs or client requirements. Below, you will find detailed information about each menu type, including the supported properties, styles, and illustrative examples for better understanding.
 
-- `bottom navigation bar`. This is the navigation bar at the bottom of the screen, typical of most iOS and Android apps.
-- `drawer`. A hidden menu which slides out from the left on menu button click. The menu button will automatically be shown as the header's navigation icon. The header will automatically be included even if not specified explicitly.
-- `left navigation bar`. This is the fixed navigation bar on the left of the screen, typical of many Web apps. This menu type is not recommended for Native apps.
+### BottomNavBar
+
+This is the navigation bar at the bottom of the screen, typical of most iOS and Android apps. Where each item has several properties as explained [below](#bottomnavbaritems).
+
+#### Properties
+
+| Property | Type             | Description                                                          |
+| :------- | :--------------- | :------------------------------------------------------------------- |
+| items    | array of objects | List of menu items (minimum 2). [see properties](#bottomnavbaritems) |
+| styles   | object           | [see properties](#bottomnavbarstyles)                                |
+
+#### BottomNavBar.items
+
+| Property    | Type   | Description                                                                                                                       |
+| :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| icon        | string | Icon name from ` Material Icons``Font Awesome``Remix ` or `custom font icons`.                                                    |
+| iconLibrary | string | Enables the usage of various icon libraries like `FontAwesome`, `Remix`, `Material Icons` or `custom icon` fonts within ensemble. |
+| label       | string | Defines the text displayed below the icon, providing a descriptive title or name for the menu item                                |
+| page        | string | The new page to navigate to on click                                                                                              |
+| selected    | string | Mark this item as selected. There should only be one selected item per page.                                                      |
+
+#### BottomNavBar.styles
+
+| Property        | Type              | Description                                                                                                                                                                                                                                                                                                                |
+| :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| backgroundColor | integer or string | Background color of the box. which can be represented in different formats. It can be specified as a number, a predefined color name, or a hexadecimal value starting with '0x'. `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange` |
+
+#### Example
+
+<div class="code-container" markdown=1>
+  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
+
+```yaml
+BottomNavBar:
+  styles:
+    backgroundColor: white
+    color: grey
+    selectedColor: orange
+    floatingBackgroundColor: orange
+    floatingIconColor: white
+  items:
+    - label: Home
+      activeIcon: home
+      icon: home
+      page: Home
+
+    - customItem:
+        widget: CustomNavBarItem
+        selectedWidget: ActiveCustomNavBarItem
+      page: Icon
+
+    - icon: note_add
+      floating: true
+      floatingAlignment: center
+      floatingMargin: 5
+      onTap: |
+        //@code
+        ensemble.navigateScreen('Lottie');
+
+    - icon: search
+      label: Search
+      page: Image
+
+    - customItem:
+        widget: CustomNavBarItemWithImage
+        selectedWidget: ActiveCustomNavBarItemWithImage
+      page: WeeklyScheduler
+```
+
+you can check the complete example at [here](https://studio.ensembleui.com/app/99NjTh75fWrVwXEhFdf4/screen/bNbZcqkvxIbC5PNUc1bX?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=trues)
+
+##### Output
+
+![Alt text](image.png)
+
+</div>
+
+- `drawer`. Put the menu behind a drawer icon on the header. The drawer icon will be positioned to the 'start' of the header (left for most languages, right for RTL languages).
+- `end drawer`. Put the menu behind a drawer icon on the header. The drawer icon will be positioned to the 'end' of the header (right for most languages, left for RTL languages).
+- `sidebar`. A fixed navigation menu to the 'start' of the screen (left for most languages, right for RTL languages). The menu may become a drawer menu on lower resolution or screen sizes.
+- `end sidebar`. A fixed navigation menu to the 'end' of the screen (right for most languages, left for RTL languages). The menu may become a drawer menu on lower resolution or screen sizes.
 
 ## Body
 
