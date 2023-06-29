@@ -48,10 +48,11 @@
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
-
+  - [Prepare your app for deployment](deploy/1-prepare-app.md)
   - [Deploy to iOS TestFlight](deploy/2-ios-appstore.md)
   - [Deploy to Android devices](deploy/3-android-device.md)
   - [Deploy to Google Play Store](deploy/4-android-play-store.md)
+  - [Prepare for production](deploy/5-prepare-for-production.md)
 
 - [Widget reference](widget-reference/directory)
 
