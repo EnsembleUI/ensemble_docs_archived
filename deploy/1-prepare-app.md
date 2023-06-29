@@ -8,8 +8,7 @@ Once you have built your UI with Ensemble and used it to build your app and are 
 ### Download Ensemble Starter
 Ensemble Starter is our packaging solution, enabling you to connect to your Ensemble UI and package it. 
 * Clone the Starter App `git clone https://github.com/EnsembleUI/ensemble_starter my_first_app` into the folder *my_first_app*. You may change the name, but don't use camelCase (e.g. myFirstApp) or dash (-) as the separators.
-* Go into this folder, and open the file `/ensemble/ensemble-config.yaml`. Enter your Ensemble App ID under `definitions > ensemble > appId`.
-* Run `flutter create --platforms=ios,android .` (note the period at the end).
+* Follow the README in this repo.
 
 ### Requesting permissions from your end-users
 If your app requires capabilities like location, camera, ..., you will need to enter a reason per capability. These reasons will be prompted to the end users, who can decide whether to grant or deny your requests.
