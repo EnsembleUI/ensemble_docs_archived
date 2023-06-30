@@ -19,6 +19,7 @@
     - [Layouts](build/user-interface/3-layouts.md)
   - Extend your App
     - [Using local assets](build/extend/1-local-assets.md)
+    - [Add OAuth Services](build/extend/2-oauth-services.md)
   - Define logic using Javascript
 
     - [Intro - Limitations, When and How to use](build/javascript/README.md)
