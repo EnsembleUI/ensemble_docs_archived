@@ -11,8 +11,8 @@ If this is a brand-new app, you first need to register a unique Bundle ID and a 
 <img src="/images/deploy_ios_1.png" alt="Add App" style="border: solid 1px lightgrey" />
 
 #### Preparing Ensemble for uploading
-* Make sure you completed the [Preparing your App](/deploy/1-prepare-app.md) step, then navigate to the folder created (e.g. my_first_app).
-* Run `flutter create --platforms=ios .` (note the period at the end).
+* Make sure you completed the [Preparing your App](/deploy/1-prepare-app.md) step, including following the starter repo's README instruction to configure and run your App.
+* Navigate to the app folder (e.g. my_first_app).
 * Under `ios` folder, open `Runner.xcworkspace` with [XCode](https://developer.apple.com/xcode/).
   * Select the Team (Apple Account) used to create the App and Bundle ID. You may need to log in to your Apple Developer Account under XCode > Preferences > Accounts.
   * Under `Signing & Capabilities`, ensure the `Bundle Identifier` matches exactly your Bundle ID above.

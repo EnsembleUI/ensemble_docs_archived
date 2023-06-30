@@ -32,7 +32,4 @@ Below are the snippet per capability to insert for iOS and Android respectively.
 <string>e.g. your reason for requesting microphone access</string>
 ```
 
-### Next Steps
-* Install [Flutter](https://docs.flutter.dev/get-started/install) on your machine, then go to the next steps for iOS/Android deployment.
-
 
