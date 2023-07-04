@@ -19,6 +19,7 @@
     - [Layouts](build/user-interface/3-layouts.md)
   - Extend your App
     - [Using local assets](build/extend/1-local-assets.md)
+    - [Adding custom fonts](build/extend/2-custom-fonts.md)
   - Define logic using Javascript
 
     - [Intro - Limitations, When and How to use](build/javascript/README.md)
