@@ -1,8 +1,8 @@
-# Connecting to OAuth services
+# Connecting to OAuth services (Optional)
 
 Ensemble supports authorizing and fetching data from OAuth2 services like Google and Microsoft. The entire flow is handled automatically if you are using Ensemble Go to preview your app. 
 
-When deploying your Production App, please follow these instructions to configure your back-end server to work with Ensemble's UI.
+When deploying your Production App and you'd like to use OAuth Services, please follow these instructions to configure your back-end server to work with Ensemble's UI.
 
 ## App Redirect
 When an OAuth flow is initiated within the UI, Ensemble will redirect the users to the appropriate OAuth service's login page. Once the users enter their username/password and authorize your app, the OAuth service will invoke a callback URL (known as Redirect URL) that your app defines. This Redirect URL will re-open your app and continue the OAuth flow.
@@ -12,8 +12,8 @@ The Redirect URL to open your App can be a Http App Link or a Custom Scheme (non
 ### Custom Scheme
 #### iOS
 - Look for `CFBundleURLTypes` inside the ios/Runner/Info.plist and update accordingly.
-  - `CFBundleURLName` - for convention match this with your bundleID
-  - `CFBundleURLSchemes` - When registering with the OAuth services, they may give you a unique string or enable you to enter your own. The scheme follows this format `com.something.globally.unique://<string>`. This has to be unique enough so it doesn't clash with any other apps out there.
+  - `CFBundleURLName` - By convention match this with your bundleID
+  - `CFBundleURLSchemes` - When registering with the OAuth services, they may give you a unique string or enable you to enter your own. The scheme follows this format `some.globally.unique.scheme://<string>`. This has to be unique so it doesn't clash with any other apps out there.
     - Enter only the portion before the `://`.
 ```
 <key>CFBundleURLTypes</key>
@@ -23,8 +23,7 @@ The Redirect URL to open your App can be a Http App Link or a Custom Scheme (non
         <string>com.mycompany.myapp</string>
         <key>CFBundleURLSchemes</key>
         <array>
-            <!-- Microsoft OAuth -->
-            <string>msauth.com.ensembleui.starter</string>
+            <string>some.globally.unique.scheme</string>
         </array>
     </dict>
 </array>
@@ -32,7 +31,7 @@ The Redirect URL to open your App can be a Http App Link or a Custom Scheme (non
 
 #### Android
 - Open `android/app/src/main/AndroidManifest.xml`. Look for the callback Activity and add an `intent-filter` for your callback.
-- e.g. if your callback URL looks like this `com.something.unique://authorize`, the android:scheme should be `com.something.unique`, and android:host should be `authorize`.
+- e.g. if your callback URL looks like this `some.globally.unique.scheme://authorize`, the android:scheme should be `some.globally.unique.scheme`, and android:host should be `authorize`.
 ```
 <activity
     android:name="com.linusu.flutter_web_auth_2.CallbackActivity"
@@ -45,7 +44,7 @@ The Redirect URL to open your App can be a Http App Link or a Custom Scheme (non
 
     <!-- enter your callback scheme and host here -->
     <data
-        android:scheme="com.something.unique"
+        android:scheme="some.globally.unique.scheme"
         android:host="authorize" />
   </intent-filter>
   
@@ -55,7 +54,7 @@ The Redirect URL to open your App can be a Http App Link or a Custom Scheme (non
 
 
 ### Http App Link
-Using a URL to redirect and open your App requires two steps for each platform: 1. adding a configuration similar to the custom schemes above, and 2. prove that you own the redirect URL.  
+Using a URL to redirect and open your App requires two steps for each platform: 1. adding a configuration similar to the custom schemes above, and 2. prove that you own the redirect URL's domain.  
 #### iOS
 - Open `ios/Runner/Runner.entitlements` and add an entry for the URL you want to redirect to your App. Note the required prefix `applinks:`.
 - For example, if your want the URL `https://auth.mycompany.com/callback` to open your app. Enter only the domain to the URL below. 
@@ -128,3 +127,8 @@ Using a URL to redirect and open your App requires two steps for each platform: 
 ]
 ```
 
+## Server component
+Once the OAuth service successfully authenticates the user and redirect back to our App, we will be making a call to your server and pass the OAuth code. Your service will be exchanging this code for the access/refresh token.
+- We provide the sample server code in Node (deployable with Firebase).
+- Open `ensemble/ensemble-config.yaml` and go to `services -> apiAuthorization`.
+  - Replace the `tokenExchangeServer` 

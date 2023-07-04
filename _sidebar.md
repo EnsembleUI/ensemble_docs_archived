@@ -19,7 +19,6 @@
     - [Layouts](build/user-interface/3-layouts.md)
   - Extend your App
     - [Using local assets](build/extend/1-local-assets.md)
-    - [Add OAuth Services](build/extend/2-oauth-services.md)
   - Define logic using Javascript
 
     - [Intro - Limitations, When and How to use](build/javascript/README.md)
@@ -50,10 +49,11 @@
   - [Preview your App](test/1-preview-app.md)
 - Deploy
   - [Prepare your app for deployment](deploy/1-prepare-app.md)
-  - [Deploy to iOS TestFlight](deploy/2-ios-appstore.md)
-  - [Deploy to Android devices](deploy/3-android-device.md)
-  - [Deploy to Google Play Store](deploy/4-android-play-store.md)
-  - [Prepare for production](deploy/5-prepare-for-production.md)
+  - [Connecting to OAuth Services](deploy/2-oauth-services.md)
+  - [Deploy to iOS TestFlight](deploy/3-ios-appstore.md)
+  - [Deploy to Android devices](deploy/4-android-device.md)
+  - [Deploy to Google Play Store](deploy/5-android-play-store.md)
+  - [Prepare for production](deploy/6-prepare-for-production.md)
 
 - [Widget reference](widget-reference/directory)
 
