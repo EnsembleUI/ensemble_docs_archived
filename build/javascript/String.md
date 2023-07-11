@@ -2,7 +2,7 @@
 
 This document covers JavaScript String functions available in Ensemble with examples. Each function is briefly explained and followed by an example demonstrating its usage.
 
-- [Code:String in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/bf9e503e-286b-437a-a692-14d0d5814918) has examples for using the String functions. Copy it into your own app and play around. 
+- [Code:String in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/bf9e503e-286b-437a-a692-14d0d5814918) has examples for using the String functions. Copy it into your own app and play around.
 - Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
 - or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
@@ -116,7 +116,7 @@ console.log(upperCaseStr); // "HELLO, WORLD!"
 
 ### match
 
-The `match()` method retrieves the result of matching a string against a regular expression and returns null in case there is no match. 
+The `match()` method retrieves the result of matching a string against a regular expression and returns null in case there is no match.
 
 **Example:**
 
@@ -129,7 +129,7 @@ console.log(result); // "world"
 
 ### matchAll
 
-The `matchAll()` method returns an array of all the matched strings or an empty array in case there is no match. 
+The `matchAll()` method returns an array of all the matched strings or an empty array in case there is no match.
 
 **Example:**
 
@@ -143,7 +143,7 @@ console.log(matches[1]); // "world"
 
 ### padStart
 
-The `padStart()` method pads the current string with another string (multiple times, if needed) on the left until the resulting string reaches the given length. 
+The `padStart()` method pads the current string with another string (multiple times, if needed) on the left until the resulting string reaches the given length.
 
 - If width is already smaller than or equal to `this.length`, no padding is added. A negative `width` is treated as zero.
 - The second argument (string to be padded with) is optional. When not specified, space is used for padding
@@ -163,7 +163,7 @@ console.log(paddedStr); // "<<<world"
 
 ### padEnd
 
-The `padEnd()` method pads the current string with another string (multiple times, if needed) on the right until the resulting string reaches the given length. 
+The `padEnd()` method pads the current string with another string (multiple times, if needed) on the right until the resulting string reaches the given length.
 
 - If width is already smaller than or equal to `this.length`, no padding is added. A negative `width` is treated as zero.
 - The second argument (string to be padded with) is optional. When not specified, space is used for padding
@@ -228,6 +228,7 @@ var base64 = "SGVsbG8sIHdvcmxkIQ==";
 var decodedStr = atob(base64);
 console.log(decodedStr); // "Hello, world!"
 ```
+
 ### tryParseInt
 
 The `tryParseInt()` method parses as string as `int` and returns null if it is not an integer. `parseInt()' throws an error when the passed in argument cannot be parsed as an integer
@@ -240,6 +241,7 @@ var i = str.tryParseInt(); // 123
 str = "xyz";
 i = tryParseInt(); // null
 ```
+
 ### tryParseDouble
 
 The `tryParseDouble()` method parses as string as `double` and returns null if it is not a double. `parseDouble()' throws an error when the passed in argument cannot be parsed as a double
@@ -251,4 +253,25 @@ var str = "123.05";
 var i = str.tryParseDouble(); // 123.05
 str = "xyz";
 i = tryParseDouble(); // null
+```
+
+### Concatenate a string in an inline expression
+
+We can concatenate strings with variables or other strings simply by wrapping them in single quotes if the inner strings are wrapped in double quotes or vise versa. This example is specifically for inline expressions used in ensembleUI.
+
+**Example**
+
+```yaml
+Column:
+  children:
+    - Text:
+        id: helloId
+        text: Apple
+    - Text:
+        text: '${helloId.text + "It's me SwiftUI"}'     # correct way
+    - Text:
+        text: ${helloId.text} + It's me SwiftUI New     # wrong way
+    - Text:
+        text: Apple + It's me SwiftUI New 2
+
 ```

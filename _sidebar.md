@@ -34,6 +34,7 @@
     - [JsonPath](build/javascript/JsonPath)
 
   - Handle Data
+
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
     - [Local Storage](build/handle-data/local-storage/1-local-storage.md)
@@ -57,6 +58,7 @@
   - [Prepare for production](deploy/6-prepare-for-production.md)
 
 - [Widget reference](widget-reference/directory)
+- [Tips and Tricks](tips-and-tricks/directory)
 
 <!-- * [Exercises](./exercises/index)
   * [Prerequisite](./exercises/0-prerequisite)
