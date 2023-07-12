@@ -20,6 +20,7 @@
   - Extend your App
     - [Using local assets](build/extend/1-local-assets.md)
     - [Adding custom fonts](build/extend/2-custom-fonts.md)
+    - [animations](build/extend/3-animations)
   - Define logic using Javascript
 
     - [Intro - Limitations, When and How to use](build/javascript/README.md)
@@ -50,6 +51,7 @@
 - Test
   - [Preview your App](test/1-preview-app.md)
 - Deploy
+
   - [Prepare your app for deployment](deploy/1-prepare-app.md)
   - [Connecting to OAuth Services](deploy/2-oauth-services.md)
   - [Deploy to iOS TestFlight](deploy/3-ios-appstore.md)
