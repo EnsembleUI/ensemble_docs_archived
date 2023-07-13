@@ -1,6 +1,6 @@
 - Getting started
 
-  - [Overview](getting-started/home.md)
+  - [Overview](getting-started/home)
   - [Create the UI for an app](./getting-started/1-create-app)
   - [Make an edit](./getting-started/2-edit)
   - [Ensemble syntax](./getting-started/3-ensemble-syntax)
@@ -15,15 +15,16 @@
 
   - User Interface
     - [Page Structure](build/user-interface/1-page-structure)
-    - [Widgets](build/user-interface/2-widgets.md)
-    - [Layouts](build/user-interface/3-layouts.md)
+    - [Widgets](build/user-interface/2-widgets)
+    - [Layouts](build/user-interface/3-layouts)
+    - [Theme](build/user-interface/4-theme)
   - Extend your App
-    - [Using local assets](build/extend/1-local-assets.md)
-    - [Adding custom fonts](build/extend/2-custom-fonts.md)
-    - [animations](build/extend/3-animations)
+    - [Using local assets](build/extend/1-local-assets)
+    - [Adding custom fonts](build/extend/2-custom-fonts)
+    - [Animations](build/extend/3-animations)
   - Define logic using Javascript
 
-    - [Intro - Limitations, When and How to use](build/javascript/README.md)
+    - [Intro - Limitations, When and How to use](build/javascript/README)
     - [The `ensemble` object](build/javascript/Ensemble)
     - [String](build/javascript/String)
     - [Numbers](build/javascript/Numbers)
@@ -38,26 +39,26 @@
 
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
-    - [Local Storage](build/handle-data/local-storage/1-local-storage.md)
+    - [Local Storage](build/handle-data/local-storage/1-local-storage)
 
   - Make it interactive with Actions
-    - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI.md)
-    - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode.md)
-    - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera.md)
-    - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl.md)
-    - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer.md)
-    - [showToast](build/make-it-interactive/actions-and-events/6-showToast.md)
+    - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI)
+    - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode)
+    - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera)
+    - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl)
+    - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer)
+    - [showToast](build/make-it-interactive/actions-and-events/6-showToast)
 
 - Test
-  - [Preview your App](test/1-preview-app.md)
+  - [Preview your App](test/1-preview-app)
 - Deploy
 
-  - [Prepare your app for deployment](deploy/1-prepare-app.md)
-  - [Connecting to OAuth Services](deploy/2-oauth-services.md)
-  - [Deploy to iOS TestFlight](deploy/3-ios-appstore.md)
-  - [Deploy to Android devices](deploy/4-android-device.md)
-  - [Deploy to Google Play Store](deploy/5-android-play-store.md)
-  - [Prepare for production](deploy/6-prepare-for-production.md)
+  - [Prepare your app for deployment](deploy/1-prepare-app)
+  - [Connecting to OAuth Services](deploy/2-oauth-services)
+  - [Deploy to iOS TestFlight](deploy/3-ios-appstore)
+  - [Deploy to Android devices](deploy/4-android-device)
+  - [Deploy to Google Play Store](deploy/5-android-play-store)
+  - [Prepare for production](deploy/6-prepare-for-production)
 
 - [Widget reference](widget-reference/directory)
 - [Tips and Tricks](tips-and-tricks/directory)
