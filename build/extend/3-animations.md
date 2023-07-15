@@ -50,6 +50,10 @@ Transitions:
 
 </div>
 
+**Output**
+
+![Alt text](image.png)
+
 **Explanation**
 
 Works similarly to page level transition in the screen but now we are defining it in [Theme]() which makes it applicable to page transitions across the whole App.
