@@ -9,3 +9,4 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [Making Progress Bars](/tips-and-tricks/progress-bars)
 - [Background Color issue in EnsembleUI Preview](/tips-and-tricks/background-color-ensemble-preview)
 - [Inputs to ChartJs](/tips-and-tricks/inputs-chartjs)
+- [Some Pro Tips ](/tips-and-tricks/pro-tips)

@@ -6,7 +6,10 @@
 
 1. Make a custom widget one for selected state and one for inactive state ( Not selected ).
 
-```
+<div class="code-container" markdown=1>
+  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
+
+```yaml
 Widget:
   inputs:
     - name
@@ -32,9 +35,15 @@ Widget:
               color: ${color}
 ```
 
-** similarl for active navigatio item ** 2. Use these widgets udner widget for each item of the BottomNavBar as given.
+</div>
 
-- ````menu:
+2.  similarly for active navigation item . Use these widgets under widget for each item of the BottomNavBar as given.
+
+<div class="code-container" markdown=1>
+  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
+
+```yaml
+menu:
   BottomNavBar:
     styles:
       backgroundColor: white
@@ -51,7 +60,7 @@ Widget:
           selectedWidget:
             CustomActiveNavbarItem:
               inputs:
-                name : Home
+                name: Home
                 icon: home
                 color: 0xFF4CA771
                 library: fontAwesome
@@ -67,7 +76,7 @@ Widget:
           selectedWidget:
             CustomActiveNavbarItem:
               inputs:
-                name : Order
+                name: Order
                 icon: shoppingBag
                 color: 0xFF4CA771
                 library: fontAwesome
@@ -83,7 +92,7 @@ Widget:
           selectedWidget:
             CustomActiveNavbarItem:
               inputs:
-                name : Favourite
+                name: Favourite
                 icon: solidHeart
                 color: 0xFF4CA771
                 library: fontAwesome
@@ -100,9 +109,10 @@ Widget:
           selectedWidget:
             CustomActiveNavbarItem:
               inputs:
-                name : Cart
+                name: Cart
                 icon: shoppingCart
                 color: 0xFF4CA771
                 library: fontAwesome
-       ```
-  ````
+```
+
+</div>
