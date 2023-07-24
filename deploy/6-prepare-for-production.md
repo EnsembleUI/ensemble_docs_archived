@@ -5,7 +5,7 @@ Now, that you have built and tested an ensemble app, you would like to publish. 
 This guide covers covers the following topics.
 
 - **Adding a launcher icons**
-- **Adding native slash screen** 
+- **Adding native splash screen** 
 
 ## Adding a launcher icons
 
@@ -90,7 +90,7 @@ flutter_native_splash:
 - Run the following command in terminal, to update native slash screen setting with above configuration
 ```bash
 flutter pub get
-flutter pub run flutter_native_splash:create
+flutter pub run flutter_launcher_icons
 ```
 
 Re-run your app and you'll see newly added splash screen. 
