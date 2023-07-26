@@ -42,12 +42,7 @@
     - [Local Storage](build/handle-data/local-storage/1-local-storage)
 
   - Make it interactive with Actions
-    - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI)
-    - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode)
-    - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera)
-    - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl)
-    - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer)
-    - [showToast](build/make-it-interactive/actions-and-events/6-showToast)
+    - [Actions](build/make-it-interactive/actions-and-events/directory)
 
 - Test
   - [Preview your App](test/1-preview-app)
