@@ -2,7 +2,16 @@
 
 An Ensemble app comprises a series of pages and assets. Each page starts with a [View](#menu), followed by an optional [header](#header), an optional [menu](#menu), and a single widget for the body. There can be one of two things on ensemble page either a [View](#view) or group of multiple views together as [ViewGroup](#viewGroup).
 
-<img src="/images/page_structure_0.png" alt="Page Skeleton" height="700"/>
+List of things you will find reference and details here.
+
+- [View](#view)
+- [ViewGroup](#viewGroup)
+- [header](#header)
+- [Menu](#menu)
+- [Body](#body)
+- [API](#api)
+
+- <img src="/images/page_structure_0.png" alt="Page Skeleton" height="700"/>
 
 ## View Group
 
@@ -368,6 +377,24 @@ A fixed navigation menu to the 'end' of the screen (right for most languages, le
 ## Body
 
 The View requires a single widget defined as its child. This will act as the body content, and can only be a Column, Row, Flex, or Stack widget.
+
+## API
+
+API widget provides a convenient way to interact with external services or data sources, allowing developers to make HTTP requests, access data, and integrate various functionalities into their applications.
+
+### Properties
+
+| Property   | Type   | Description                                                                     |
+| :--------- | :----- | :------------------------------------------------------------------------------ |
+| method     | String | The HTTP method of the request, such as `GET`, `POST`, `DELETE`, `PUT`, `PATCH` |
+| uri        | String | The URI for the request                                                         |
+| body       | Object | The request body                                                                |
+| headers    | Object | The headers for the request                                                     |
+| onResponse | Action | The action to handle the response                                               |
+| onError    | Action | The action to handle errors                                                     |
+| inputs     | Array  | The input values                                                                |
+
+You can find many great example [here](/build/make-it-interactive/actions-and-events/1-invokeAPI)
 
 ## Putting it together
 
