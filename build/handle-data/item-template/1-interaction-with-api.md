@@ -1,6 +1,6 @@
 # Api
 
-API widget with documented API not only saves development time but also ensures consistency across and improves the user experience of the app.
+API widget provides a convenient way to interact with external services or data sources, allowing developers to make HTTP requests, access data, and integrate various functionalities into their applications
 
 ## Properties
 
