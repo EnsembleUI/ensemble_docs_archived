@@ -4,15 +4,15 @@ API widget with documented API not only saves development time but also ensures 
 
 ## Properties
 
-| Property   | Type   | Description                                                                     |
-| :--------- | :----- | :------------------------------------------------------------------------------ |
-| method     | String | The HTTP method of the request, such as `GET`, `POST`, `DELETE`, `PUT`, `PATCH` |
-| uri        | String | The URI for the request                                                         |
-| body       | Object | The request body                                                                |
-| headers    | Object | The headers for the request                                                     |
-| onResponse | Action | The action to handle the response                                               |
-| onError    | Action | The action to handle errors                                                     |
-| inputs     | Array  | The input values users might want to send in the api uri                        |
+| Property   | Type   | Description                                                                                   |
+| :--------- | :----- | :-------------------------------------------------------------------------------------------- |
+| method     | String | The HTTP method of the request, such as `GET`, `POST`, `DELETE`, `PUT`, `PATCH`. (`required`) |
+| uri        | String | The URI for the request (`required`)                                                          |
+| body       | Object | The request body                                                                              |
+| headers    | Object | The headers for the request                                                                   |
+| onResponse | Action | The action to handle the response                                                             |
+| onError    | Action | The action to handle errors                                                                   |
+| inputs     | Array  | The input values users might want to send in the api uri                                      |
 
 ## Set Values
 
@@ -20,7 +20,9 @@ First of all we have to set different values in the API widget before we move to
 
 #### Specify Input
 
-Let specify our inputs for the API if there are any inputs value we want to provide to the api uri endpoint. For now we do not have any input but let us see if there how would deal with it.
+Sometimes users might need to send variables as query parameters as part of their API call. Well in that scenario let us see how API allows us to use it.
+
+**Example**
 
 <div class="code-container" markdown=1>
   <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
@@ -43,6 +45,38 @@ API:
 </div>
 
 - Its a `Get` request and with `appId` as input to `airtable` specifying which app base it is in `AirTable`.
+- We can use [invokeAPI](/build/make-it-interactive/actions-and-events/1-invokeAPI) action on a [Button](/widget-reference/button) as well through `onTap` event handler. This way instead of calling this api when screen loads up we can do it when user clicks on it ( like submitting a form ).
+
+<div class="code-container" markdown=1>
+  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
+
+```yaml
+View:
+  styles:
+    scrollableView: true
+
+  body:
+    Column:
+      children:
+        - Button:
+            label: Call API
+            onTap:
+              invokeAPI:
+                name: getData
+                inputs:
+                  appId: applTF2E7IbHETHza
+
+API:
+  getData:
+    inputs:
+      - appId
+    uri: https://api.airtable.com/v0/${appId}/Accounts_New/
+    method: GET
+```
+
+</div>
+
+We can also send form values as inputs to the api call ( using `POST` method ) while submitting a form and much more.
 
 #### Defining Query Parameters
 
@@ -114,15 +148,6 @@ createToDo:
 ```
 
 </div>
-
-### Best Practices
-
-Some properties are always required and minimum ones required to make an API request work in actual.
-
-- `uri`
-- `method`
-
-if your api call uses these it will work just fine.
 
 #### API Response manipulations
 
