@@ -18,12 +18,13 @@
     - [Widgets](build/user-interface/2-widgets)
     - [Layouts](build/user-interface/3-layouts)
     - [Theme](build/user-interface/4-theme)
+    
   - Extend your App
     - [Using local assets](build/extend/1-local-assets)
     - [Adding custom fonts](build/extend/2-custom-fonts)
     - [Animations](build/extend/3-animations)
+      
   - Define logic using Javascript
-
     - [Intro - Limitations, When and How to use](build/javascript/README)
     - [The `ensemble` object](build/javascript/Ensemble)
     - [String](build/javascript/String)
@@ -36,18 +37,16 @@
     - [JsonPath](build/javascript/JsonPath)
 
   - Handle Data
-
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
     - [Local Storage](build/handle-data/local-storage/1-local-storage)
 
-  - Make it interactive with Actions
-    - [Actions](build/make-it-interactive/actions-and-events/directory)
+  - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
 
 - Test
   - [Preview your App](test/1-preview-app)
+  
 - Deploy
-
   - [Prepare your app for deployment](deploy/1-prepare-app)
   - [Connecting to OAuth Services](deploy/2-oauth-services)
   - [Deploy to iOS TestFlight](deploy/3-ios-appstore)
