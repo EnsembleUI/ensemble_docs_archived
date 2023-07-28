@@ -1,4 +1,4 @@
-# Fitted Row
+# FittedRow
 
 Stretch to fit the parent (the parent is required to have a predetermined width), then distribute the horizontal spaces evenly among its children. You can override the space distribution via 'childrenFits' attribute.
 
