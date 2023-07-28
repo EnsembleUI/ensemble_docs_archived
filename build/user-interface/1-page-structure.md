@@ -10,6 +10,7 @@ List of things you will find reference and details here.
 - [Menu](#menu)
 - [Body](#body)
 - [API](#api)
+- [Global](#global)
 
 - <img src="/images/page_structure_0.png" alt="Page Skeleton" height="700"/>
 
