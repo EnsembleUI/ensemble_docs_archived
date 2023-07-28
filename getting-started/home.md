@@ -9,4 +9,4 @@ You can get feedback on your UI from your stakeholders through the Ensemble Prev
 
 ## Ready to build an app?
 
-Follow [our guide]() to create a simple ToDo app in less than 15 minutes.
+Follow [our guide](/getting-started/1-create-app) to create a simple ToDo app in less than 15 minutes.
