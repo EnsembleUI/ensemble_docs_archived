@@ -1,8 +1,8 @@
-# Fitted Column
+# FittedColumn
 
 Stretch to fit the parent (the parent is required to have a predetermined height), then distribute the vertical spaces evenly among its children. You can override the space distribution via 'childrenFits' attribute.
 
-[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/hRFxxoaBePQaLfmoBiIb?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/hRFxxoaBePQaLfmoBiIb)
 
 ## Properties
 
@@ -14,9 +14,9 @@ Stretch to fit the parent (the parent is required to have a predetermined height
 
 ### styles
 
-| Property                     | Type              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| :--------------------------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| expanded                     | boolean           | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g stretch horizontally for parent of type Row)                                                                                                                                                                                                                                                                                                                                                                                |
+| Property                     | Type              | Description |
+| :--------------------------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| childrenFits                 | array             | Specify array of numbers to set how space is distributed among the children. Use `auto` instead of a number in order to have the child widget determin its own width. |
 | mainAxis                     | string            | Control our children's layout vertically. `start` `center` `end` `spaceBetween` `spaceAround` `spaceEvenly`                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | fontSize                     | integer           | Sets the size of the text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | fontFamily                   | string            | Set the font family applicable for all widgets inside this container                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
