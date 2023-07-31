@@ -16,7 +16,7 @@ Any screens can reference the variable with `${env.variable_name}`. Here we pref
 
 ### Override environment variables to load images locally
 
-When building Production app (see [Preparing your App](/#/deploy/1-prepare-app), you can load this image locally instead of via URL.
+When building Production app (see [Preparing your App](/deploy/1-prepare-app), you can load this image locally instead of via URL.
 
 - Add the assets under folder `<Ensemble Starter>/ensemble/assets/`.
 - Open `<Ensemble Starter>/ensemble/ensemble-config.yaml` and add a matching environment variable that you defined on Ensemble Studio. Leave the value empty (if all your assets are directly under /ensemble/assets).
