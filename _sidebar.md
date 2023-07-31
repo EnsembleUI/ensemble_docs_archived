@@ -5,9 +5,9 @@
   - [Make an edit](./getting-started/2-edit)
   - [Ensemble syntax](./getting-started/3-ensemble-syntax)
   - [Create a Form](./getting-started/4-form)
-    <!-- - [Handle events](./getting-started/5-actions)-->
-    <!-- - [Write code](./getting-started/6-code)-->
-    <!-- - [Store data locally](./getting-started/7-storage) -->
+  - [Handle events](./getting-started/5-actions)
+  - [Write code](./getting-started/6-code)
+  - [Store data locally](./getting-started/7-storage)
   - [Display list of items](./getting-started/8-item-template)
   - [Style widgets](./getting-started/9-styling)
 
@@ -18,13 +18,12 @@
     - [Widgets](build/user-interface/2-widgets)
     - [Layouts](build/user-interface/3-layouts)
     - [Theme](build/user-interface/4-theme)
-    
   - Extend your App
     - [Using local assets](build/extend/1-local-assets)
     - [Adding custom fonts](build/extend/2-custom-fonts)
     - [Animations](build/extend/3-animations)
-      
   - Define logic using Javascript
+
     - [Intro - Limitations, When and How to use](build/javascript/README)
     - [The `ensemble` object](build/javascript/Ensemble)
     - [String](build/javascript/String)
@@ -37,6 +36,7 @@
     - [JsonPath](build/javascript/JsonPath)
 
   - Handle Data
+
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
     - [Local Storage](build/handle-data/local-storage/1-local-storage)
@@ -45,8 +45,8 @@
 
 - Test
   - [Preview your App](test/1-preview-app)
-  
 - Deploy
+
   - [Prepare your app for deployment](deploy/1-prepare-app)
   - [Connecting to OAuth Services](deploy/2-oauth-services)
   - [Deploy to iOS TestFlight](deploy/3-ios-appstore)
