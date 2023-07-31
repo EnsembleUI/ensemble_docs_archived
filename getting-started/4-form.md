@@ -1,13 +1,40 @@
 # Add a Form
 
-Let's create a simple form with one text input and a button. Start by removing the `Text` widget and add a `Form` widget instead.
+Here is our code until now
 
-A Form is a container widget with special behavior such as `onSubmit`. 
+```yaml
+View:
+  # Optional - style the screen
+  styles:
+    scrollableView: true
 
+  # Optional - set the header for the screen
+  header:
+    title: ToDo App
+
+  # Specify the body of the screen
+  body:
+    Column:
+      styles:
+        padding: 24
+        gap: 8
+      children:
+        - Text:
+            text: Hi there!
+        - Button:
+            label: Checkout Ensemble Kitchen Sink
+            onTap:
+              openUrl:
+                url: "https://studio.ensembleui.com/preview/index.html?appId=e24402cb-75e2-404c-866c-29e6c3dd7992"
+```
+
+Let's create a simple form with one text input and a button. Start by removing the [Text](/widget-reference/text) and [Button](/widget-reference/button) widget and add a [Form](/widget-reference/form) widget instead.
+
+A Form is a container widget with special behavior such as `onSubmit` event handler.
 
 ### Add a TextInput
 
-Container widgets have a property called `children` where you can add more widgets. Let's add a `TextInput` widget. Here's what you should have so far:
+Container widgets have a property called `children` where you can add more widgets. Let's add a [TextInput](/widget-reference/textinput) widget. Here's what you should have so far:
 
 ```yaml
 View:
@@ -19,7 +46,7 @@ View:
   # widget for this View
   body:
     Column:
-      styles: 
+      styles:
         padding: 20
         backgroundColor: white
       children:
@@ -37,11 +64,10 @@ View:
 We can define the TextInput's behavior by setting a few properties:
 
 ```yaml
-            - TextInput:
-                label: New task
-                hintText: Enter task name
-                required: true
-
+- TextInput:
+    label: New task
+    hintText: Enter task name
+    required: true
 ```
 
 ### Add a Button
@@ -49,11 +75,36 @@ We can define the TextInput's behavior by setting a few properties:
 Our form needs a button that triggers the form submission.
 
 ```yaml
-            - Button:
-                label: Add
-                submitForm: true
+- Button:
+    label: Add
+    submitForm: true
 ```
 
 Save your changes and verify the form appears.
 
-<img src="/images/gs4.png" alt="form" />
+```yaml
+View:
+  header:
+    title: ToDo app
+  styles:
+    scrollableView: true
+
+  # widget for this View
+  body:
+    Column:
+      styles:
+        padding: 20
+        backgroundColor: white
+      children:
+        - Form:
+            children:
+              - TextInput:
+                  label: New task
+                  hintText: Enter task name
+                  required: true
+              - Button:
+                  label: Add
+                  submitForm: true
+```
+
+![Alt text](image-4.png)

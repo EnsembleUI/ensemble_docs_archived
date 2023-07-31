@@ -10,6 +10,7 @@ List of things you will find reference and details here.
 - [Menu](#menu)
 - [Body](#body)
 - [API](#api)
+- [Global](#global)
 
 - <img src="/images/page_structure_0.png" alt="Page Skeleton" height="700"/>
 
@@ -380,9 +381,9 @@ The View requires a single widget defined as its child. This will act as the bod
 
 ## API
 
-API widget provides a convenient way to interact with external services or data sources, allowing developers to make HTTP requests, access data, and integrate various functionalities into their applications.
+API provides a convenient way to interact with external services or data sources, allowing developers to make HTTP requests, access data, and integrate various functionalities into their applications.
 
-### Properties
+#### Properties
 
 | Property   | Type   | Description                                                                     |
 | :--------- | :----- | :------------------------------------------------------------------------------ |
@@ -395,6 +396,50 @@ API widget provides a convenient way to interact with external services or data 
 | inputs     | Array  | The input values                                                                |
 
 You can find many great example [here](/build/make-it-interactive/actions-and-events/1-invokeAPI)
+
+## Global
+
+Global enables users to declare or define functions and variables which can be accessed globally inside the whole screen in every widget. In simple words its scope ig `global` just like a normal JavaScript `Global Execution Context` where users can access these functions anywhere in the screen.
+
+**Example**
+
+```yaml
+View:
+  header:
+    title: "Code: Global functions"
+  styles:
+    scrollableView: true
+  Column:
+    styles: { gap: 16, padding: 24 }
+    children:
+      - TextInput:
+          id: secondsInput
+          label: Seconds
+          value: 28565
+      - Button:
+          label: Convert to hours and minutes
+          onTap:
+            executeCode:
+              body: |-
+                //@code
+                results.text = convertSecondsToHours(secondsInput.value);
+
+      - Text:
+          id: results
+
+Global: |-
+
+  function convertSecondsToHours (s) {
+
+    console.log(s);
+  }
+```
+
+**Output**
+
+The output can be checked in the logs for browser
+
+![Alt text](image-6.png)
 
 ## Putting it together
 
