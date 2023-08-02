@@ -12,7 +12,7 @@ List of things you will find reference and details here.
 - [API](#api)
 - [Global](#global)
 
-- <img src="/images/page_structure_0.png" alt="Page Skeleton" style="height: 50%;"/>
+<img src="/images/page_structure_0.png" alt="Page Skeleton" height="70%" width="70%">
 
 ## View Group
 
