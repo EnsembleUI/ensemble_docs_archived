@@ -1,4 +1,4 @@
-# Making you app work when offline
+# Making your app work when offline
 
 You can embed your app definition in your build output so that your app works without network connectivity. Note that once you make this change, you will not have the ability to change the app from Ensemble Studio.
 
