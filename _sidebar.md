@@ -53,7 +53,7 @@
   - [Deploy to Android devices](deploy/4-android-device)
   - [Deploy to Google Play Store](deploy/5-android-play-store)
   - [Prepare for production](deploy/6-prepare-for-production)
-  - [Making you app work when offline](deploy/7-offline-mode)
+  - [Making your app work when offline](deploy/7-offline-mode)
 - [Widget reference](widget-reference/directory)
 - [Tips and Tricks](tips-and-tricks/directory)
 
