@@ -1,31 +1,29 @@
 # Actions
 
-Actions page serves as a comprehensive reference, listing all available actions on our UI platform. Developers can explore and utilize these actions to enhance app functionality, customize user interactions, and integrate various functionalities, ensuring a seamless and dynamic user experience.
+When an event is triggered (e.g. button is tapped), you can perform actions such as navigate to a screen, call an API, or even run JavaScript code.
 
-### List
 
-Given list has short explanation for all actions and what purpose they serve.
-
-| Property                                                                                               | Description                                                                                                                                                 |
-| :----------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI)                                  | invokeAPI is used for calling an API. You can call an API on events such as a button tap or on screen load.                                                 |
-| [executeCode](build/make-it-interactive/actions-and-events/2-executeCode)                              | executeCode action executes custom code logic within the app, enabling dynamic functionality and personalized interactions.                                 |
-| [openCamera](build/make-it-interactive/actions-and-events/3-openCamera)                                | openCamera action allows users to access their device's camera within the app for capturing images and videos.                                              |
-| [openUrl](build/make-it-interactive/actions-and-events/4-openUrl)                                      | openUrl action opens external URLs or web links within the app, facilitating seamless integration with external content.                                    |
-| [startTimer](build/make-it-interactive/actions-and-events/5-startTimer)                                | startTimer action initiates a timer within the app, facilitating time-sensitive processes and triggering events after a specified duration.                 |
-| [showToast](build/make-it-interactive/actions-and-events/6-showToast)                                  | showToast action displays a temporary notification or message on the app interface, providing concise and contextual updates to users.                      |
-| [navigateBack](build/make-it-interactive/actions-and-events/7-navigateBack)                            | navigateBack action allows users to go back to the previous screen or page within the app's navigation stack.                                               |
-| [navigateScreen](build/make-it-interactive/actions-and-events/8-navigateScreen)                        | navigateScreen action facilitates smooth navigation to a specific screen or page within the app's interface.                                                |
-| [navigateModalScreen](build/make-it-interactive/actions-and-events/9-navigateModalScreen)              | navigateModalScreen action opens a specific screen or page as a modal overlay, focusing on the temporary view without losing the main app context.          |
-| [openUrl](build/make-it-interactive/actions-and-events/10-openUrl)                                     | openUrl action allows users to open external URLs or web links within the app, enhancing content integration.                                               |
-| [showDialog](build/make-it-interactive/actions-and-events/11-showDialog)                               | showDialog action triggers the display of a modal dialog box within the app, presenting important information or notifications.                             |
-| [closeAllDialogs](build/make-it-interactive/actions-and-events/12-closeAllDialogs)                     | closeAllDialogs action dismisses or closes all open modal dialogs within the app, ensuring a clutter-free interface.                                        |
-| [stopTimer](build/make-it-interactive/actions-and-events/13-stopTimer)                                 | stopTimer action halts or pauses a running timer within the app, providing control over time-sensitive processes.                                           |
-| [getLocation](build/make-it-interactive/actions-and-events/14-getLocation)                             | getLocation action retrieves the device's current location, enabling location-based functionalities within the app.                                         |
-| [uploadFiles](build/make-it-interactive/actions-and-events/15-uploadFiles)                             | uploadFiles action allows users to select and upload files from their device to the app, facilitating data transfer and sharing.                            |
-| [pickFiles](build/make-it-interactive/actions-and-events/16-pickFiles)                                 | pickFiles action enables users to select files from their device for further processing or usage within the app.                                            |
-| [copyToClipboard](build/make-it-interactive/actions-and-events/17-copyToClipboard)                     | copyToClipboard action copies text or content to the device's clipboard, facilitating easy sharing and transfer of information within the app.              |
-| [connectWallet](build/make-it-interactive/actions-and-events/18-connectWallet)                         | connectWallet action establishes a connection between the app and the user's digital wallet, enabling blockchain-based interactions and transactions.       |
-| [requestNotificationAccess](build/make-it-interactive/actions-and-events/19-requestNotificationAccess) | requestNotificationAccess action prompts users to grant permission for the app to send notifications to their device.                                       |
-| [showNotification](build/make-it-interactive/actions-and-events/20-showNotification)                   | showNotification action displays local notifications within the app, notifying users of important events or information.                                    |
-| [notification](build/make-it-interactive/actions-and-events/21-notification)                           | notification action manages and handles notifications within the app, enabling effective communication with users and delivering timely updates and alerts. |
+| Property | Description |
+| :------- | :---------- |
+| [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI) | invokeAPI is used for calling an API. You can call an API on events such as a button tap or on screen load. |
+| [executeCode](build/make-it-interactive/actions-and-events/2-executeCode) | executeCode action executes custom code logic within the app, enabling dynamic functionality and personalized interactions. |
+| [openCamera](build/make-it-interactive/actions-and-events/3-openCamera) | openCamera action allows users to access their device's camera within the app for capturing images and videos. |
+| [openUrl](build/make-it-interactive/actions-and-events/4-openUrl) | openUrl action opens external URLs or web links within the app, facilitating seamless integration with external content. |
+| [startTimer](build/make-it-interactive/actions-and-events/5-startTimer) | startTimer action initiates a timer within the app, facilitating time-sensitive processes and triggering events after a specified duration. |
+| [showToast](build/make-it-interactive/actions-and-events/6-showToast) | showToast action displays a temporary notification or message on the app interface, providing concise and contextual updates to users. |
+| [navigateBack](build/make-it-interactive/actions-and-events/7-navigateBack) | navigateBack action allows users to go back to the previous screen or page within the app's navigation stack. |
+| [navigateScreen](build/make-it-interactive/actions-and-events/8-navigateScreen) | navigateScreen action facilitates smooth navigation to a specific screen or page within the app's interface. |
+| [navigateModalScreen](build/make-it-interactive/actions-and-events/9-navigateModalScreen) | navigateModalScreen action opens a specific screen or page as a modal overlay, focusing on the temporary view without losing the main app context. |
+| [openUrl](build/make-it-interactive/actions-and-events/10-openUrl) | openUrl action allows users to open external URLs or web links within the app, enhancing content integration. |
+| [showDialog](build/make-it-interactive/actions-and-events/11-showDialog) | showDialog action triggers the display of a modal dialog box within the app, presenting important information or notifications. |
+| [closeAllDialogs](build/make-it-interactive/actions-and-events/12-closeAllDialogs) | closeAllDialogs action dismisses or closes all open modal dialogs within the app, ensuring a clutter-free interface. |
+| [stopTimer](build/make-it-interactive/actions-and-events/13-stopTimer) | stopTimer action halts or pauses a running timer within the app, providing control over time-sensitive processes. |
+| [getLocation](build/make-it-interactive/actions-and-events/14-getLocation) | getLocation action retrieves the device's current location, enabling location-based functionalities within the app. |
+| [uploadFiles](build/make-it-interactive/actions-and-events/15-uploadFiles) | uploadFiles action allows users to select and upload files from their device to the app, facilitating data transfer and sharing. |
+| [pickFiles](build/make-it-interactive/actions-and-events/16-pickFiles) | pickFiles action enables users to select files from their device for further processing or usage within the app. |
+| [copyToClipboard](build/make-it-interactive/actions-and-events/17-copyToClipboard) | copyToClipboard action copies text or content to the device's clipboard, facilitating easy sharing and transfer of information within the app. |
+| [connectWallet](build/make-it-interactive/actions-and-events/18-connectWallet) | connectWallet action establishes a connection between the app and the user's digital wallet, enabling blockchain-based interactions and transactions. |
+| [openPlaidLink](build/make-it-interactive/actions-and-events/21-openPlaidLink) | Open the Plaid Link Service so user can link their financial accounts to your service. |
+| [requestNotificationAccess](build/make-it-interactive/actions-and-events/19-requestNotificationAccess) | requestNotificationAccess action prompts users to grant permission for the app to send notifications to their device. |
+| [showNotification](build/make-it-interactive/actions-and-events/20-showNotification) | showNotification action displays local notifications within the app, notifying users of important events or information. |
+| [notification](build/make-it-interactive/actions-and-events/21-notification) | notification action manages and handles notifications within the app, enabling effective communication with users and delivering timely updates and alerts. |
