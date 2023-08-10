@@ -6,17 +6,25 @@ The DataGrid Widget enables the seamless rendering of data grids, facilitating t
 
 ## Properties
 
-| Property         | Type    | Description                                                           |
-| :--------------- | :------ | :-------------------------------------------------------------------- |
-| item-template    | object  | [See properties](#item-template)                                      |
-| children         | array   | List of Data Row widgets.                                             |
-| styles           | object  | [See properties](#styles)                                             |
-| horizontalMargin | integer | The leading and trailing gap for the DataGrid view.                   |
-| dataRowHeight    | integer | Set the height of the data row item.                                  |
-| headingRowHeight | integer | Set the height of the heading row item.                               |
-| columnSpacing    | number  | Set the padding for the column.                                       |
-| dividerThickness | integer | Determines the thickness or width of dividers in the DataGrid widget. |
-| DataColumns      | array   | List of data columns                                                  |
+| Property         | Type    | Description                                                                          |
+| :--------------- | :------ | :----------------------------------------------------------------------------------- |
+| item-template    | object  | [See properties](#item-template)                                                     |
+| children         | array   | List of Data Row widgets.                                                            |
+| styles           | object  | [See properties](#styles)                                                            |
+| horizontalMargin | integer | The leading and trailing gap for the DataGrid view.                                  |
+| dataRowHeight    | integer | Set the height of the data row item.                                                 |
+| headingRowHeight | integer | Set the height of the heading row item.                                              |
+| columnSpacing    | number  | Set the padding for the column.                                                      |
+| dividerThickness | integer | Determines the thickness or width of dividers in the DataGrid widget.                |
+| DataColumns      | array   | List of data columns                                                                 |
+| sorting          | object  | Sort the data columns in ascending or descending order. [See properties](#styles)    | 
+
+### sorting
+
+| Property         | Type   | Description                                                                                                                                          |
+| :--------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| columnIndex      | String | The index of the data column to be sorted                                                                                                                    |
+| order            | String | Set the data column sorting either in `ascending` or `descending` order    
 
 ### item-template
 
@@ -96,4 +104,4 @@ The DataGrid Widget enables the seamless rendering of data grids, facilitating t
 | font       | string            | Default built-in style for this text. `heading` `title` `subtitle`                                                                                                                                                                                                                                                                  |
 | fontWeight | string            | The thickness of the glyphs used to draw the text. `light` `normal` `bold` `w100` `w200` `w300` `w400` `w500` `w600` `w700` ` w800``w900 `                                                                                                                                                                                          |
 | lineHeight | string or integer | The line height of the text, which determines the vertical spacing between lines. It can be specified as, a number, or a string chosen from a set of predefined values: `default` `1.0` `1.15` `1.25` `1.5` `2.0` `2.5`                                                                                                             |
-| textStyle  | string            | A linear decoration to draw near the text or whether to slant the glyphs in font. `normal` `italic` `underline` `strikethrough` `italic_underline` `italic_strikethrough`                                                                                                                                                           |
+| textStyle  | string            | A linear decoration to draw near the text or whether to slant the glyphs in font. `normal` `italic` `underline` `strikethrough` `italic_underline` `italic_strikethrough`                                                                                                                                                           |                                                                                                                       |
