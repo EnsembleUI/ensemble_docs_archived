@@ -18,10 +18,8 @@
     - [Widgets](build/user-interface/2-widgets)
     - [Layouts](build/user-interface/3-layouts)
     - [Theme](build/user-interface/4-theme)
-  - Extend your App
-    - [Using local assets](build/extend/1-local-assets)
-    - [Adding custom fonts](build/extend/2-custom-fonts)
     - [Animations](build/extend/3-animations)
+    
   - Define logic using Javascript
 
     - [Intro - Limitations, When and How to use](build/javascript/README)
@@ -37,14 +35,21 @@
 
   - Handle Data
 
+    - [Local Storage](build/handle-data/local-storage/1-local-storage)
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
-    - [Local Storage](build/handle-data/local-storage/1-local-storage)
+
+  - Authentication
+
+    - [Firebase](build/authentication/firebase)
 
   - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
+  - [Using local assets](build/local-assets)
+  - [Adding custom fonts](build/custom-fonts)
 
 - Test
   - [Preview your App](test/1-preview-app)
+
 - Deploy
 
   - [Prepare your app for deployment](deploy/1-prepare-app)
