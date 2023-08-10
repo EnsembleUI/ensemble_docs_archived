@@ -1,5 +1,14 @@
 # Setting up Authentication with Firebase
 
+In this guide, we will enable authentication through Firebase.
+
+<video width="70%"  controls>
+  <source src="/images/firebase-auth.mov" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
 #### Prerequisites
 
 1. You have created a Firebase project
