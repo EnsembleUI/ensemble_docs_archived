@@ -1,30 +1,33 @@
 # Setting up Authentication with Firebase
 
-**Prerequisites**
+#### Prerequisites
+
 1. You have created a Firebase project
 2. You have created an app on Ensemble Studio
 3. You have [Flutter](https://docs.flutter.dev/get-started/install) installed on your machine
 4. You have a Simulator for testing
 
-
 ## 1. Configure Firebase project
 
 Login to your Firebase account and navigate to your project in order to complete following steps.
 
-**Enable Sign in with Google**
+#### Enable Sign in with Google
+
 Go to the Authentication section of your Firebase project, and enable Authentication. After that, enable Google as the sign-in method.
 
-**Add iOS app**
+#### Add iOS app
+
 Under project settings, add iOS app to your Firebase project. As you go through the steps, you will download a file named `GoogleService-Info.plist` . We will use details from this file later on.
  
-**Add Android app**
+#### Add Android app
+
 Under project settings, add Android app to your Firebase project. As you go through the steps, you will download a file named `google-services.json` . We will use details from this file later on.
 
 ---
 
 ## 2. Configure Ensemble app
 
-**Get starter app**
+#### Get starter app
 
 Clone [Ensemble Starter](https://github.com/EnsembleUI/starter) from GitHub. Using a code or text editor, open `/ensemble/ensemble-config.yaml` .
 
@@ -41,7 +44,7 @@ Set your definition source to be Ensemble:
 
 You can find you Ensemble app id by navigating to the app on Ensemble Studio, clicking the menu icon, and selecting `Copy App ID` option.
 
-**Add Firebase app details to Ensemble app**
+#### Add Firebase app details to Ensemble app
 
 In the same file, `ensemble-config.yaml` , add Firebase account details in the following format.
 
@@ -67,7 +70,7 @@ Here's an example of the outcome.
 <img src="/images/firebase-account-details.png" alt="firebase account details" style="max-width: 900px;">
 
 
-**Add sign-in providers to Ensemble app**
+#### Add sign-in providers to Ensemble app
 
 In the same file, `ensemble-config.yaml` , under `services` add the following.
 
