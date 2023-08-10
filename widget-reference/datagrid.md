@@ -17,6 +17,7 @@ The DataGrid Widget enables the seamless rendering of data grids, facilitating t
 | columnSpacing    | number  | Set the padding for the column.                                       |
 | dividerThickness | integer | Determines the thickness or width of dividers in the DataGrid widget. |
 | DataColumns      | array   | List of data columns                                                  |
+| sorting          | object  | Sort the data columns in ascending or descending order                |
 
 ### item-template
 
