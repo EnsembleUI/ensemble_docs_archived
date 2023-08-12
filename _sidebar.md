@@ -42,6 +42,7 @@
   - Authentication
 
     - [Firebase](build/authentication/firebase)
+    - [Auth0](build/authentication/auth0)
 
   - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
   - [Using local assets](build/local-assets)
