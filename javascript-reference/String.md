@@ -54,18 +54,6 @@ var char = str.charAt(7);
 console.log(char); // 'w'
 ```
 
-### startsWith
-
-The `startsWith()` method determines whether a string begins with the characters of a specified string.
-
-**Example:**
-
-```javascript
-var str = "Hello, world!";
-var result = str.startsWith("Hello");
-console.log(result); // true
-```
-
 ### endsWith
 
 The `endsWith()` method determines whether a string ends with the characters of a specified string.
@@ -181,16 +169,47 @@ paddedStr = str.padEnd(8, "<");
 console.log(paddedStr); // "world<<<"
 ```
 
-### substring
+### replace
 
-The `substring()` method returns the part of the string between the start and end indexes, or to the end of the string.
+The `replace()` function replaces the first occurrence of a specified substring or regular expression with a new substring. It returns a new string with the replaced content while leaving the original string unchanged.
 
+**Syntax:**
+```javascript
+replace(pattern, replacement);
+```
 **Example:**
 
 ```javascript
-var str = "Hello, world!";
-var substr = str.substring(7, 12);
-console.log(substr); // "world"
+const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+console.log(p.replace('dog', 'monkey'));
+// Expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
+
+const regex = /Dog/i;
+console.log(p.replace(regex, 'ferret'));
+// Expected output: "The quick brown fox jumps over the lazy ferret. If the dog reacted, was it really lazy?"
+```
+
+### replaceAll
+
+The `replaceAll()` method of String values returns a new string with all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. The original string is left unchanged.
+
+**Syntax:**
+```javascript
+replaceAll(pattern, replacement)
+```
+**Example:**
+
+```javascript
+const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+console.log(p.replaceAll('dog', 'monkey'));
+// Expected output: "The quick brown fox jumps over the lazy monkey. If the monkey reacted, was it really lazy?"
+
+// Global flag required when calling replaceAll with regex
+const regex = /Dog/gi;
+console.log(p.replaceAll(regex, 'ferret'));
+// Expected output: "The quick brown fox jumps over the lazy ferret. If the ferret reacted, was it really lazy?"
 ```
 
 ### split
@@ -205,6 +224,29 @@ var arr = str.split(", ");
 console.log(arr); // ["Hello", "world!"]
 ```
 
+### startsWith
+
+The `startsWith()` method determines whether a string begins with the characters of a specified string.
+
+**Example:**
+
+```javascript
+var str = "Hello, world!";
+var result = str.startsWith("Hello");
+console.log(result); // true
+```
+
+### substring
+
+The `substring()` method returns the part of the string between the start and end indexes, or to the end of the string.
+
+**Example:**
+
+```javascript
+var str = "Hello, world!";
+var substr = str.substring(7, 12);
+console.log(substr); // "world"
+```
 ### btoa
 
 The `btoa()` method creates a base-64 encoded ASCII string from a string of binary data.
