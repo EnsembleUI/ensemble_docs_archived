@@ -22,16 +22,16 @@
     
   - Define logic using Javascript
 
-    - [Intro - Limitations, When and How to use](build/javascript/README)
-    - [The `ensemble` object](build/javascript/Ensemble)
-    - [String](build/javascript/String)
-    - [Numbers](build/javascript/Numbers)
-    - [Date](build/javascript/Date)
-    - [Object and Array](build/javascript/MapAndArray)
-    - [Globals](build/javascript/Global)
-    - [Math](build/javascript/Math)
-    - [JSON](build/javascript/JSON)
-    - [JsonPath](build/javascript/JsonPath)
+    - [Intro - Limitations, When and How to use](javascript-reference/README)
+    - [The `ensemble` object](javascript-reference/Ensemble)
+    - [String](javascript-reference/String)
+    - [Numbers](javascript-reference/Numbers)
+    - [Date](javascript-reference/Date)
+    - [Object and Array](javascript-reference/MapAndArray)
+    - [Globals](javascript-reference/Global)
+    - [Math](javascript-reference/Math)
+    - [JSON](javascript-reference/JSON)
+    - [JsonPath](javascript-reference/JsonPath)
 
   - Handle Data
 
