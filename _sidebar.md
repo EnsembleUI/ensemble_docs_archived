@@ -19,19 +19,7 @@
     - [Layouts](build/user-interface/3-layouts)
     - [Theme](build/user-interface/4-theme)
     - [Animations](build/extend/3-animations)
-    
-  - Define logic using Javascript
-
-    - [Intro - Limitations, When and How to use](javascript-reference/README)
-    - [The `ensemble` object](javascript-reference/Ensemble)
-    - [String](javascript-reference/String)
-    - [Numbers](javascript-reference/Numbers)
-    - [Date](javascript-reference/Date)
-    - [Object and Array](javascript-reference/MapAndArray)
-    - [Globals](javascript-reference/Global)
-    - [Math](javascript-reference/Math)
-    - [JSON](javascript-reference/JSON)
-    - [JsonPath](javascript-reference/JsonPath)
+  
 
   - Handle Data
 
@@ -44,10 +32,12 @@
     - [Firebase](build/authentication/firebase)
     - [Auth0](build/authentication/auth0)
 
+  - [Define logic](javascript-reference/README)
   - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
   - [Application Secrets](build/secrets)
+  
 
 - Test
   - [Preview your App](test/1-preview-app)
@@ -61,6 +51,20 @@
   - [Deploy to Google Play Store](deploy/5-android-play-store)
   - [Prepare for production](deploy/6-prepare-for-production)
   - [Making your app work when offline](deploy/7-offline-mode)
+ 
+- Define logic using Javascript
+
+  - [Intro - Limitations, When and How to use](javascript-reference/README)
+  - [The `ensemble` object](javascript-reference/Ensemble)
+  - [String](javascript-reference/String)
+  - [Numbers](javascript-reference/Numbers)
+  - [Date](javascript-reference/Date)
+  - [Object and Array](javascript-reference/MapAndArray)
+  - [Globals](javascript-reference/Global)
+  - [Math](javascript-reference/Math)
+  - [JSON](javascript-reference/JSON)
+  - [JsonPath](javascript-reference/JsonPath)
+  
 - [Widget reference](widget-reference/directory)
 - [Tips and Tricks](tips-and-tricks/directory)
 
