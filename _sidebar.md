@@ -47,6 +47,7 @@
   - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
+  - [Application Secrets](build/secrets)
 
 - Test
   - [Preview your App](test/1-preview-app)
