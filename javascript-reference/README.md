@@ -1,6 +1,9 @@
-# Welcome!
+# Add logic using JavaScript
+
 Welcome to the Ensemble Javascript manual. It provides how-to guides, API reference documentation and examples. 
+
 ## Limitations
+
 Ensemble's javascript is a limited subset of the javascript you may be used to. It is used primarily for manipulating the JSON response from the server, performing UI logic when handling events or writing re-usable functions. 
 
 Following are the key limitations of the javascript in Ensemble.
