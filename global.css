@@ -1,0 +1,30 @@
+.code-container {
+    position: relative;
+  }
+  .copy-code-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  background-color: #f1f1f1;
+  font-size: 12px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  z-index:1;
+  }
+  .copy-code-button:hover{
+    background-color: #000;
+    color: white; 
+  }
+  pre > code {
+    padding: 2.5em 5px !important;
+  }
+  pre {
+    margin: 0;
+  }
+  
+  .language-yaml {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }

@@ -2,14 +2,18 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <link rel="stylesheet" href="global.css">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">
   <title>Ensemble Docs</title>
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -36,8 +40,14 @@
         crossChapter: true
       },
       ga: 'G-XGVQDCRNG9',
+      copyCode: {
+        buttonText : 'Copy to clipboard',
+        errorText  : 'Error',
+        successText: 'Copied'
+      },
     }
   </script>
+  
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
@@ -45,5 +55,15 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
   <script src="//unpkg.com/docsify-sidebar-collapse@1.1.0/dist/docsify-sidebar-collapse.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-plugin-ga"></script>
+  <!-- <script src="clipboard.js"></script> -->
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script>
+    // Manually initialize Prism.js after Docsify and the necessary language scripts are loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      Prism.highlightAll();
+    });
+  </script>
 </body>
+
 </html>

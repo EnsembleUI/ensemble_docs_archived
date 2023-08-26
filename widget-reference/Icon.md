@@ -6,12 +6,12 @@ The Icon Widget enables easy integration of icons from popular libraries like Fo
 
 ## Properties
 
-| Property | Type   | Description                                        |
-| :------- | :----- | :------------------------------------------------- |
-| icon     | string | Icon name from Material Icons or Font Awesome      |
-| library  | string | Which icon library to use `default` `fontAwesome ` |
-| onTap    | action | Call Ensemble's built-in functions or execute code |
-| styles   | object | [See properties](#styles)                          |
+| Property | Type   | Description                                                                                                                                                                                                                                                                                                                                                             |
+| :------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| icon     | string | Icon name from Material Icons or Font Awesome                                                                                                                                                                                                                                                                                                                           |
+| library  | string | Which icon library to use, if there is no value for library then its considered to be default. `fontAwesome` `remix` ( for now only few remix icons are supported but we will support most them soon) You can check list of supported icons [here](https://github.com/EnsembleUI/ensemble/blob/476af9ea9862620205a4e85a3312e5433764f785/lib/framework/widget/icon.dart) |
+| onTap    | action | Call Ensemble's built-in functions or execute code                                                                                                                                                                                                                                                                                                                      |
+| styles   | object | [See properties](#styles)                                                                                                                                                                                                                                                                                                                                               |
 
 ### styles
 

@@ -10,49 +10,43 @@ View:
     title: ToDo app
   styles:
     scrollableView: true
-
-  # view's onload action
   onLoad:
-    action: executeCode
-    body: |
-      //@code
-      if (ensemble.storage.todoItems == null) {
+    executeCode:
+      body: |
+        //@code
+        if (ensemble.storage.todoItems == null) {
         ensemble.storage.todoItems = [];
-      }
+        }
 ```
 
-Once you make the above change, you can verify it in the browser's developer tool.
+Once you make the above change, you can verify it in the browser's developer tool. ( If you cannot find it under local storage in dev tools just refresh page while still keeping the dev tools opened and you will find it under GetStorage )
 
-<img src="/images/gs7a.png" alt="actions" />
-
+![Alt text](image-6.png)
 
 ### Store item when form is submitted
 
 Let's add another event handler, this time the form's `onSubmit`.
 
 ```yaml
-      - Form:
-          onSubmit:
-            action: executeCode
-            body: |
-              //@code
-              var items = ensemble.storage.todoItems;
-              items.push(newTodo.value);
-              ensemble.storage.todoItems = items;
-
-          children:
-            - TextInput:
-                id: newTodo
-                label: New task
-                hintText: Enter task name
-                required: true
-            - Button:
-                label: Add
-                submitForm: true
+- Form:
+    onSubmit: |
+      //@code
+      var items = ensemble.storage.todoItems;
+      items.push(newTodo.value);
+      ensemble.storage.todoItems = items;
+    children:
+      - TextInput:
+          id: newTodo
+          label: New task
+          hintText: Enter task name
+          required: true
+      - Button:
+          label: Add
+          submitForm: true
 ```
 
 Note that we added in `id` property to the `TextInput` so we can reference its value in the code section.
 
 Save and verify the change by adding a new task and pressing the button.
 
-<img src="/images/gs7b.png" alt="actions" />
+![Alt text](image-7.png)

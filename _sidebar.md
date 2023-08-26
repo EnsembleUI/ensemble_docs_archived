@@ -1,13 +1,13 @@
 - Getting started
 
-  - [Overview](getting-started/home.md)
+  - [Overview](getting-started/home)
   - [Create the UI for an app](./getting-started/1-create-app)
   - [Make an edit](./getting-started/2-edit)
   - [Ensemble syntax](./getting-started/3-ensemble-syntax)
   - [Create a Form](./getting-started/4-form)
-    <!-- - [Handle events](./getting-started/5-actions)-->
-    <!-- - [Write code](./getting-started/6-code)-->
-    <!-- - [Store data locally](./getting-started/7-storage) -->
+  - [Handle events](./getting-started/5-actions)
+  - [Write code](./getting-started/6-code)
+  - [Store data locally](./getting-started/7-storage)
   - [Display list of items](./getting-started/8-item-template)
   - [Style widgets](./getting-started/9-styling)
 
@@ -15,48 +15,58 @@
 
   - User Interface
     - [Page Structure](build/user-interface/1-page-structure)
-    - [Widgets](build/user-interface/2-widgets.md)
-    - [Layouts](build/user-interface/3-layouts.md)
-  - Extend your App
-    - [Using local assets](build/extend/1-local-assets.md)
-    - [Adding custom fonts](build/extend/2-custom-fonts.md)
-  - Define logic using Javascript
-
-    - [Intro - Limitations, When and How to use](build/javascript/README.md)
-    - [The `ensemble` object](build/javascript/Ensemble)
-    - [String](build/javascript/String)
-    - [Numbers](build/javascript/Numbers)
-    - [Date](build/javascript/Date)
-    - [Object and Array](build/javascript/MapAndArray)
-    - [Globals](build/javascript/Global)
-    - [Math](build/javascript/Math)
-    - [JSON](build/javascript/JSON)
-    - [JsonPath](build/javascript/JsonPath)
+    - [Widgets](build/user-interface/2-widgets)
+    - [Layouts](build/user-interface/3-layouts)
+    - [Theme](build/user-interface/4-theme)
+    - [Animations](build/extend/3-animations)
+  
 
   - Handle Data
+
+    - [Local Storage](build/handle-data/local-storage/1-local-storage)
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
-    - [Local Storage](build/handle-data/local-storage/1-local-storage.md)
 
-  - Make it interactive with Actions
-    - [invokeAPI](build/make-it-interactive/actions-and-events/1-invokeAPI.md)
-    - [executeCode](build/make-it-interactive/actions-and-events/2-executeCode.md)
-    - [openCamera](build/make-it-interactive/actions-and-events/3-openCamera.md)
-    - [openUrl](build/make-it-interactive/actions-and-events/4-openUrl.md)
-    - [startTimer](build/make-it-interactive/actions-and-events/5-startTimer.md)
-    - [showToast](build/make-it-interactive/actions-and-events/6-showToast.md)
+  - Authentication
+
+    - [Firebase](build/authentication/firebase)
+    - [Auth0](build/authentication/auth0)
+
+  - [Define logic](javascript-reference/README)
+  - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
+  - [Using local assets](build/local-assets)
+  - [Adding custom fonts](build/custom-fonts)
+  - [Application Secrets](build/secrets)
+  
 
 - Test
-  - [Preview your App](test/1-preview-app.md)
-- Deploy
-  - [Prepare your app for deployment](deploy/1-prepare-app.md)
-  - [Connecting to OAuth Services](deploy/2-oauth-services.md)
-  - [Deploy to iOS TestFlight](deploy/3-ios-appstore.md)
-  - [Deploy to Android devices](deploy/4-android-device.md)
-  - [Deploy to Google Play Store](deploy/5-android-play-store.md)
-  - [Prepare for production](deploy/6-prepare-for-production.md)
+  - [Preview your App](test/1-preview-app)
 
+- Deploy
+
+  - [Prepare your app for deployment](deploy/1-prepare-app)
+  - [Connecting to OAuth Services](deploy/2-oauth-services)
+  - [Deploy to iOS TestFlight](deploy/3-ios-appstore)
+  - [Deploy to Android devices](deploy/4-android-device)
+  - [Deploy to Google Play Store](deploy/5-android-play-store)
+  - [Prepare for production](deploy/6-prepare-for-production)
+  - [Making your app work when offline](deploy/7-offline-mode)
+ 
+- Define logic using Javascript
+
+  - [Intro - Limitations, When and How to use](javascript-reference/README)
+  - [The `ensemble` object](javascript-reference/Ensemble)
+  - [String](javascript-reference/String)
+  - [Numbers](javascript-reference/Numbers)
+  - [Date](javascript-reference/Date)
+  - [Object and Array](javascript-reference/MapAndArray)
+  - [Globals](javascript-reference/Global)
+  - [Math](javascript-reference/Math)
+  - [JSON](javascript-reference/JSON)
+  - [JsonPath](javascript-reference/JsonPath)
+  
 - [Widget reference](widget-reference/directory)
+- [Tips and Tricks](tips-and-tricks/directory)
 
 <!-- * [Exercises](./exercises/index)
   * [Prerequisite](./exercises/0-prerequisite)
