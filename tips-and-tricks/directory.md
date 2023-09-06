@@ -11,3 +11,4 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [Inputs to ChartJs](/tips-and-tricks/inputs-chartjs)
 - [How to get ListView/GridView to take up all available height](/tips-and-tricks/list-gridview-stretch-to-available-height)
 - [How to modify the BottomNavBar with custom styling and widgets](/tips-and-tricks/how-to-modify-bottom-navbar)
+- [Using navigate Screen with BottomNavBar](/tips-and-tricks/navigateScreen-with-bottomNavBar)
