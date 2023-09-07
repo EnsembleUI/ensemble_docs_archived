@@ -1,6 +1,4 @@
-# Here are some tips to help you avoid issues and build quickly
-
-## How to modify the BottomNavBar with custom styling and widgets
+# How to modify the BottomNavBar with custom styling and widgets
 
 #### Steps
 
