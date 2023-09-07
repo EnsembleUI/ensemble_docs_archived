@@ -9,4 +9,5 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [Making Progress Bars](/tips-and-tricks/progress-bars)
 - [Background Color issue in EnsembleUI Preview](/tips-and-tricks/background-color-ensemble-preview)
 - [Inputs to ChartJs](/tips-and-tricks/inputs-chartjs)
+- [How to get ListView/GridView to take up all available height](/tips-and-tricks/list_gridview_with_full_available_height)
 - [Some Pro Tips ](/tips-and-tricks/pro-tips)
