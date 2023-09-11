@@ -1,24 +1,17 @@
 # Action: openUrl
 
-`openUrl` action is used to open a URL in a browser or an external app. To open a URL in a browser, use the `openUrl` action with `url` property.
+openUrl action allows users to open external URLs or web links directly from the app, facilitating seamless integration with external content and enhancing the user's browsing experience within the application.
 
 ### Properties
-
-| Property | Type   | Description                                                |
-| :------- | :----- | :--------------------------------------------------------- |
-| type     | object | Open URL in ensemble or a separate app. [see properties]() |
-
-#### properties.type
 
 | Property          | Type    | Description                 |
 | :---------------- | :------ | :-------------------------- |
 | url               | string  | The URL to open             |
 | openInExternalApp | boolean | Open URL in an external app |
 
-**Usage Example**
+**Example**
 
-<div class="code-container" markdown=1>
-  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
+1.  This one is simple example related to how one can make use of `openUrl` to open given url inside browser or an external browser app in android or ios.
 
 ```yaml
 View:
@@ -47,12 +40,7 @@ View:
                             url: ${uri.value}
 ```
 
-</div>
-
 You can use `openInExternalApp` property, this will open the url in the right app based on the url scheme in native apps. For browser, it doesn't matter
-
-<div class="code-container" markdown=1>
-  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
 
 ```yaml
 - Button:
@@ -63,6 +51,17 @@ You can use `openInExternalApp` property, this will open the url in the right ap
         openInExternalApp: true
 ```
 
-</div>
+2. In this example we will open the default email app depending on the device or OS like on Windows its `Mail`.
+
+```yaml
+			- TextInput:
+				id: email
+				value: 'mailto: khurram.mahmood@gmail.com'
+			- Button:
+				label: Open Url
+				onTap:
+					openUrl:
+						url: ${email.value}
+```
 
 To learn more about how to use openUrl action, check out the [Ensemble Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/TnoazbWLihcenxD1NBkr) example.

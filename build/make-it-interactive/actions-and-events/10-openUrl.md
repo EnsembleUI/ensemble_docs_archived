@@ -11,8 +11,7 @@ openUrl action allows users to open external URLs or web links directly from the
 
 **Example**
 
-<div class="code-container" markdown=1>
-  <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
+1.  This one is simple example related to how one can make use of `openUrl` to open given url inside browser or an external browser app in android or ios.
 
 ```yaml
 View:
@@ -39,41 +38,73 @@ View:
                         onTap:
                           openUrl:
                             url: ${uri.value}
-
-                    - Button:
-                        label: Open Url in external app
-                        onTap:
-                          openUrl:
-                            url: ${uri.value}
-                            #openInExternalApp: true will open the url in the right app based on the url scheme in native apps. For browser, it doesn't matter
-                            openInExternalApp: true
-
-              - TextInput:
-                  id: email
-                  value: "mailto: khurram.mahmood@gmail.com"
-              - Button:
-                  label: Open Url
-                  onTap:
-                    openUrl:
-                      url: ${email.value}
-              - TextInput:
-                  id: tel
-                  value: "tel: +1 (201) 867-5309"
-              - Button:
-                  label: Open Url
-                  onTap:
-                    openUrl:
-                      url: ${tel.value}
-              - TextInput:
-                  id: sms
-                  value: "sms: +1 (201) 867-5309"
-              - Button:
-                  label: Open Url
-                  onTap:
-                    openUrl:
-                      url: ${sms.value}
 ```
 
-</div>
+You can use `openInExternalApp` property, this will open the url in the right app based on the url scheme in native apps. For browser, it doesn't matter
 
-Try complete example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/TnoazbWLihcenxD1NBkr?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+```yaml
+- Button:
+    label: Open Url in external app
+    onTap:
+      openUrl:
+        url: ${uri.value}
+        openInExternalApp: true
+```
+
+2. In this example we will open the default email app depending on the device or OS like on Windows its `Mail`.
+
+```yaml
+			- TextInput:
+				id: email
+				value: 'mailto: khurram.mahmood@gmail.com'
+			- Button:
+				label: Open Url
+				onTap:
+					openUrl:
+						url: ${email.value}
+```
+
+3. Will open the default `Phone` app depending on the android or ios.
+
+```yaml
+
+			- TextInput:
+				id: tel
+				value: 'tel: +1 (201) 867-5309'
+			- Button:
+				label: Open Url
+				onTap:
+					openUrl:
+						url: ${tel.value}
+
+```
+
+4. Will open the default `Message` app depending on the android or ios.
+
+```yaml
+
+			- TextInput:
+				id: sms
+				value: 'sms: +1 (201) 867-5309'
+			- Button:
+				label: Open Url
+				onTap:
+					openUrl:
+						url: ${sms.value}
+
+```
+
+5. Will open the default `Message` app depending on the android or ios along with pre populated text as equal to `body`.
+
+```yaml
+			- TextInput:
+				id: smsWithBody
+				value: "sms: +918812345678&body=Build amazing apps 20x faster using EnsembleUI"
+			- Button:
+				label: Open Url
+				onTap:
+					openUrl:
+						url: ${smsWithBody.value}
+```
+
+To learn more about how to use openUrl action, check out the [Ensemble Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/TnoazbWLihcenxD1NBkr) example.
