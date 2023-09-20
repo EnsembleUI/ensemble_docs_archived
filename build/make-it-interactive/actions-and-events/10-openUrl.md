@@ -7,7 +7,13 @@ openUrl action allows users to open external URLs or web links directly from the
 | Property          | Type    | Description                 |
 | :---------------- | :------ | :-------------------------- |
 | url               | string  | The URL to open             |
-| openInExternalApp | boolean | Open URL in an external app |
+| openInExternalApp | boolean | (optional) Default: false. Open URL in an external app |
+
+The openUrl action may be invoked from javascript as well by simply calling 
+```javascript
+ensemble.openUrl({url: 'https://ensembleui.com', openInExternalApp: true});
+```
+The openInExternalApp parameter is optional and has the default value of false. 
 
 **Example**
 
