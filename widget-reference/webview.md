@@ -11,6 +11,16 @@ The WebView Widget enables seamless integration of web content within native app
 | url      | string | Defines the web address (URL) to be loaded within the WebView widget. |
 | styles   | object | [See properties](#styles)                                             |
 
+## Events
+
+| Event | Description                                                           |
+| :------- | :-------------------------------------------------------------------- |
+| onPageStart      | Invoked when a page has started loading |
+| onPageFinished   | Invoked when a page has finished loading. |
+| onProgress   | Invoked when a page is loading to report the progress. |
+| onNavigationRequest   | Invoked when a decision for a navigation request is pending. When a navigation is initiated by the WebView (e.g when a user clicks a link) this delegate is called and has to decide how to proceed with the navigation. |
+| onWebResourceError | Invoked when a resource loading error occurred. |
+
 ### styles
 
 | Property                     | Type              | Description                                                                                                                                                                                                                                                                                                                       |
