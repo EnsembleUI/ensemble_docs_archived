@@ -371,10 +371,6 @@ You can also check live example [here](https://studio.ensembleui.com/app/e24402c
 
 ![Alt text](image-3.png)
 
-### End Sidebar
-
-A fixed navigation menu to the 'end' of the screen (right for most languages, left for RTL languages). The menu may become a drawer menu on lower resolution or screen sizes. Similar to [Sidebar](#sidebar) except that its on Right or end of the screen.
-
 ## Body
 
 The View requires a single widget defined as its child. This will act as the body content, and can only be a Column, Row, Flex, or Stack widget.
