@@ -52,6 +52,10 @@
   - [Prepare for production](deploy/6-prepare-for-production)
   - [Making your app work when offline](deploy/7-offline-mode)
 
+- Action Reference
+
+  - [Index](/actions-and-events/directory)
+
 - Define logic using Javascript
 
   - [Intro - Limitations, When and How to use](javascript-reference/README)
