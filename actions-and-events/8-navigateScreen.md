@@ -4,11 +4,12 @@ navigateScreen action allows users to transition to a specific screen or page wi
 
 ### Properties
 
-| Property | Type   | Description                                              |
-| :------- | :----- | :------------------------------------------------------- |
-| name     | string | Enter the Name or ID of your Screen                      |
-| inputs   | object | Specify the key/value pairs to pass into the next Screen |
-| options  | object | [see properties]()                                       |
+| Property       | Type   | Description                                                                             |
+| :------------- | :----- | :-------------------------------------------------------------------------------------- |
+| name           | string | Enter the Name or ID of your Screen                                                     |
+| inputs         | object | Specify the key/value pairs to pass into the next Screen                                |
+| options        | object | [see properties]()                                                                      |
+| onNavigateBack | action | triggers when users returns back to a screen it previously visited using navigateScreen |
 
 #### properties.options
 
@@ -118,3 +119,78 @@ View:
   </div>
 
 You can try complete example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/kgGUzKx0YiIWp96auaEO?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+
+### onNavigateBack
+
+We can also make use of onNavigateBack in our navigateScreen action to achieve certain goals like calling an API when returning to screen, updating something which was modified on visited screen etc.
+
+**Example**
+Below is only a snippet from a use case where we can perform any action inside the onNavigateBack event. We can call an API or update any particular parameter we want
+
+```yaml
+navigateScreen:
+  name: "${booking.completion_status == 'confirmed' ? 'ConfirmedTrip' : 'ConfirmTripRequest'}"
+  inputs:
+    booking: ${booking}
+  onNavigateBack: |-
+    ensemble.debug("got back")
+```
+
+Another example where using in context of a button we are updating certain local storage items inside the context of the onNavigateBack
+
+```yaml
+	- Button:
+		label: Categories
+		styles:
+			outline: true
+			padding: 0
+			labelStyle:
+			fontSize: 12
+			color: 0xff969ba1
+		endingIcon:
+			name: chevron_right
+			color: 0xff969ba1
+			size: 16
+		onTap:
+			navigateScreen:
+			name: Spending
+			onNavigateBack: |-
+				//@code
+				getCategoriesAggregate(ensemble.storage.timeSpan);
+```
+
+Note: here we are chaining actions onTap -> navigateScreen -> onNavigateBack etc. Also getCategories(...) is a function used to update certain local storage items.
+
+- We can also pass data from the visited screen to current screen using navigateBack action. let see an example for that as well.
+
+```yaml
+View:
+  header:
+    title: Home
+  body:
+    Button:
+      label: Checkout Ensemble Kitchen Sink
+      onTap:
+        navigateBack:
+          data: #  optional, can be simple or complex
+            var1: 1
+            var2: "s t r i n g"
+```
+
+on visited screen using navigateBack we pass certain variables which can be accessed on previous screen using onNavigateBack event.
+
+```yaml
+View:
+  header:
+    title: Home
+  body:
+    Button:
+      label: Checkout Ensemble Kitchen Sink
+      onTap:
+        navigateScreen:
+          name: nextScreen
+          onNavigateBack: |-
+            //@code
+            console.log("navigated back to main screen");
+            console.log(event.data);
+```

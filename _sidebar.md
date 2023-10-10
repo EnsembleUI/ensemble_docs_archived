@@ -55,6 +55,28 @@
 - Action Reference
 
   - [Index](/actions-and-events/directory)
+  - [invokeAPI](/actions-and-events/1-invokeAPI)
+  - [executeCode](/actions-and-events/2-executeCode)
+  - [openCamera](/actions-and-events/3-openCamera)
+  - [openUrl](/actions-and-events/4-openUrl)
+  - [startTimer](/actions-and-events/5-startTimer)
+  - [showToast](/actions-and-events/6-showToast)
+  - [navigateBack](/actions-and-events/7-navigateBack)
+  - [navigateScreen](/actions-and-events/8-navigateScreen)
+  - [navigateModalScreen](/actions-and-events/9-navigateModalScreen)
+  - [openUrl](/actions-and-events/10-openUrl)
+  - [showDialog](/actions-and-events/11-showDialog)
+  - [closeAllDialogs](/actions-and-events/12-closeAllDialogs)
+  - [stopTimer](/actions-and-events/13-stopTimer)
+  - [getLocation](/actions-and-events/14-getLocation)
+  - [uploadFiles](/actions-and-events/15-uploadFiles)
+  - [pickFiles](/actions-and-events/16-pickFiles)
+  - [copyToClipboard](/actions-and-events/17-copyToClipboard)
+  - [connectWallet](/actions-and-events/18-connectWallet)
+  - [openPlaidLink](/actions-and-events/21-openPlaidLink)
+  - [requestNotificationAccess](/actions-and-events/19-requestNotificationAccess)
+  - [showNotification](/actions-and-events/20-showNotification)
+  - [notification](/actions-and-events/21-notification)
 
 - Define logic using Javascript
 
