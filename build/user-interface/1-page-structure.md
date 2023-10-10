@@ -5,7 +5,7 @@ An Ensemble app comprises a series of pages and assets. Each page starts with a 
 List of things you will find reference and details here.
 
 - [View](#view)
-- [ViewGroup](#viewGroup)
+- [ViewGroup](#view-group)
 - [header](#header)
 - [Menu](#menu)
 - [Body](#body)
@@ -225,7 +225,7 @@ This sippet has example for how user can utilize
 1. Custom widgets as items for the menu
 2. Floating icons
 
-you can check the complete example [here](https://studio.ensembleui.com/app/99NjTh75fWrVwXEhFdf4/screen/bNbZcqkvxIbC5PNUc1bX?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=trues).
+you can check the complete example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/aa634599-cd5d-411c-a4b6-1163f3b5c558).
 
 ##### Output
 
@@ -290,7 +290,7 @@ View:
 
 </div>
 
-You can also check live example [here](https://studio.ensembleui.com/app/99NjTh75fWrVwXEhFdf4/screen/WNFwQa801fyqq0PQcSmR?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+You can also check live example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/0073ebe9-6b0b-4ebf-9e8b-72a93a1275df#)
 
 ##### Output
 
@@ -299,7 +299,7 @@ You can also check live example [here](https://studio.ensembleui.com/app/99NjTh7
 
 ### End Drawer
 
-Similar to Drawer but the drawer icon will be positioned to the 'end' of the header (right for most languages, left for RTL languages). You can check its properties [here](#drawerproperties)
+Similar to Drawer but the drawer icon will be positioned to the 'end' of the header (right for most languages, left for RTL languages). You can check its properties [here](#drawerproperties). You can find its example in [Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/YIcCi9aXiGJKftQRNi34#)
 
 ### SideBar
 
@@ -365,7 +365,7 @@ View:
 
 </div>
 
-You can also check live example [here](https://studio.ensembleui.com/app/99NjTh75fWrVwXEhFdf4/screen/3jJUs1mDyLTS6VVvQobO?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+You can also check live example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/QZyoRkHHrHEAkGJMwoNU#)
 
 ##### Output
 

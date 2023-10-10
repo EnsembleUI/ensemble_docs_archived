@@ -14,12 +14,12 @@
 - Build
 
   - User Interface
+
     - [Page Structure](build/user-interface/1-page-structure)
     - [Widgets](build/user-interface/2-widgets)
     - [Layouts](build/user-interface/3-layouts)
     - [Theme](build/user-interface/4-theme)
     - [Animations](build/extend/3-animations)
-  
 
   - Handle Data
 
@@ -37,9 +37,9 @@
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
   - [Application Secrets](build/secrets)
-  
 
 - Test
+
   - [Preview your App](test/1-preview-app)
 
 - Deploy
@@ -51,7 +51,7 @@
   - [Deploy to Google Play Store](deploy/5-android-play-store)
   - [Prepare for production](deploy/6-prepare-for-production)
   - [Making your app work when offline](deploy/7-offline-mode)
- 
+
 - Define logic using Javascript
 
   - [Intro - Limitations, When and How to use](javascript-reference/README)
@@ -64,7 +64,7 @@
   - [Math](javascript-reference/Math)
   - [JSON](javascript-reference/JSON)
   - [JsonPath](javascript-reference/JsonPath)
-  
+
 - [Widget reference](widget-reference/directory)
 - [Tips and Tricks](tips-and-tricks/directory)
 
