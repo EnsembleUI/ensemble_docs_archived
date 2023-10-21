@@ -9,7 +9,7 @@ The GridView Widget empowers you to render grid-based layouts, enabling the disp
 | Property      | Type   | Description                                                                             |
 | :------------ | :----- | :-------------------------------------------------------------------------------------- |
 | item-template | object | [See properties](#item-template)                                                        |
-| onItemTap     |        | Call Ensemble's built-in functions or execute code when tapping on an item in the list. |
+| onItemTap     |        | Call Ensemble's built-in functions or execute code when tapping on an item in the list. The index of the item can be retrieved using 'selectedItemIndex'. You can access as this.selectedItemIndex. See example linked above |
 | styles        | object | [See properties](#styles)                                                               |
 
 ### item-template
