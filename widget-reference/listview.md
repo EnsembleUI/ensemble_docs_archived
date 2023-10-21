@@ -10,7 +10,7 @@ The ListView Widget enables the rendering of lists with dynamic and scrollable c
 | :---------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | item-template     | object  | [See properties](#item-template)                                                                                                                                        |
 | children          | array   | List of widgets                                                                                                                                                         |
-| onItemTap         | action  | Dispatch when an ListView item is selected/tapped.The event dispatches only when you tap on the item. The index of the item can be retrieved using 'selectedItemIndex'. |
+| onItemTap         | action  | Dispatch when an ListView item is selected/tapped.The event dispatches only when you tap on the item. The index of the item can be retrieved using 'selectedItemIndex'. You can access as this.selectedItemIndex. See example linked above|
 | selectedItemIndex | integer | Selecting a ListView item gives the index of selected item                                                                                                              |
 | onSwipeToRefresh  | action  | Enable swipe to refresh. This will trigger onRefresh action if enabled                                                                                                  |
 | styles            | object  | [See properties](#styles)                                                                                                                                               |
