@@ -36,6 +36,7 @@ Ensemble widgets enable you to build both simple and complex applications.
 | Carousel      | [Link](/widget-reference/carousel)         | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/2e1d88b1-f281-4c2c-9bb1-bd18016d2b8c) |
 | Divider       | [Link](/widget-reference/divider)          | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/4a893a2e-5bde-400c-b974-b25b497d31a5) |
 | Spacer        | [Link](/widget-reference/spacer)           | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/1d7e42a9-5bbc-4b4b-9a02-8c102234ee05) |
+| Shape         | [Link](/widget-reference/shape)            | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/Lg2nljyD46n2hiAUlBMP)                 |
 
 ### Forms and inputs
 
