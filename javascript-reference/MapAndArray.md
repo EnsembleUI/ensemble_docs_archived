@@ -6,7 +6,70 @@ Any property of a javascript object may be accessed using either the parenthesis
 - or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
 ## Methods
+### keys()
+Just like the Object.keys() method in javascript. Returns an array containing the keys (propery names) of an object. 
 
+#### Returns
+Returns an array containing the keys (propery names) of an object. 
+
+Example - 
+```js
+var headers = {};
+headers['abc'] = 'xyz';
+headers['def'] = 123;
+headers['ghi'] = '456';      
+var keys = headers.keys();
+keys.forEach(function(key) {
+  console.log(key + ':' + headers[key]);
+});
+/* outputs
+abc:xyz
+def:123
+ghi:456
+*/
+```
+### values()
+Just like the Object.values() method in javascript. Returns an array containing the values (propery values) of an object. 
+
+#### Returns
+Returns an array containing the values (propery values) of an object. 
+
+Example - 
+```js
+var headers = {};
+headers['abc'] = 'xyz';
+headers['def'] = 123;
+headers['ghi'] = '456';      
+headers.values().forEach(function(val) {
+  console.log(val);
+});
+/* outputs
+xyz
+123
+456
+*/
+```
+### entries()
+Just like the Object.entries() method in javascript. Returns an array containing the entries  of an object where each entry is an object - {key:<key>,value:<value>} 
+
+#### Returns
+Returns an array containing the values (propery values) of an object. 
+
+Example - 
+```js
+var headers = {};
+headers['abc'] = 'xyz';
+headers['def'] = 123;
+headers['ghi'] = '456';      
+headers.entries().forEach(function(entry) {
+  console.log(entry.key + ':' + entry.value);
+});  
+/* outputs
+abc:xyz
+def:123
+ghi:456
+*/
+```
 ### path(jsonPath,mapFunction)
 The `path` method is a function that takes a JSON path as a string and an optional mapping function as arguments. The function traverses the object using the provided path and returns a list of the values found at that path.
 
