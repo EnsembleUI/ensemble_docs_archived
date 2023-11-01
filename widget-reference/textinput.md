@@ -27,6 +27,7 @@ The TextInput Widget enables the rendering of interactive text input fields, all
 | textStyle               | object  | An opaque object that determines the size, color, and decoration of text. Similar properties as hintStyle [see properties](#hintstyles)                                                                                           |
 | mask                    | string  | It formats the input by a given mask. Ex: +# (###) ###-##-##. detailed examples can be seen in [Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/abc081b1-bcb4-4db6-ae55-7987cb6c418e) |
 | delayedKeyPressDuration | integer | The delay in milliseconds to trigger onDelayedKeyPress ( min : 0)                                                                                                                                                                 |
+| maxLines                | integer | maximum number of lines allowed in a textinput. Default is 1 |
 
 ### Actions
 
