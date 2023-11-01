@@ -10,6 +10,8 @@ navigateModalScreen action enables users to open a specific screen or page as a 
 | inputs         | object | Specify the key/value pairs to pass into the next Screen |
 | onModalDismiss | action | Execute an Action when the modal screen is dismissed     |
 
+**Note:** To close the modal from within the modal screen, just call the [navigateBack](7-navigateBack.md) action
+
 **Example**
 
 <div class="code-container" markdown=1>
