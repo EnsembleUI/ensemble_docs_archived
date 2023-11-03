@@ -20,7 +20,9 @@ console.log(obj.result);
 // Expected output: true
 ```
 ### stringify()
-The JSON.stringify() static method converts a JavaScript value to a JSON string
+The JSON.stringify() static method converts a JavaScript value to a JSON string.
+
+Types that are directly converted to json strings - string, number, array, object (map), boolean and date. Date objects are converted to string by calling the toISOString() method. 
 
 #### Returns
 Returns a string representing the json object 
