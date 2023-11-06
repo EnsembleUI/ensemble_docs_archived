@@ -150,24 +150,25 @@ navigateScreen:
 Another example where using in context of a button we are updating certain local storage items inside the context of the onNavigateBack
 
 ```yaml
-	- Button:
-		label: Categories
-		styles:
-			outline: true
-			padding: 0
-			labelStyle:
-			fontSize: 12
-			color: 0xff969ba1
-		endingIcon:
-			name: chevron_right
-			color: 0xff969ba1
-			size: 16
-		onTap:
-			navigateScreen:
-			name: Spending
-			onNavigateBack: |-
-				//@code
-				getCategoriesAggregate(ensemble.storage.timeSpan);
+- Button:
+    label: Categories
+    styles:
+      outline: true
+      padding: 0
+    labelStyle:
+      fontSize: 12
+      color: 4288060321
+    endingIcon:
+      name: chevron_right
+      color: 4288060321
+      size: 16
+    onTap: null
+    navigateScreen:
+      name: Spending
+      onNavigateBack: |-
+        //@code
+        getCategoriesAggregate(ensemble.storage.timeSpan);
+
 ```
 
 Note: here we are chaining actions onTap -> navigateScreen -> onNavigateBack etc. Also getCategories(...) is a function used to update certain local storage items.
