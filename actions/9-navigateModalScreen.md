@@ -45,6 +45,8 @@ View:
 
                   // no inputs
                   ensemble.navigateModalScreen('Actions & events');
+                  //with inputs
+                  //ensemble.navigateModalScreen({name: 'Actions & events',inputs:{input1: 'abc', input2: 'ced'}} );
 ```
 
 </div>
