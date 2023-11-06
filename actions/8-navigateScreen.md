@@ -122,6 +122,14 @@ View:
 
 You can try complete example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/kgGUzKx0YiIWp96auaEO?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
 
+**Example: Calling navigateScreen in Javascript**
+
+```javascript
+//navigating to a screen without any options
+ensemble.navigateScreen('My Screen');
+//navigating to a screen with options
+ensemble.navigateScreen({name: 'My Screen',options: {replaceCurrentScreen: true}}
+```
 
 ### onNavigateBack
 
