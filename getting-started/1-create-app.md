@@ -13,6 +13,6 @@ Get started by creating a new UI in [Ensemble Studio](https://studio.ensembleui.
 
 Along with the app, a screen is created. You can add additional screens as you go along to complete your app.
 
-In the editor, you see the definition for the UI of your screen that is rendered on the `right`. While in `center` is a default generated yaml code which is generated whenever a new screen or an App is created. On `left` is `Widget Tree` which shows all the widgets you have used ( coming soon ).
+In the editor, you see the definition for the UI of your screen that is rendered on the `right`. While in `center` is a default generated yaml code which is generated whenever a new screen or an App is created. On `left` is `Widget Tree` which shows all the widgets you have used.
 
 ![Alt text](image-2.png)
