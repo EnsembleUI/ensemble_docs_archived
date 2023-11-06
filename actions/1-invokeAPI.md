@@ -163,7 +163,7 @@ To handle Errors, you can use the `onError` property:
         - Text:
             text: Handle error
         - Button:
-            label: Call t h e API 
+            label: Call API 
             onTap:
               invokeAPI:
                 name: createToDoError
