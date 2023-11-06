@@ -20,7 +20,7 @@ Like any other action, navigateScreen may be called in YAML or in the JS code.
 | replaceCurrentScreen | boolean | If true, the new screen will replace the current screen on the navigation history. Navigating back from the new screen will skip the current screen.                                          |
 | clearAllScreens      | boolean | If true, clear out all existing screens in the navigation history. This is useful when navigating to a Logout or similar page where users should not be able to go back to the prior screens. |
 
-**Example: Calling navigateScreen in YAML**
+**Example: Calling navigateScreen - Detailed Examples for YAML and JS**
 
 <div class="code-container" markdown=1>
   <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
