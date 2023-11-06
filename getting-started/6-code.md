@@ -30,4 +30,4 @@ View:
 
 **Note**
 
-Ensemble uses ES5 syntax so using `let`, `const`, `arrow functions ()=>()` is not supported yet. However you can make use use plain functions and `var` for declaring variables. See more details about JavaScript in ensemble [here](/build/javascript/README)
+Ensemble uses ES5 syntax so using `let`, `const`, `arrow functions ()=>()` is not supported yet. However you can make use use plain functions and `var` for declaring variables. See more details about JavaScript in ensemble [here](/javascript-reference/README)

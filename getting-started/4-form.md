@@ -1,6 +1,8 @@
 # Add a Form
 
-Here is our code until now
+Let’s create a simple Form starting with this base code you can copy and paste into Ensemble Studio
+
+A Form is a container widget with special behavior such as `onSubmit` event handler.
 
 ```yaml
 View:
@@ -30,7 +32,7 @@ View:
 
 Let's create a simple form with one text input and a button. Start by removing the [Text](/widget-reference/text) and [Button](/widget-reference/button) widget and add a [Form](/widget-reference/form) widget instead.
 
-A Form is a container widget with special behavior such as `onSubmit` event handler.
+Take note of proper indentation and make sure everything is nested within another; messing this up could cause misrepresentation of the app's data hierarchy.
 
 ### Add a TextInput
 
