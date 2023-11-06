@@ -2,6 +2,8 @@
 
 navigateScreen action allows users to transition to a specific screen or page within the app, facilitating seamless navigation and enhancing user interaction with different sections of the application.
 
+Like any other action, navigateScreen may be called in YAML or in the JS code. 
+
 ### Properties
 
 | Property       | Type   | Description                                                                             |
@@ -18,7 +20,7 @@ navigateScreen action allows users to transition to a specific screen or page wi
 | replaceCurrentScreen | boolean | If true, the new screen will replace the current screen on the navigation history. Navigating back from the new screen will skip the current screen.                                          |
 | clearAllScreens      | boolean | If true, clear out all existing screens in the navigation history. This is useful when navigating to a Logout or similar page where users should not be able to go back to the prior screens. |
 
-**Example**
+**Example: Calling navigateScreen in YAML**
 
 <div class="code-container" markdown=1>
   <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
@@ -119,6 +121,7 @@ View:
   </div>
 
 You can try complete example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/kgGUzKx0YiIWp96auaEO?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+
 
 ### onNavigateBack
 
