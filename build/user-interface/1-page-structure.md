@@ -1,6 +1,6 @@
 # Ensemble Page Structure
 
-An Ensemble app comprises a series of pages and assets. Each page starts with a [View](#menu), followed by an optional [header](#header), an optional [menu](#menu), and a single widget for the body. There can be one of two things on ensemble page either a [View](#view) or group of multiple views together as [ViewGroup](#viewGroup).
+An Ensemble app comprises a series of pages and assets. Each page starts with a [View](#view), followed by an optional [header](#header), an optional [menu](#menu), and a single widget for the body. There can be one of two things on ensemble page either a [View](#view) or group of multiple views together as [ViewGroup](#view-group).
 
 List of things you will find reference and details here.
 
@@ -20,7 +20,7 @@ The ViewGroup widget allows you to group multiple Views together and organize th
 
 ### Example
 
-let us take an example with a `Bottom Navigation Bar` menu type.
+Let's look at an example with a `Bottom Navigation Bar` menu type.
 
 <div class="code-container" markdown=1>
   <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
@@ -47,7 +47,7 @@ ViewGroup:
 
 </div>
 
-where each page denotes an individual `view`. Complete example can be found [here](https://studio.ensembleui.com/app/3vEZBIhDyYnIQo6BLN2O/screen/Wewvp6ZUyb0PBwkTAltQ?propertyPanelEnabled=true&instantPreviewDisabled=false)
+Check it out in [studio](https://studio.ensembleui.com/app/3vEZBIhDyYnIQo6BLN2O/screen/Wewvp6ZUyb0PBwkTAltQ?propertyPanelEnabled=true&instantPreviewDisabled=false)
 
 ##### Output
 
@@ -55,7 +55,7 @@ where each page denotes an individual `view`. Complete example can be found [her
 
 ## View
 
-The View widget defines the overall structure of a page, encompassing properties like header, body and more, to create a cohesive layout and presentation within your application. View requires only body while other components like [header](#header) and [menu](#menu) are optional.
+The View widget defines the overall structure of a page, including properties like header, body and more, to create a cohesive layout and presentation within your application. View requires only body while other components like [header](#header) and [menu](#menu) are optional.
 
 #### Properties
 
@@ -83,7 +83,7 @@ The View widget defines the overall structure of a page, encompassing properties
 | Property  | Type   | Description                                                                                                                                        |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | source    | string | The Image URL to fill the background                                                                                                               |
-| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see options](#fit-options-for-stylesbackgroundimage) |
+| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see options](#fit-options-for-stylesbackgroundImage) |
 | alignment | string | Alignment of the background image                                                                                                                  |
 
 #### Fit options for styles.backgroundImage
@@ -391,7 +391,7 @@ API provides a convenient way to interact with external services or data sources
 | onError    | Action | The action to handle errors                                                     |
 | inputs     | Array  | The input values                                                                |
 
-You can find many great example [here](/build/make-it-interactive/actions-and-events/1-invokeAPI)
+You can find many great example [here](/actions/1-invokeAPI)
 
 ## Global
 
@@ -496,4 +496,4 @@ menu:
 
 ![Alt text](image-4.png)
 
-You can check the complete App [here](https://studio.ensembleui.com/app/gVHb1fcLAjm373WtCK4l/screen/WEov9pB3G4nmuFLl0qx3?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
+You can check the complete App [here](https://studio.ensembleui.com/app/iM58Wgr7bgzTxEi7rV40/screen/cYMnCfhOya8Vq1QG6aCC?propertyPanelEnabled=true&instantPreviewDisabled=false)
