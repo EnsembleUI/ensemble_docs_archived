@@ -14,7 +14,7 @@ To achieve this, consider the following steps:
       items:
         - label: Home
           icon: search 
-          page: Home
+          screen: Home
     ```
 
 2. fontAwesome Icons:
@@ -26,9 +26,9 @@ To achieve this, consider the following steps:
       items:
         - label: Favourite
           icon: heart
-          page: Home
+          screen: Home
           iconLibrary: fontAwesome
     ```
-    
+
 3. Active Icons:
     If an active state icon is needed (e.g., a different icon when the item is selected), use the activeIcon attribute. 
