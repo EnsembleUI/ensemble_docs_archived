@@ -7,8 +7,8 @@ and vibrate does a short vibrate pulse. It also supports playing haptic by JavaS
 
 | Property  | Type   | Description                                              |
 | :-------- | :----- | :------------------------------------------------------- |
-| type      | enum   | The text to copy to clipboard                            |
-| onComplete| action | Execute another Action upon successful copy to clipboard |
+| type      | enum   | The type of haptic to perform. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
+| onComplete| action | Execute another Action post executing the haptic |
 
 **Example**
 
@@ -42,4 +42,4 @@ View:
             //@code
             console.log("Button Press")
 ```
-
+</div>
