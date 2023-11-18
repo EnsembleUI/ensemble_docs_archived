@@ -9,6 +9,7 @@ StaggeredGrid is a versatile widget that arranges its children in a staggered la
 | Property      | Type   | Description                                                                             |
 | :------------ | :----- | :-------------------------------------------------------------------------------------- |
 | onItemTap     | action | Call Ensemble's built-in functions or execute code when tapping on an item in the list. |
+| onItemTapHaptic | enum | The type of haptic to perform when a item is pressed. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
 | children      | array  | List of widgets                                                                         |
 | styles        | object | [See properties](#styles)                                                               |
 | item-template | object | [See properties](#item-template)                                                        |

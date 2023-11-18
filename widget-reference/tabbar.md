@@ -11,6 +11,8 @@ The TabBar Widget enables the creation of tab bars, providing a convenient and v
 | styles        | object  | [See properties](#styles)                |
 | selectedIndex | integer | Selecting a Tab based on its index order |
 | items         | array   | Define each of your Tab here             |
+| onTabSelection | action | The action that will be performed when a tab is pressed. |
+| onTabSelectionHaptic | enum | The type of haptic to perform when a tab is pressed. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
 
 ### styles
 
