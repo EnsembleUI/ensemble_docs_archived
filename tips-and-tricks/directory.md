@@ -12,4 +12,4 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [How to get ListView/GridView to take up all available height](/tips-and-tricks/list-gridview-stretch-to-available-height)
 - [How to modify the BottomNavBar with custom styling and widgets](/tips-and-tricks/how-to-modify-bottom-navbar)
 - [Using navigate Screen with BottomNavBar](/tips-and-tricks/navigateScreen-with-bottomNavBar)
-- [Open a custom progress dialog and then close it on an event such as an API response](/tips-and-tricks/custom-progress-dialog-close-on-an-event)
+- [Open a custom progress dialog and then close it on an event such as an API response](/tips-and-tricks/custom-progress-dialog-close-on-an-event.md)
