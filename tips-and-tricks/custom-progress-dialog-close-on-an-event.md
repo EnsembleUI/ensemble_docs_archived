@@ -1,4 +1,8 @@
-One common theme in most apps is to show a progress dialog while an API is being processed on the server and close it when the response from the API has been received. This can easily be achieved as follows. 
+One common theme in most apps is to show a progress dialog while an API is being processed on the server and close it when the response from the API has been received. This can easily be achieved as follows. Note the use of closeAllDialogs action. 
+
+This method will not work when the progress container is being displayed on top of an existing dialog as closeAllDialogs will close the dialog under it as well which may not be what you desire. 
+
+Lastly a dialog is not the samething as a modal that is displayed with navigateModalScreen. Calling closeAllDialogs does NOT close the modal that is opened with navigateModalScreen
 
   ```yaml
           - Button:
