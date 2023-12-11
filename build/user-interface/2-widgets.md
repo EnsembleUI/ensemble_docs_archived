@@ -57,4 +57,4 @@ Ensemble widgets enable you to build both simple and complex applications. Here 
 | Widget             | Documentation                                                     | Kitchen sink example                                                                                                       |
 | ------------------ | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Progress indicator | [Link](/widget-reference/progressindicator)                       | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/c2c248f2-a289-40d3-acd5-65a1a7f3c5a2) |
-| Toast message      | [Link](/build/make-it-interactive/actions-and-events/6-showToast) | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/9a576805-019a-4bd3-953f-3c623fbfb905) |
+| Toast message      | [Link](/actions/6-showToast) | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/9a576805-019a-4bd3-953f-3c623fbfb905) |
