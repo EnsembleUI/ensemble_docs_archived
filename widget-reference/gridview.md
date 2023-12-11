@@ -9,7 +9,8 @@ The GridView Widget empowers you to render grid-based layouts, enabling the disp
 | Property      | Type   | Description                                                                             |
 | :------------ | :----- | :-------------------------------------------------------------------------------------- |
 | item-template | object | [See properties](#item-template)                                                        |
-| onItemTap     |        | Call Ensemble's built-in functions or execute code when tapping on an item in the list. The index of the item can be retrieved using 'selectedItemIndex'. You can access as this.selectedItemIndex. See example linked above |
+| onItemTap     | action | Call Ensemble's built-in functions or execute code when tapping on an item in the list. The index of the item can be retrieved using 'selectedItemIndex'. You can access as this.selectedItemIndex. See example linked above |
+| onItemTapHaptic | enum | The type of haptic to perform when item is pressed. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
 | styles        | object | [See properties](#styles)                                                               |
 
 ### item-template

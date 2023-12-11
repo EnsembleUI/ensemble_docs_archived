@@ -12,6 +12,7 @@ A control that can execute an action on tap or click.
 | enabled      | boolean | Enables or disables the interactivity and input functionality of the widget                                         |
 | submitForm   | boolean | If the button is inside a Form and upon on tap, it will execute the form's onSubmit action if this property is TRUE |
 | onTap        | action  | Call Ensemble's built-in functions or execute code                                                                  |
+| onTapHaptic | enum | The type of haptic to perform when button is pressed. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
 | styles       | object  | [see properties](#styles)                                                                                           |
 | endingIcon   | object  | Icon placed behind the label, according to device text alignment                                                    |
 | startingIcon | object  | Icon placed in front of the label, according to device text alignment                                               |

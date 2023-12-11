@@ -10,13 +10,20 @@ The Lottie Render Widget allows you to effortlessly render Lottie animation file
 | :------- | :----- | :---------------------------------------- |
 | source   | string | URL or asset name of the Lottie json file |
 | styles   | object | [See properties](#styles)                 |
+| onForward | action | Callback which is fired when the animation starts playing in the forward direction |
+| onReverse | action | Callback which is fired when the animation starts playing in the reverse direction |
+| onComplete | action | Callback which is fired when the animation is completed |
+| onTap | action | Run a block of code or execute a given action when there is a tap event on lottie widget |
+| onStop | action | Callback which is fired when the animation is stopped. This is fired only when animation is stopped or aborted in between. |
+| autoPlay | boolean | Whether to automatically start the animation in the forward direction (default true) |
+| repeat | boolean | Whether we should repeat the animation (default true) |
+| onTapHaptic | enum | The type of haptic to perform when lottie is pressed. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
 
 ### styles
 
 | Property                     | Type              | Description                                                                                                                                                                                                                                                                                                                       |
 | :--------------------------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | expanded                     | boolean           | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g stretch horizontally for parent of type Row)                                                                                                                                                                              |
-| repeat                       | boolean           | Whether we should repeat the animation (default true)                                                                                                                                                                                                                                                                             |
 | fit                          | string            | How to fit the Lottie animation within our width/height or our parent (if dimension is not specified) . [see options](#fit-options-for-stylesbackgroundimage)                                                                                                                                                                     |
 | borderRadius                 | string or integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                                                                                             |
 | borderColor                  | integer or string | Sets the border color, starting with '0xFF' for full opacity. `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange`                                                                                                                           |

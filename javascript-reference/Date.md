@@ -175,6 +175,27 @@ var date = new Date();
 var jsonString = date.toJSON();
 console.log(jsonString); // Example output: "2022-06-02T10:49:07.521Z"
 ```
+### toString()
+Returns the Date object as a human readable string. It does not support internationalized strings.
+This string can be parsed back into the Date object using the parse() method
+
+Example:
+```js
+var date = new Date();
+var str = date.toString()
+console.log(str); // Example output: "2023-11-02 17:03:32.094453"
+```
+### toISOString()
+Returns the Date object as a ISO8601 string. It does not support internationalized strings.
+This string can be parsed back into the Date object using the parse() method
+
+Example:
+```js
+var event = new Date('2023-11-02 17:07:35.053068');
+var str = date.toISOString()
+console.log(str); // Example output: "2023-11-03T00:07:35.053068Z"
+```
+
 ## UTC Methods
 These methods are similar to their local-time counterparts but use UTC time instead of local time.
 
