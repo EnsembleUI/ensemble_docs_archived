@@ -98,6 +98,17 @@ Arrays behave exactly as they would in regular javascript. You can access an ite
 - Let us know on our [Discord server](https://discord.gg/k4CJeuRc) if you need any of other capabilities
 - or open a [ticket](https://github.com/EnsembleUI/ensemble/issues)
 
+## Properties
+### length
+Returns the length of the array. Works exactly like the javascript arrays. 
+
+**Example:**
+
+```javascript
+var numbers = [1, 4, 9];
+console.log(roots.length); // 3
+```
+
 ## Methods
 ### map
 

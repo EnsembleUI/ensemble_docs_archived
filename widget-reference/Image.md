@@ -10,6 +10,7 @@ The Image Render Widget provides a simple and intuitive way to display images wi
 | :------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | source   | string | URL to or asset name of the image. If the URL is used, it is highly recommended that the dimensions is set (either with width/height or other means) to prevent the UI jerkiness while loading. |
 | onTap    | action | Call Ensemble's built-in functions or execute code                                                                                                                                              |
+| onTapHaptic | enum | The type of haptic to perform when image is pressed. It should be one of heavyImpact, mediumImpact, lightImpact, selectionClick, and vibrate |
 | styles   | object | [See properties](#styles)                                                                                                                                                                       |
 
 ### styles

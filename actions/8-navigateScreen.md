@@ -2,6 +2,8 @@
 
 navigateScreen action allows users to transition to a specific screen or page within the app, facilitating seamless navigation and enhancing user interaction with different sections of the application.
 
+Like any other action, navigateScreen may be called in YAML or in the JS code. 
+
 ### Properties
 
 | Property       | Type   | Description                                                                             |
@@ -18,7 +20,7 @@ navigateScreen action allows users to transition to a specific screen or page wi
 | replaceCurrentScreen | boolean | If true, the new screen will replace the current screen on the navigation history. Navigating back from the new screen will skip the current screen.                                          |
 | clearAllScreens      | boolean | If true, clear out all existing screens in the navigation history. This is useful when navigating to a Logout or similar page where users should not be able to go back to the prior screens. |
 
-**Example**
+**Example: Calling navigateScreen - Detailed Examples for YAML and JS**
 
 <div class="code-container" markdown=1>
   <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
@@ -120,6 +122,15 @@ View:
 
 You can try complete example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/kgGUzKx0YiIWp96auaEO?propertyPanelEnabled=true&instantPreviewDisabled=false&editorV2Enabled=true)
 
+**Example: Calling navigateScreen in Javascript**
+
+```javascript
+//navigating to a screen without any options
+ensemble.navigateScreen('My Screen');
+//navigating to a screen with options
+ensemble.navigateScreen({name: 'My Screen',options: {replaceCurrentScreen: true}}
+```
+
 ### onNavigateBack
 
 We can also make use of onNavigateBack in our navigateScreen action to achieve certain goals like calling an API when returning to screen, updating something which was modified on visited screen etc.
@@ -139,24 +150,25 @@ navigateScreen:
 Another example where using in context of a button we are updating certain local storage items inside the context of the onNavigateBack
 
 ```yaml
-	- Button:
-		label: Categories
-		styles:
-			outline: true
-			padding: 0
-			labelStyle:
-			fontSize: 12
-			color: 0xff969ba1
-		endingIcon:
-			name: chevron_right
-			color: 0xff969ba1
-			size: 16
-		onTap:
-			navigateScreen:
-			name: Spending
-			onNavigateBack: |-
-				//@code
-				getCategoriesAggregate(ensemble.storage.timeSpan);
+- Button:
+    label: Categories
+    styles:
+      outline: true
+      padding: 0
+    labelStyle:
+      fontSize: 12
+      color: 4288060321
+    endingIcon:
+      name: chevron_right
+      color: 4288060321
+      size: 16
+    onTap: null
+    navigateScreen:
+      name: Spending
+      onNavigateBack: |-
+        //@code
+        getCategoriesAggregate(ensemble.storage.timeSpan);
+
 ```
 
 Note: here we are chaining actions onTap -> navigateScreen -> onNavigateBack etc. Also getCategories(...) is a function used to update certain local storage items.
