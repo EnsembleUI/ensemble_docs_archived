@@ -20,39 +20,40 @@ The HTML Render Widget enables seamless rendering of HTML code within your appli
 
 ### properties
 
-| Property               | Type   | Description                                       |
-| :--------------------- | :----- | :------------------------------------------------ |
-| backgroundColor        | string | Sets the background color of an element. Useful for emphasizing or styling page sections.                           |
-| color                  | string | Defines the text color within an element, impacting readability and visual hierarchy.                                 |
-| counterIncrement       | string | Specifies the increment value for counters, facilitating dynamic list numbering or tracking.                         |
-| counterReset           | string | Determines the reset value for counters, useful for restarting or initializing counting sequences.                    |
-| direction              | string | Sets the text direction, crucial for proper alignment in multilingual content.                                        |
-| display               | string | Specifies the box model used for an element, influencing its layout and rendering behavior.                             |
-| fontFamily            | string | Defines the font family for text, allowing customization of the typeface for stylistic or thematic consistency.          |
-| fontFeatureSettings    | string | Enables advanced typographic features in fonts, providing fine control over ligatures and stylistic elements.           |
-| fontSize              | string | Sets the font size within an element, influencing the overall visual hierarchy and readability of content.              |
-| fontStyle             | string | Specifies the style of the font, such as italic or normal, contributing to the visual emphasis of displayed text.        |
-| fontWeight            | string | Sets the thickness of characters within a text element, allowing for varied emphasis and hierarchy in content.          |
-| height                | string | Defines the height of an element, offering control over vertical dimensions and aspect ratios.                          |
-| letterSpacing         | string | Adjusts the spacing between characters in text, providing fine-tuned control over readability and aesthetics.           |
-| listStyleImage        | string | Sets an image as the list-item marker, allowing customization of list styles with distinctive visual markers.          |
-| listStyleType         | string | Defines the type of marker or style for list items, contributing to the overall appearance and theme of content lists.    |
-| listStylePosition     | string | Sets the position of the list-item marker, influencing its placement in relation to list item content and surroundings.  |
-| margin                | string | Sets the margin outside an element's border, controlling spacing between the element and its neighboring elements.        |
-| padding               | string | Defines the padding inside an element's border, ensuring space between the element's content and its border.             |
-| textAlign             | string | Aligns text within an element, controlling horizontal positioning such as left-aligned, center-aligned, or right-aligned.|
-| textDecoration        | string | Adds decoration to text, like underline or overline, enhancing visual appeal or conveying additional information.        |
-| textDecorationColor   | string | Sets the color of the text decoration, allowing coordination with the document's color scheme.                            |
-| textDecorationStyle   | string | Defines the style of the text decoration, influencing its visual appearance with options like solid, dashed, or dotted lines.|
-| textDecorationThickness| string | Specifies the thickness of the text decoration, providing control over its visual prominence.                             |
-| textShadow            | string | Adds a shadow to text for emphasis, enhancing legibility and visual impact of text elements within a design or layout.    |
-| verticalAlign         | string | Aligns the vertical positioning of inline elements, ensuring proper alignment in relation to surrounding content.        |
-| whiteSpace            | string | Controls handling of white space inside an element, influencing text wrapping, line breaks, and spacing for optimal readability.|
-| width                 | string | Defines the width of an element, offering control over horizontal dimensions and aspect ratios.                          |
-| wordSpacing           | string | Adjusts spacing between words in text, providing control over the visual appearance and readability of textual content.   |
-| lineHeight            | string | Sets the height of a line of text, influencing overall vertical spacing and readability within an element.              |
-| maxLines              | string | Limits the number of lines for multiline text, controlling display and preventing excessive expansion of text content.   |
-
+| Property               | Type          | Description                                       |
+| :--------------------- | :------------ | :------------------------------------------------ |
+| backgroundColor        | string        | Sets the background color of an element. Useful for emphasizing or styling page sections.                           |
+| color                  | string        | Defines the text color within an element, impacting readability and visual hierarchy.                                 |
+| counterIncrement       | string        | Specifies the increment value for counters, facilitating dynamic list numbering or tracking.                         |
+| counterReset           | string        | Determines the reset value for counters, useful for restarting or initializing counting sequences.                    |
+| direction              | string        | Sets the text direction, crucial for proper alignment in multilingual content.                                        |
+| display               | string        | Specifies the box model used for an element, influencing its layout and rendering behavior.                             |
+| fontFamily            | string        | Defines the font family for text, allowing customization of the typeface for stylistic or thematic consistency.          |
+| fontFeatureSettings    | string        | Enables advanced typographic features in fonts, providing fine control over ligatures and stylistic elements.           |
+| fontSize              | string        | Sets the font size within an element, influencing the overall visual hierarchy and readability of content.              |
+| fontStyle             | string        | Specifies the style of the font, such as italic or normal, contributing to the visual emphasis of displayed text.        |
+| fontWeight            | string        | Sets the thickness of characters within a text element, allowing for varied emphasis and hierarchy in content.          |
+| height                | string        | Defines the height of an element, offering control over vertical dimensions and aspect ratios.                          |
+| letterSpacing         | string        | Adjusts the spacing between characters in text, providing fine-tuned control over readability and aesthetics.           |
+| listStyleImage        | string        | Sets an image as the list-item marker, allowing customization of list styles with distinctive visual markers.          |
+| listStyleType         | string        | Defines the type of marker or style for list items, contributing to the overall appearance and theme of content lists.    |
+| listStylePosition     | string        | Sets the position of the list-item marker, influencing its placement in relation to list item content and surroundings.  |
+| margin                | string        | Sets the margin outside an element's border, controlling spacing between the element and its neighboring elements.        |
+| padding               | string        | Defines the padding inside an element's border, ensuring space between the element's content and its border.             |
+| textAlign             | string        | Aligns text within an element, controlling horizontal positioning such as left-aligned, center-aligned, or right-aligned.|
+| textDecoration        | string        | Adds decoration to text, like underline or overline, enhancing visual appeal or conveying additional information.        |
+| textDecorationColor   | string        | Sets the color of the text decoration, allowing coordination with the document's color scheme.                            |
+| textDecorationStyle   | string        | Defines the style of the text decoration, influencing its visual appearance with options like solid, dashed, or dotted lines.|
+| textDecorationThickness| string        | Specifies the thickness of the text decoration, providing control over its visual prominence.                             |
+| textOverflow          | string | Defines how text content that overflows its container should be handled, indicating options like ellipsis or clip.        |
+| textShadow            | string        | Adds a shadow to text for emphasis, enhancing legibility and visual impact of text elements within a design or layout.    |
+| textTransform         | string | Controls the capitalization of text, allowing options like uppercase or lowercase to achieve stylistic preferences.        |
+| verticalAlign         | string        | Aligns the vertical positioning of inline elements, ensuring proper alignment in relation to surrounding content.        |
+| whiteSpace            | string        | Controls handling of white space inside an element, influencing text wrapping, line breaks, and spacing for optimal readability.|
+| width                 | string        | Defines the width of an element, offering control over horizontal dimensions and aspect ratios.                          |
+| wordSpacing           | string        | Adjusts spacing between words in text, providing control over the visual appearance and readability of textual content.   |
+| lineHeight            | string        | Sets the height of a line of text, influencing overall vertical spacing and readability within an element.              |
+| maxLines              | string        | Limits the number of lines for multiline text, controlling display and preventing excessive expansion of text content.   |
 
 ### styles
 
