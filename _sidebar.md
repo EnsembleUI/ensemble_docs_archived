@@ -77,6 +77,7 @@
   - [requestNotificationAccess](/actions/19-requestNotificationAccess)
   - [showNotification](/actions/20-showNotification)
   - [notification](/actions/21-notification)
+  - [invokeHaptic](/actions/23-invokeHaptic)
 
 - Define logic using Javascript
 
