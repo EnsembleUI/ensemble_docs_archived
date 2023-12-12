@@ -32,6 +32,9 @@
     - [Firebase](build/authentication/firebase)
     - [Auth0](build/authentication/auth0)
 
+  - Deep Link
+    - [Setup Android & iOS Deep Linking](build/deep-link/deeplink.md)
+
   - [Define logic](javascript-reference/README)
   - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
   - [Using local assets](build/local-assets)
