@@ -19,7 +19,7 @@
     - [Widgets](build/user-interface/2-widgets)
     - [Layouts](build/user-interface/3-layouts)
     - [Theme](build/user-interface/4-theme)
-    - [Animations](build/extend/3-animations)
+    - [Animations](build/user-interface/3-animations)
 
   - Handle Data
 
