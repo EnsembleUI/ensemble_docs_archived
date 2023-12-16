@@ -13,7 +13,7 @@ The Lottie Render Widget allows you to effortlessly render Lottie animation file
 | onForward | action | Callback which is fired when the animation starts playing in the forward direction |
 | onReverse | action | Callback which is fired when the animation starts playing in the reverse direction |
 | onComplete | action | Callback which is fired when the animation is completed |
-| onTap | action | Run a block of code or execute a given action when there is a tap event on lottie widget |
+| onTap | action | __NOTE:__ Currently it doesn't work for HTML Renderer. Run a block of code or execute a given action when there is a tap event on lottie widget |
 | onStop | action | Callback which is fired when the animation is stopped. This is fired only when animation is stopped or aborted in between. |
 | autoPlay | boolean | Whether to automatically start the animation in the forward direction (default true) |
 | repeat | boolean | Whether we should repeat the animation (default true) |
