@@ -4,6 +4,9 @@ The Lottie Render Widget allows you to effortlessly render Lottie animation file
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/576f3004-83e6-429d-b256-628d85e05f7f)
 
+### NOTE
+__NOTE:__ *onTap* property works only for native apps (iOS and Android) and web apps. onTap will not work when the web app is compiled with the [HTML renderer](https://docs.flutter.dev/platform-integration/web/renderers) option (i.e. --web-renderer html). Ensemble Studio is compiled with HTML renderer option so the onTap will not work on the studio. However, it should work fine for Ensemble Go (iOS) and Ensemble Preview (Android). 
+
 ## Properties
 
 | Property | Type   | Description                               |
@@ -13,7 +16,7 @@ The Lottie Render Widget allows you to effortlessly render Lottie animation file
 | onForward | action | Callback which is fired when the animation starts playing in the forward direction |
 | onReverse | action | Callback which is fired when the animation starts playing in the reverse direction |
 | onComplete | action | Callback which is fired when the animation is completed |
-| onTap | action | __NOTE:__ Currently it doesn't work for HTML Renderer. Run a block of code or execute a given action when there is a tap event on lottie widget |
+| [onTap](#note) | action | Run a block of code or execute a given action when there is a tap event on lottie widget |
 | onStop | action | Callback which is fired when the animation is stopped. This is fired only when animation is stopped or aborted in between. |
 | autoPlay | boolean | Whether to automatically start the animation in the forward direction (default true) |
 | repeat | boolean | Whether we should repeat the animation (default true) |
