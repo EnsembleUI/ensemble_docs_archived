@@ -72,8 +72,11 @@ In the same file, `ensemble-config.yaml` , add Firebase account details in the f
 				projectId: # In google-services.json, take value of project_info.project_id
 ```
 
-
 To get these details, use the `GoogleService-Info.plist` and  `google-services.json` you downloaded during step 1.
+
+Here's an example of the outcome.
+
+<img src="/images/firebase-account-details.png" alt="firebase account details" style="max-width: 900px;">
 
 
 #### Add sign-in providers to Ensemble app
@@ -88,6 +91,11 @@ In the same file, `ensemble-config.yaml` , under `services` add the following.
             iOSClientId: # In GoogleService-Info.plist, take the value of CLIENT_ID
             androidClientId: # In google-services.json, take value of client.oauth_client.client_id
 ```
+
+Here's an example of the outcome.
+
+
+<img src="/images/firebase-provider-details.png" alt="firebase provider details" style="max-width: 900px;">
 
 
 ---
