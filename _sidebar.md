@@ -36,7 +36,7 @@
     - [Setup Android & iOS Deep Linking](build/deep-link/deeplink.md)
 
   - [Define logic](javascript-reference/README)
-  - [Add interactions with Actions](build/make-it-interactive/actions-and-events/directory)
+  - Add interactions with Actions - See Actions Reference
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
   - [Application Secrets](build/secrets)
