@@ -21,4 +21,4 @@ Explore more of what invokeAPI can do for you when creating your app!
 - [GraphQL](/APIs/graphql.md)
 - [Headers](/APIs/header.md)
 - [onError](/APIs/on-error.md)
-- [Rest API](/APIs/rest-api.md)
+- [REST API](/APIs/rest-api.md)
