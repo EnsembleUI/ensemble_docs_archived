@@ -82,6 +82,14 @@
   - [notification](/actions/21-notification)
   - [invokeHaptic](/actions/23-invokeHaptic)
 
+- APIs
+
+  - [Index](/APIs/index)
+  - [GraphQL](/APIs/graphql)
+  - [Headers](/APIs/header)
+  - [onError](/APIs/on-error)
+  - [Rest API](/APIs/rest-api)
+
 - Define logic using Javascript
 
   - [Intro - Limitations, When and How to use](javascript-reference/README)
