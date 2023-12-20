@@ -105,7 +105,7 @@
 
 - Widget Reference
 
-  - [Index](widget-reference/directory)
+  - [Index](/widget-reference/directory)
   - [Text](/widget-reference/text)
   - [Image](/widget-reference/Image)
   - [Icon](/widget-reference/Icon)
@@ -143,8 +143,6 @@
   - [PasswordInput](/widget-reference/passwordinput)
   - [Conditional](/widget-reference/conditional)
   - [Progress Indicator](/widget-reference/progressindicator)
-  - [Toast Message](/widget-reference/conditional)
-
 
 - [Tips and Tricks](tips-and-tricks/directory)
 
