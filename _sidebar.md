@@ -103,8 +103,9 @@
   - [JSON](javascript-reference/JSON)
   - [JsonPath](javascript-reference/JsonPath)
 
-- [Widget reference](widget-reference/directory)
+- Widget Reference
 
+  - [Index](widget-reference/directory)
   - [Text](/widget-reference/text)
   - [Image](/widget-reference/Image)
   - [Icon](/widget-reference/Icon)
