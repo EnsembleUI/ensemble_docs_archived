@@ -24,6 +24,8 @@
 | preview                 | boolean | If set true, users can view captured/selected media.                                                                           |
 | maxCount                | number  | It used to control number of media that can be captured/selected                                                               |
 | maxCountMessage         | string  | Custom message to show when captured/selected media is greater than maxCount                                                   |
+| minCount                | number  | It used to control number of media that can be captured/selected                                                               |
+| minCountMessage         | string  | Custom message to show when captured/selected media is greater than minCount                                                   |
 | permissionDeniedMessage | string  | Set custom message when access to camera is denied                                                                             |
 | nextButtonLabel         | string  | Set custom label on next button.                                                                                               |
 | cameraRotateIcon        | widget  | Set custom icon for camera rotate button. [see here](/widget-reference/Icon)                                                   |
@@ -123,6 +125,7 @@ View:
 
 - assistAngle, show message when phone angle goes below min angle or goes beyond max angle.
 - assistSpeed, show message when phone goes beyond max speed.
+- minCount/maxCount, type is a number and can also be set to `minCount: ${ensemble.storage.xyz}` to get a dynamic value
 
 <div class="code-container" markdown=1>
   <button onclick="copyCode()" class="copy-code-button">Copy Code</button>
