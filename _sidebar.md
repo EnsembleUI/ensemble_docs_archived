@@ -29,6 +29,7 @@
 
   - Authentication
 
+    - [Social Sign In](build/authentication/social-signin)
     - [Firebase](build/authentication/firebase)
     - [Auth0](build/authentication/auth0)
 
