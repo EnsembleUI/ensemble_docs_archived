@@ -34,7 +34,8 @@
     - [Auth0](build/authentication/auth0)
 
   - Deep Link
-    - [Setup Android & iOS Deep Linking](build/deep-link/deeplink.md)
+    - [Setup Deep Linking](build/deep-link/deeplink.md)
+    - [(BranchIO) Deferred Deep Linking](build/deep-link/deferred-deeplink.md)
 
   - [Define logic](javascript-reference/README)
   - Add interactions with Actions - See Actions Reference
