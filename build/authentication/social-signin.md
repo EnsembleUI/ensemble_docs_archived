@@ -14,7 +14,14 @@ Ensemble supports sign in exclusively on the client side, where user information
 
 ### Setting up Sign In credentials
 On Google's API Console, create your OAuth client ID for each platform (i.e. iOS, Android, Web).
-<img src="/images/signin-google1.png" alt="Google iOS client ID" style="border: solid 1px lightgrey" />
+
+On `iOS`, enter the bundle ID of your App.
+
+<img src="/images/signin-google-ios.png" alt="Google iOS client ID" style="border: solid 1px lightgrey; max-width: 900px" />
+
+on `Android`, use Web Application type (don't use Android type). You can leave Authorized Origins and Redirect URIs blank. 
+
+<img src="/images/signin-google-android.png" alt="Google Android client ID" style="border: solid 1px lightgrey; max-width: 900px" />
 
 Using a code or text editor, open `/ensemble/ensemble-config.yaml` and enter these credentials.
 
@@ -29,6 +36,33 @@ services:
         webClientId: <Web client ID here>
 ```
 
+### Setting up iOS
+On Google's API Console, open the OAuth client ID for iOS and look for the `iOS URL Scheme` under Additional Information.
+
+Open `/ios/Runner/Info.plist` with a code editor, look for the block below and replace the value with your iOS URL Scheme.
+
+```yaml
+    <!-- UPDATE for your Starter. Custom Scheme for OAuth -->
+	<key>CFBundleURLTypes</key>
+    <array>
+        <!-- Google Sign in, replace with your URL scheme -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>your_iOS_URL_scheme_here</string>
+            </array>
+        </dict>
+    </array>
+```
+
+#### Setting up Android
+There is no additional setup required for Android.
+
+#### Setting up Web
+(tbc)
+
 ### Enable Auth service in Ensemble code
 
 By default, Ensemble does not include the authentication module to avoid installing unnecessary packages. Here, we uncomment a few lines of code to get the necessary packages.
@@ -42,7 +76,7 @@ By default, Ensemble does not include the authentication module to avoid install
       ref: main
 ```
 
-* Uncomment and update the following lines in `/lib/generated/ensemble_modules.dart`.
+* Uncomment and update the following lines in `/lib/generated/ensemble_modules.dart`.  Try running it with `flutter run` 
 ```
 ...
 import 'package:ensemble_auth/auth_module.dart';
