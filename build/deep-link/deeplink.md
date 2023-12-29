@@ -31,4 +31,4 @@ For more info: [iOS Universal Link](https://developer.apple.com/ios/universal-li
 
 
 ## For Deferred Deep Linking
-Use services like Branch.io
+Checkout - https://docs.ensembleui.com/#/build/deep-link/deferred-deeplink
