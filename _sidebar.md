@@ -149,6 +149,7 @@
   - [Video](/widget-reference/video)
   - [Webview](/widget-reference/webview)
 
+- [Device Capabilities](/device-capabilities/index)
 
 - [Tips and Tricks](tips-and-tricks/directory)
 
