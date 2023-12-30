@@ -1,0 +1,15 @@
+# Directory for device capabilities
+
+- [getLocation](/actions/14-getLocation)
+- [openCamera](/actions/3-openCamera)
+- [pickFiles](/actions/16-pickFiles)
+- [requestNotification](/actions/19-requestNotificationAccess)
+- [showNotification](/actions/20-showNotification)
+- [getPhoneContacts](/actions/25-getPhone)
+- [openURL](/actions/10-openUrl)
+- [uploadFiles](/actions/15-uploadFiles)
+- [connectWallet](/actions/18-connectWallet)
+- [checkPermission](/actions/26-checkPermission)
+- [share](/actions/27-share)
+- [rateApp](/actions/28-rateApp)
+- [invokeHaptic](/actions/23-invokeHaptic)
