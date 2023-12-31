@@ -14,7 +14,7 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [How to modify the BottomNavBar with custom styling and widgets](/tips-and-tricks/how-to-modify-bottom-navbar)
 - [Using navigate Screen with BottomNavBar](/tips-and-tricks/navigateScreen-with-bottomNavBar)
 - [Calling an API to fill and array](/tips-and-tricks/calling-api-response-to-fill-an-array)
-- [Dynamic color modification](/tips-and-tricks/dymanic-color-modification)
+- [Dynamic color modification](/tips-and-tricks/dynamic-color-modification)
 - [Custom card component](/tips-and-tricks/custom-card-component)
 - [Icons in bottomNavBar](/tips-and-tricks/icons-in-bottomNavBar)
 - [InvokeHaptic](/tips-and-tricks/invoke-haptic.md)
