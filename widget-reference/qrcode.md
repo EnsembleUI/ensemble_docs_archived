@@ -9,6 +9,8 @@ The QR-Code Render Widget empowers you to effortlessly generate and render QR co
 | Property | Type   | Description                      |
 | :------- | :----- | :------------------------------- |
 | value    | string | The data to generate the QR code |
+| dataModuleShape    | enum | Used to define the shape of the data module of QR Code. It can be either square or circle. Defaults to square |
+| eyeShape    | enum | Used to define the shape of the eye of QR Code. It can be either square or circle. Defaults to square |
 | styles   | object | [See properties](#styles)        |
 
 ### styles
