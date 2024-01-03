@@ -5,10 +5,11 @@ Ensemble widgets enable you to build both simple and complex applications.
 ### Data display
 
 | Widget           | Documentation                      | Kitchen sink example                                                                                                       |
-| ---------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+|------------------|------------------------------------| -------------------------------------------------------------------------------------------------------------------------- |
 | Text             | [Link](/widget-reference/text)     | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/c87f8b09-58e2-4c2f-99a1-cbbe9e25e9a5) |
 | Image            | [Link](/widget-reference/Image)    | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/7c7a3ffe-68ef-4e99-b9d1-4b5cee166233) |
 | Icon             | [Link](/widget-reference/Icon)     | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/e7c686f5-b8a2-4670-9e6e-8fdb0fea768e) |
+| Avatar           | [Link](/widget-reference/avatar)   | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/kJ9eqI5BPL30IwjnEDdJ) |
 | Map              | [Link](/widget-reference/Map)      | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/36e52d1a-39c5-4a6b-b064-2be6cfe3cf7b) |
 | QRCode           | [Link](/widget-reference/qrcode)   | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/f4921ba2-9f3d-4c33-8848-4df29a5e7a4d) |
 | Video            | [Link](/widget-reference/video)    | [Link](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/fce92bbb-af8e-403d-bf2d-c10926cc89a0) |

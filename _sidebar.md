@@ -108,6 +108,7 @@
 - Widget Reference
 
   - [Index](/widget-reference/directory)
+  - [Avatar](/widget-reference/avatar)
   - [Button](/widget-reference/button)
   - [Carousel](/widget-reference/carousel)
   - [Checkbox](/widget-reference/checkbox)
@@ -148,6 +149,7 @@
   - [Time](/widget-reference/time)
   - [Video](/widget-reference/video)
   - [Webview](/widget-reference/webview)
+  - [Types Reference](/widget-reference/types)
 
 - [Device Capabilities](/device-capabilities/index)
 
