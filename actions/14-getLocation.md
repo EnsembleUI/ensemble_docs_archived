@@ -2,6 +2,30 @@
 
 getLocation action enables users to retrieve their device's current location, facilitating location-based functionalities within the app, such as mapping, navigation, or personalized content delivery, enhancing user experience and context-aware interactions. It requests user's permission to get his/her current location
 
+### Module (ensemble_location)
+Enable Location service in Ensemble code
+
+By default, Ensemble does not include the location module to avoid installing unnecessary packages. Here, we uncomment a few lines of code to get the necessary packages.
+
+Inside the directory where you cloned Ensemble Starter, open `/lib/generated/ensemble_modules.dart`.
+
+* Search for this line and uncomment it:
+```
+// import 'package:ensemble_location/location_manager.dart';
+```
+
+* Search for this line and uncomment it:
+```
+      // GetIt.I.registerSingleton<LocationManager>(LocationManagerImpl());
+```
+
+* Search for this line and set it to true
+```
+  static const useLocation = false;
+```
+
+---
+
 ### Properties
 
 | Property           | Type   | Description                                                                                           |
