@@ -32,6 +32,30 @@ For Detailed Doc - https://help.branch.io/developers-hub/docs
     - Configure Info.plist for adding branch keys (Test and Live) and Links (Test and Live)
     - Add Custom URL Scheme in the URL types of Info.plist
 
+### Module (ensemble_deeplink)
+Enable Deeplink service in Ensemble code
+
+By default, Ensemble does not include the deeplink module to avoid installing unnecessary packages. Here, we uncomment a few lines of code to get the necessary packages.
+
+Inside the directory where you cloned Ensemble Starter, open `/lib/generated/ensemble_modules.dart`.
+
+* Search for this line and uncomment it:
+```
+// import 'package:ensemble_deeplink/deferred_link_manager.dart';
+```
+
+* Search for this line and uncomment it:
+```
+      // GetIt.I.registerSingleton<DeferredLinkManager>(DeferredLinkManagerImpl());
+```
+
+* Search for this line and set it to true
+```
+  static const useDeeplink = false;
+```
+
+---
+
 #### Initialize Branch SDK
 1. In the ensemble project, Initialize your branch SDK using the ```deeplinkInit``` action
 
