@@ -6,6 +6,7 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 
 - [Custom BottomNavBar item styling](/tips-and-tricks/custom-navbar-items)
 - [Making the UI responsive](/build/user-interface/6-responsive)
+- [Use device's camera for updating profile picture](/tips-and-tricks/user-profile-picture)
 - [Generalized Color All Button across an App ](/tips-and-tricks/general_primary_color-theme)
 - [Making Progress Bars](/tips-and-tricks/progress-bars)
 - [Background Color issue in EnsembleUI Preview](/tips-and-tricks/background-color-ensemble-preview)
