@@ -1,10 +1,7 @@
 # Social Sign In
 
 Ensemble supports Social Sign in with Google and Apple. This guide will specifically target the **Sign in with Google** flow.
-For each service, we support three different mechanism for managing the signed-in users: on the client only, with your Server, or with Firebase.
-
-## Client-side
-Ensemble supports sign in exclusively on the client side, where user information is stored locally on the device.
+For each service, we support three different mechanism for managing the signed-in users: [Client-side](#client-side), with your [Server](#Server-side), or with [Firebase](/build/authentication/social-signin-firebase).
 
 <video width="70%"  controls>
   <source src="/images/signin-client.mov" type="video/mp4">
@@ -12,88 +9,12 @@ Ensemble supports sign in exclusively on the client side, where user information
   Your browser does not support the video tag.
 </video>
 
-### Setting up Sign In credentials
-On Google's API Console, create your OAuth client ID for each platform (i.e. iOS, Android, Web).
+## Client-side
+Ensemble supports Signing In from the client side without any backend server. User information is stored locally on the device.
 
-On `iOS`, enter the bundle ID of your App.
-
-<img src="/images/signin-google-ios.png" alt="Google iOS client ID" style="border: solid 1px lightgrey; max-width: 900px" />
-
-on `Android`, use Web Application type (don't use Android type). You can leave Authorized Origins and Redirect URIs blank. 
-
-<img src="/images/signin-google-android.png" alt="Google Android client ID" style="border: solid 1px lightgrey; max-width: 900px" />
-
-Using a code or text editor, open `/ensemble/ensemble-config.yaml` and enter these credentials.
-
-```yaml
-...
-services:
-  signIn:
-    providers:
-      google:
-        iOSClientId: <iOS client ID here>
-        androidClientId: <Android client ID here>
-        webClientId: <Web client ID here>
-```
-
-### Setting up iOS
-On Google's API Console, open the OAuth client ID for iOS and look for the `iOS URL Scheme` under Additional Information.
-
-Open `/ios/Runner/Info.plist` with a code editor, look for the block below and replace the value with your iOS URL Scheme.
-
-```yaml
-    <!-- UPDATE for your Starter. Custom Scheme for OAuth -->
-	<key>CFBundleURLTypes</key>
-    <array>
-        <!-- Google Sign in, replace with your URL scheme -->
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>your_iOS_URL_scheme_here</string>
-            </array>
-        </dict>
-    </array>
-```
-
-#### Setting up Android
-There is no additional setup required for Android.
-
-#### Setting up Web
-(tbc)
-
-### Enable Auth service in Ensemble code
-
-By default, Ensemble does not include the authentication module to avoid installing unnecessary packages. Here, we uncomment a few lines of code to get the necessary packages.
-
-* Under pubspec.yaml. Uncomment the Auth module block, then run `flutter pub get`.
-```yaml
-  # Uncomment to enable Auth service
-  ensemble_auth:
-    git:
-      url: https://github.com/EnsembleUI/ensemble_module_auth.git
-      ref: main
-```
-
-* Uncomment and update the following lines in `/lib/generated/ensemble_modules.dart`.  Try running it with `flutter run` 
-```
-...
-import 'package:ensemble_auth/auth_module.dart';
-...
-static const useAuth = true;    # set to true
-...
-if (useAuth) {
-  // Uncomment to enable Auth service
-  AuthModuleImpl().init();
-} else {
-  AuthModuleStub().init();
-}
-...
-```
 
 ### Build your screens on Studio
-We are now ready to build the screens on Studio. First build a **Login** screen.
+First build a **Login** screen.
 
 ```yaml
 View:
@@ -167,4 +88,48 @@ View:
                     name: Login
                     options:
                       clearAllScreens: true
+```
+
+
+## Server-side
+Currently Social Sign In with your custom Server has to be managed manually. Below is an example flow, and your implementation can varies per your needs.
+1. Use the Social Sign in to authenticate the user. This will return the idToken and the user information.
+2. Send this idToken to your server, which can validate that this idToken was issued by Google, extract the user information from the idToken, and return server-specific credentials (e.g. bearer token, cookies) for this user back to the client.
+3. The client can then save these credentials into storage and use them for subsequent requests.
+
+```yaml
+View:
+  body:
+    SignInWithGoogle:
+      # the user successfully authenticated with Google
+      onAuthenticated:
+        invokeAPI:
+          # call your server, pass the idToken and return server-specific credentials
+          name: signInToServer
+          inputs:
+            # idToken can be accessed on event.data.idToken
+            token: ${event.data.idToken}
+
+            # user info can be accessed via event.data.user.*
+            email: ${event.data.user.email}
+
+          onResponse:
+            executeCode:
+              # store the bearerToken for latter use
+              body: |-
+                ensemble.storage.token = ${response.body.bearerToken};
+              onComplete:
+                navigateScreen:
+                  name: Home
+                  options:
+                    replaceCurrentScreen: true
+
+API:
+  # Your server should validate that the idToken is indeed issued by Google
+  # The server can then create/update the user account in your database, and return server-specific credentials about this user
+  signInToServer:
+    inputs: [token]
+    uri: https://myExampleApi.com/auth
+    parameters:
+      token: ${token}
 ```

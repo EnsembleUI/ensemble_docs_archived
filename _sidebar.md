@@ -30,7 +30,7 @@
   - Authentication
 
     - [Social Sign In](build/authentication/social-signin)
-    - [Firebase](build/authentication/firebase)
+    - [Social Sign In with Firebase](build/authentication/social-signin-firebase)
     - [Auth0](build/authentication/auth0)
 
   - Deep Link
@@ -50,7 +50,8 @@
 - Deploy
 
   - [Prepare your app for deployment](deploy/1-prepare-app)
-  - [Connecting to OAuth Services](deploy/2-oauth-services)
+  - [Setting up Social Sign in credentials](deploy/2-social-signin)
+  - [Connecting to OAuth Services](deploy/3-oauth-services)
   - [Deploy to iOS TestFlight](deploy/3-ios-appstore)
   - [Deploy to Android devices](deploy/4-android-device)
   - [Deploy to Google Play Store](deploy/5-android-play-store)
