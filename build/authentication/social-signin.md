@@ -117,7 +117,7 @@ View:
             executeCode:
               # store the bearerToken for latter use
               body: |-
-                ensemble.storage.token = ${response.body.bearerToken};
+                ensemble.storage.token = response.body.bearerToken;
               onComplete:
                 navigateScreen:
                   name: Home
