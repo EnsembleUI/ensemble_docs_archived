@@ -9,11 +9,10 @@ The Carousel Widget allows you to create and render carousels, enabling the pres
 | Property      | Type   | Description                                                                                                                                                                                                                                            |
 | :------------ | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | children      | array  | List of widgets                                                                                                                                                                                                                                        |
-| onItemChange  | action | Dispatch when an carousel item is in focus. For SingleView, this happens when the item is scroll into view. For scrolling MultiView, the event dispatches only when you tap on the item. The index of the item can be retrieved using 'selectedIndex'. |
-| styles        | object | [See properties](#styles)                                                                                                                                                                                                                              |
+| onItemChange  | [action](/actions/directory.md) | Dispatch when an carousel item is in focus. For SingleView, this happens when the item is scroll into view. For scrolling MultiView, the event dispatches only when you tap on the item. The index of the item can be retrieved using 'selectedIndex'. |                                                                                                                                                                                                                              |
 | item-template | object | [See properties](#item-template)                                                                                                                                                                                                                       |
 
-### styles
+### Styles
 
 | Property               | Type              | Description                                                                                                                                                                                                                                                                                                                |
 | :--------------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -32,19 +31,16 @@ The Carousel Widget allows you to create and render carousels, enabling the pres
 | indicatorWidth         | integer           | Sets the width of the carousel indicators within the Carousel                                                                                                                                                                                                                                                              |
 | indicatorHeight        | integer           | Adjusts the height of the carousel indicators within the Carousel                                                                                                                                                                                                                                                          |
 | indicatorMargin        | string or integer | The margin around each indicator                                                                                                                                                                                                                                                                                           |
-| borderRadius           | string or integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                                                                                      |
-| borderColor            | integer or string | Sets the border color, starting with '0xFF' for full opacity. `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange`                                                                                                                    |
-| borderWidth            | integer           | Thickness of the border. Minimum value should be 0.                                                                                                                                                                                                                                                                        |
-| shadowColor            | integer or string | Sets the box shadow color starting with '0xFF' for full opacity. `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange`                                                                                                                 |
-| shadowOffset           | array             | The values in array define the horizontal and vertical offset of the shadow. Example: if the shadowOffset is set to [2, 4], the shadow will be offset by 2 pixels horizontally and 4 pixels vertically from its original position.                                                                                         |
-| shadowRadius           | string or integer | The border radius of the widget.This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                                                                                                                                                                      |
-| shadowStyle            | string            | The blur style to apply on the shadow `normal`, `solid`, `outer`, `inner`                                                                                                                                                                                                                                                  |
-| margin                 | string or integer | Margin with CSS-style notation                                                                                                                                                                                                                                                                                             |
-| padding                | string or integer | Padding with CSS-style value                                                                                                                                                                                                                                                                                               |
-| backgroundImage        | object            | Background image of the box. [see properties](#stylesbackgroundImage)                                                                                                                                                                                                                                                      |
-| backgroundGradient     | object            | Background gradient of the box [see properties ](#stylesbackgroundGradient)                                                                                                                                                                                                                                                |
-| backgroundColor        | integer or string | Background color of the box. which can be represented in different formats. It can be specified as a number, a predefined color name, or a hexadecimal value starting with '0x'. `transparent` `black` `blue` `white` `red` `grey` `teal` `amber` `pink` `purple` `yellow` `green` `brown` `cyan` `indigo` `lime` `orange` |
-| expanded               | boolean           | If the parent is a Row or Column, this flag will stretch this widget in the appropriate direction. (e.g. stretch horizontally for parent of type Row)                                                                                                                                                                      |
+
+### Box Styles (Inherited)
+This widget also inherits these styles
+
+[box](_snippets/box-styles.md ':include')
+
+### Base Styles (Inherited)
+This widget also inherits these styles
+
+[base](_snippets/base-styles.md ':include')
 
 ### item-template
 
@@ -53,31 +49,3 @@ The Carousel Widget allows you to create and render carousels, enabling the pres
 | data     | string | Bind to an array of data from an API response or a variable        |
 | name     | string | Set the name to reference as you iterate through the array of data |
 | template | widget | The widget to render for each item                                 |
-
-### styles.backgroundGradient
-
-| Property | Type   | Description                                                                                                                                                                                    |
-| :------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| colors   | array  | The list of colors used for the gradient. Colors can be represented in different formats. It can be specified as a number, a predefined color name, or a hexadecimal value starting with '0x'. |
-| start    | string | The starting position of the gradient                                                                                                                                                          |
-| end      | string | The ending position of the gradient                                                                                                                                                            |
-
-### styles.backgroundImage
-
-| Property  | Type   | Description                                                                                                                                        |
-| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| source    | string | The Image URL to fill the background                                                                                                               |
-| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see options](#fit-options-for-stylesbackgroundimage) |
-| alignment | string | Alignment of the background image                                                                                                                  |
-
-#### Fit options for styles.backgroundImage
-
-| Option    | Description                                                                                         |
-| :-------- | :-------------------------------------------------------------------------------------------------- |
-| fill      | Stretch our image to fill the dimension, and distorting the aspect ratio if needed                  |
-| contain   | Scale the image such that the entire image is contained within our dimension                        |
-| cover     | Scale the image to fill our dimension, clipping the image as needed                                 |
-| fitWidth  | Scale the image to fit the width, and clipping the height if needed                                 |
-| fitHeight | Scale the image to fit the height, and clipping the width if needed                                 |
-| none      | Center-Align the original image size, clipping the content if needed                                |
-| scaleDown | Center-Align the image and only scale down to fit. Image will not be scaled up to bigger dimension. |
