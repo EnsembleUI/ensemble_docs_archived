@@ -221,7 +221,7 @@ API:
 
 | Property   | Type   | Description                                                                |
 | :--------- | :----- | :------------------------------------------------------------------------- |
-| id         | string | Give the API an ID allows you to bind to its result. e.g. ${apiId.body...} |
+| id         | String | Give the API an ID allows you to bind to its result. e.g. ${apiId.body...} |
 | name       | String | Name of the API defined in the API section                                 |
 | inputs     | Object | Key value pairs ofinputs to be passed to API definition                    |
 | onResponse | Action | The action to handle the response                                          |

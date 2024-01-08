@@ -88,10 +88,11 @@
 - APIs
 
   - [Index](/APIs/index)
-  - [GraphQL](/APIs/graphql)
-  - [Headers](/APIs/header)
-  - [onError](/APIs/on-error)
-  - [REST API](/APIs/rest-api)
+  - [Define APIs](/APIs/define-api)
+  - [Calls APIs](/APIs/call-api)
+  - [Access API response](/APIs/access-api-response)
+  - [Handle API errors](/APIs/on-error)
+  - [GraphQL APIs](/APIs/graphql)
 
 - Define logic using Javascript
 
