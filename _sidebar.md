@@ -38,7 +38,6 @@
     - [(BranchIO) Deferred Deep Linking](build/deep-link/deferred-deeplink.md)
 
   - [Define logic](javascript-reference/README)
-  - Add interactions with Actions - See Actions Reference
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
   - [Application Secrets](build/secrets)
