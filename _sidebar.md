@@ -152,6 +152,9 @@
   - [Webview](/widget-reference/webview)
   - [Types Reference](/widget-reference/types)
 
+- Miscellaneous
+  - [External Screen](/miscellaneous/external-screen)
+
 - [Device Capabilities](/device-capabilities/index)
 
 - [Tips and Tricks](tips-and-tricks/directory)
