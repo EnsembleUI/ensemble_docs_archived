@@ -5,10 +5,7 @@ You can access an API response through:
 - **API name** set when defining the API
 - **API ID** set when invoking the API
 
-Use ID instead of a name for the following scenarios:
-
-1. You're setting the API name dynamically
-2. The same API is called multiple times with different inputs, e.g. when looping through data
+When invoking the same API more than once, the API name will point to the last instance of the API request. If this is not the desired effect, use an ID instead.
 
 
 ## Basic GET example
@@ -62,7 +59,7 @@ API:
 
 ## Using ID to access API response
 
-When invoking an API, optionally you can assign it an ID. Using ID is required in the following scenarios:
+When invoking an API, optionally you can assign it an ID. Use this ID when you invoke the API multiple times to access each instance. Here are few examples:
 
 ### 1. Invoking different APIs based on a condition
 
