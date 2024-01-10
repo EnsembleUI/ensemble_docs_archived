@@ -154,6 +154,7 @@
 
 - Miscellaneous
   - [External Screen](/miscellaneous/external-screen)
+  - [App Information](/miscellaneous/app-info)
 
 - [Device Capabilities](/device-capabilities/index)
 
