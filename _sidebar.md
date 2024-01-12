@@ -111,6 +111,7 @@
   - [Index](/widget-reference/directory)
   - [Avatar](/widget-reference/avatar)
   - [Button](/widget-reference/button)
+  - [Calendar](/widget-refrence/calendar)
   - [Carousel](/widget-reference/carousel)
   - [Checkbox](/widget-reference/checkbox)
   - [Column](/widget-reference/column)
