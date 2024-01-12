@@ -53,6 +53,8 @@ API:
 
 You can control the styling of inputs' label at the Form level, by setting `labelPosition`, `labelMaxWidth`, and `labelOverflow` properties under Form's style.
 
+Use `labelStyle` to control the detailed styling of all the labels. Note that an Input widget's own labelStyle will take precedence over the Form's labelStyle.
+
 ```yaml
 View:
   body:
@@ -61,6 +63,9 @@ View:
         labelPosition: start
         labelMaxWidth: 100
         labelOverflow: clip
+        # all labels will have a bolder weight
+        labelStyle:
+          fontWeight: w600
       children:
         - TextInput:
             label: Name
@@ -69,6 +74,10 @@ View:
             label: email
             required: true
             inputType: email
+            styles:
+              # setting this will ignore the Form's labelStyle
+              labelStyle:
+                color: red
         - Button:
             label: Submit
             validateForm: true
@@ -85,11 +94,12 @@ View:
 
 ##### styles
 
-| Property      | Type    | Description                                                                                                                   |
-| :------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------- |
-| labelPosition | string  | Where the position the FormField's label `top` `start` `none`                                                                 |
-| labelOverflow | string  | Treatment of text longer than available space `wrap` `visible` `clip` `ellipsis`                                              |
-| labelMaxWidth | integer | Cap the label's width, useful on larger screen. This property only works on labelPosition=start.                              |
-| width         | integer | The width property determines the horizontal size of an element, allowing control over its width dimension within the layout. |
-| height        | integer | The height property determines the vertical size of an element, allowing control over its height dimension within the layout. |
-| gap           | integer | Vertical gap to insert between the children (default is 10)                                                                   |
+| Property      | Type                                           | Description                                                                                                                   |
+|:--------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
+| labelPosition | string                                         | Where the position the FormField's label `top` `start` `none`                                                                 |
+| labelOverflow | string                                         | Treatment of text longer than available space `wrap` `visible` `clip` `ellipsis`                                              |
+| labelMaxWidth | integer                                        | Cap the label's width, useful on larger screen. This property only works on labelPosition=start.                              |
+| labelStyle    | [TextStyle](/widget-reference/types#TextStyle) | Styling for the label                                                                                                         |
+| width         | integer                                        | The width property determines the horizontal size of an element, allowing control over its width dimension within the layout. |
+| height        | integer                                        | The height property determines the vertical size of an element, allowing control over its height dimension within the layout. |
+| gap           | integer                                        | Vertical gap to insert between the children (default is 10)                                                                   |
