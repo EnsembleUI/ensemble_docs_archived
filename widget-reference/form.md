@@ -83,7 +83,7 @@ View:
 | children | array   | List of widgets                                                           |
 | styles   | object  | [see properties](#styles)                                                 |
 
-##### styles
+## Styles
 
 | Property      | Type    | Description                                                                                                                   |
 | :------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------- |
@@ -93,3 +93,10 @@ View:
 | width         | integer | The width property determines the horizontal size of an element, allowing control over its width dimension within the layout. |
 | height        | integer | The height property determines the vertical size of an element, allowing control over its height dimension within the layout. |
 | gap           | integer | Vertical gap to insert between the children (default is 10)                                                                   |
+
+## Methods
+
+| Function      | Return Type    | Description                                                                                                                   |
+| :------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------- |
+| validate() | boolean  | validates each formfield inside the Form. Returns true if all the fields are valid and false otherwise                                                                 |
+| submit | none  | submits the form                                             |
