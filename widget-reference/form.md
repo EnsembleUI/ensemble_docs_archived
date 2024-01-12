@@ -50,7 +50,7 @@ API:
       email: ${email}
 ```
 #### Validate or Submit a Form from outside the Form
-Detailed Example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/FQ0pHhc9SaXr3XSCu9kK) This examples shows how to validate/submit a form from a sticky button in the footer. This is a common pattern in mobile apps. 
+Detailed Example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/fIZkgKM25hNHtI0q5wZF) This examples shows how to validate/submit a form from a sticky button in the footer. This is a common pattern in mobile apps. 
 
 By default, when `Form.submit()` is called, it first called `Form.validate()` and calls submit only if the validation succeeds (i.e. all form fields are in valid state. 
 
