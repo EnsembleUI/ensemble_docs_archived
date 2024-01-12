@@ -2,11 +2,13 @@
 
 Form is a wrapper widget for inputs such as TextInput, Dropdown, Checkbox, etc. Form enables you to perform validation and styling on inputs inside the Form.
 
-[Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3107baf6-dfc3-42cd-b617-61c37b31f31e)
+[Example of validating/submitting a Form from a Button inside the form](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3107baf6-dfc3-42cd-b617-61c37b31f31e)
 
-### Validation
+[Example of validating/submitting a Form from a Button in the Footer outside the Form](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/FQ0pHhc9SaXr3XSCu9kK) 
+### Validate and Submit
 
-To trigger validation of a Form's children inputs, add a Button widget with the property of `validateForm: true`. In this example, following validations will be performed when the submit button is pressed.
+#### Submit a Form from a Button inside a Form
+To trigger validation of a Form's children inputs, add a Button widget with the property of `validateForm: true`. In this example, following validations will be performed when the submit button is pressed. If `validateForm: true`, Form will be submitted only if validation passes. 
 
 ```yaml
 View:
@@ -47,6 +49,28 @@ API:
     body:
       name: ${name}
       email: ${email}
+```
+#### Validate or Submit a Form from outside the Form
+Detailed Example [here](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/FQ0pHhc9SaXr3XSCu9kK) This examples shows how to validate/submit a form from a sticky button in the footer. This is a common pattern in mobile apps. 
+
+By default, when `Form.submit()` is called, it first called `Form.validate()` and calls submit only if the validation succeeds (i.e. all form fields are in valid state. 
+
+Following is a snippet from the example above
+
+```yaml
+  footer:
+    styles:
+      backgroundColor: white
+    children:
+      - Button:
+          styles:
+            backgroundColor: black
+            borderRadius: 40
+            padding: 20
+          label: Submit
+          onTap: |-
+            basicForm.validate();
+            complexForm.submit();
 ```
 
 ### Styling
@@ -92,7 +116,7 @@ View:
 | children | array   | List of widgets                                                           |
 | styles   | object  | [see properties](#styles)                                                 |
 
-##### styles
+## Styles
 
 | Property      | Type                                           | Description                                                                                                                   |
 |:--------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
@@ -103,3 +127,11 @@ View:
 | width         | integer                                        | The width property determines the horizontal size of an element, allowing control over its width dimension within the layout. |
 | height        | integer                                        | The height property determines the vertical size of an element, allowing control over its height dimension within the layout. |
 | gap           | integer                                        | Vertical gap to insert between the children (default is 10)                                                                   |
+
+## Methods
+
+| Function   | Return Type | Description                                                                                            |
+|:-----------|:------------|:-------------------------------------------------------------------------------------------------------|
+| validate() | boolean     | validates each formfield inside the Form. Returns true if all the fields are valid and false otherwise |
+| submit()   | none        | submits the form                                                                                       |
+

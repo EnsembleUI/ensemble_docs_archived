@@ -1,4 +1,4 @@
-# Action: getPhoneContacts
+# Actions: getPhoneContacts & getPhoneContactPhoto
 
 The `PhoneContacts` view is designed to retrieve and display phone contacts from Android and iOS physical devices or simulators. It includes a warning note, a button to fetch contacts, and a list view to display individual contact details.
 
@@ -38,32 +38,37 @@ The `ListView` component displaying a list of contacts (ensemble.storage.contact
 UserContact:
   inputs:
     - contact
+  styles: { gap: 10 }
+  onLoad:
+    getPhoneContactPhoto:
+      id: contactPhotoId
+      contactId: ${contact.id}
   body:
-    Row:
-      styles: { gap: 5, crossAxis: center, margin: 0 0 20 0 }
+    Column:
+      styles: { gap: 2 }
       children:
-        - Avatar:
-            styles:
-              borderColor: grey
-              height: 46
-            name: ${contact.displayName}
-
-        - Column:
-            styles: { gap: 10 }
+        - Row:
             children:
-              - Text:
-                  styles:
-                    textStyle:
-                      fontWeight: bold
-                      lineHeightMultiple: .8
-                  text: "${contact.displayName}"
-              - Text:
-                  styles:
-                    textStyle:
-                      lineHeightMultiple: .8
-                  text: "${getPhoneNumber(contact.phones)}"
+              - Image:
+                  source: ${contactPhotoId.image}
+                  width: 100
+                  height: 100
+                  fallback: ImageFallbackWidget
+              - Column:
+                  styles: { gap: 2, margin: 10 }
+                  children:
+                    - Text:
+                        textStyle: { fontWeight: bold, fontSize: 18 }
+                        text: "${contact.displayName}"
+                    - Text:
+                        textStyle: { fontWeight: bold, fontSize: 18 }
+                        text: "${getPhoneNumber(contact.phones)}"
+                    - Shape:
+                        styles:
+                          height: 10
+        - Divider:
 ```
-The `UserContact` component representing the structure for displaying an individual contact. It includes an `Avatar` and two `Text` components for displaying the contact's display name and phone number.
+The `UserContact` component representing the structure for displaying an individual contact. It includes an `Image` and two `Text` components for displaying the contact's display image, name and phone number. The `getPhoneContactPhoto` action is used to get the contact photo with the contactId.
 
 ```yaml
 Global: |
