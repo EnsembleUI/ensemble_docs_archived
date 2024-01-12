@@ -2,9 +2,8 @@
 
 Form is a wrapper widget for inputs such as TextInput, Dropdown, Checkbox, etc. Form enables you to perform validation and styling on inputs inside the Form.
 
-[Example of validating/submitting a Form from a Button inside the form](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/3107baf6-dfc3-42cd-b617-61c37b31f31e)
+[Detailed Example of validating/submitting a Form from inside a form or outside](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/fIZkgKM25hNHtI0q5wZF) 
 
-[Example of validating/submitting a Form from a Button in the Footer outside the Form](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/FQ0pHhc9SaXr3XSCu9kK) 
 ### Validate and Submit
 
 #### Submit a Form from a Button inside a Form
