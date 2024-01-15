@@ -101,6 +101,65 @@ var str = "Hello, World!";
 var upperCaseStr = str.toUpperCase();
 console.log(upperCaseStr); // "HELLO, WORLD!"
 ```
+### trim
+The trim() method removes whitespace from both ends of a string.
+
+```js
+var str = "   Hello, world!   ";
+var result = str.trim();
+console.log(result); // "Hello, world!"
+```
+### trimStart
+The trimStart() method removes whitespace from the beginning of a string.
+
+```js
+var str = "   Hello, world!";
+var result = str.trimStart();
+console.log(result); // "Hello, world!"
+```
+### trimEnd
+The trimEnd() method removes whitespace from the end of a string.
+
+```js
+var str = "Hello, world!   ";
+var result = str.trimEnd();
+console.log(result); // "Hello, world!"
+```
+### repeat
+The `repeat()` method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+
+```js
+var str = "Hello ";
+var result = str.repeat(3);
+console.log(result); // "Hello Hello Hello "
+```
+
+### search
+The `search()` method executes a search for a match between a regular expression and this String object.
+
+```js
+var str = "Hello, world!";
+var result = str.search(/world/);
+console.log(result); // 7
+```
+
+### slice
+The `slice()` method extracts a section of a string and returns it as a new string, without modifying the original string.
+
+```js
+var str = "Hello, world!";
+var result = str.slice(7, 12);
+console.log(result); // "world"
+```
+
+### substr
+The `substr()` method returns a portion of the string, starting at the specified index and extending for a given number of characters afterward.
+
+```js
+var str = "Hello, world!";
+var result = str.substr(7, 5);
+console.log(result); // "world"
+```
 
 ### match
 
