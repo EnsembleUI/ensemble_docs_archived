@@ -1,4 +1,4 @@
-# Persistent Storage 
+# Persistent Storage and How to Use It
 You can write to or access the storage using simply `ensemble.storage`. On the browser, this uses the local storage. On the native apps, it uses the secure storage that's provided to each app by iOS and Android. This stoage is persistent i.e. the data you save will stay there until the user explicitly deletes the storage or the app. This means that you can use storage to share data among multiple screens in your app. 
 
 Typically apps store data such as the logged-in user's information, app-level data to cache data from the backend etc. 
