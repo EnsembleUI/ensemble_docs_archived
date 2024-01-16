@@ -67,13 +67,16 @@ API:
 ### Manually triggering binding updates
 Updates due to bindings to the storage are triggered only when you set a parameter on the storage directly. 
 
-For example, 
+For example, the following triggers the binding and updates all the fields that are bound to ensemble.storage.myData
 ```js
-ensemble.storage.myData = {name: {first:'John', last: 'Doe'}; //triggers the binding and updates all the fields that are bound to ensemble.storage.myData
-//However, if you are manipulating the data that is not directly stored in the `ensemble.storage`, it won't trigger binding.
+ensemble.storage.myData = {name: {first:'John', last: 'Doe'};
+```
+However, if you are manipulating the data that is not directly stored in the `ensemble.storage`, it won't trigger binding.
+```js
 ensemble.storage.myData.name.first = 'Jane'; //will NOT trigger binding and the `nameField.text` will NOT be updated.
-//To solve this issue, we set storage parameter back to itself to trigger the update
-//after doing all the manipulations to myData, set it back to itself
+```
+To solve this issue, we set storage parameter back to itself to trigger the update. After doing all the manipulations to myData, set it back to itself
+```js
 ensemble.storage.myData = ensemble.storage.myData; //this will now update nameField.text and any other fields listening for this change
 ``` 
 
