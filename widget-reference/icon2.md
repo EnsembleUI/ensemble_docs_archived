@@ -1,7 +1,9 @@
 # Finding supported icons and their library
 
-3 icon libaries
-Remix, Default, fontAwesome
+Ensemble Supports 3 icon libraries
+- [Default Flutter](https://github.com/EnsembleUI/ensemble/blob/476af9ea9862620205a4e85a3312e5433764f785/lib/framework/widget/icon.dart#L59)
+- [Remix](https://remixicon.com)
+- [fontAwesome](https://fontawesome.com/search)
 
 ## **Remix Library**
 [Find supported images here!](https://remixicon.com)
