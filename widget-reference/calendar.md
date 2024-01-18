@@ -16,6 +16,41 @@
 | disableCell        | Defines the style of disabled cells in the calendar, typically with a line-through decoration.|
 | rowSpans           | Configures the display of events spanning across multiple days, providing a clickable button.  |
 
+### Row Span in detail
+
+Row spans are widget, this widget span across multiple cell (Date). 
+| Property | Type   | Description                                                        |
+| :------- | :----- | :----------------------------------------------------------------- |
+| data | string | Bind to an array of data from an API response or storgae |
+| name | string | Set the name to reference as you iterate through the array of data |
+| span | | [Span detail](#Span) |
+
+#### Span
+| Property | Type   | Description                                                        |
+| :------- | :----- | :----------------------------------------------------------------- |
+| start | string, DateTime | Starting date of span |
+| end | string, DateTime | Ending date of span |
+| widget | | The widget to render for each item |
+
+
+### Methods 
+| Function | Args |  Description | 
+| ---| ---| --- |
+|update() | | Refresh the calendar if required. Note calendar will automatically on calling any below functions |
+|selectCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as selected |
+|selectStartEndCell(startDate, endDate) | Start Date (string, DateTime), End Date (string, DateTime) | Mark start, end and every date in between as selected|
+|unSelectCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as un-selected |
+|unSelectStartEndCell(startDate, endDate) | Start Date (string, DateTime), End Date (string, DateTime) | Mark start, end and every date in between as un-selected|
+|toggleSelectCell(dates)| Single Date (string, DateTime), List of Dates (string, DateTime)  | Toggle between selected and unselected with given dates
+|markCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as marked |
+|markStartEndCell(startDate, endDate) | Start Date (string, DateTime), End Date (string, DateTime) | Mark start, end and every date in between as marked|
+|unMarkCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as un-mark |
+|unMarkStartEndCell(startDate, endDate) | Start Date (string, DateTime), End Date (string, DateTime) | Mark start, end and every date in between as un-marked|
+|toggleMarkCell(dates)| Single Date (string, DateTime), List of Dates (string, DateTime)  | Toggle between mark and unMark with given dates
+|disableCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as disable |
+|disableCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as disable |
+|enableCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as enabled |
+|toggleDisableCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Toggle between enable and disabled cells with given dates |
 
 #### Exploring the [Kitchen Sink example](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/4aAgiwyVyucOAilPNy0s), let's delve into the process that repeats as users interact with the app, triggering events and updating the UI based on the defined logic and configurations.
 
