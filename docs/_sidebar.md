@@ -38,6 +38,7 @@
     - [(BranchIO) Deferred Deep Linking](build/deep-link/deferred-deeplink.md)
 
   - [Define logic](javascript-reference/README)
+  - Add interactions with Actions - See Actions Reference
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
   - [Application Secrets](build/secrets)
@@ -111,7 +112,6 @@
   - [Index](/widget-reference/directory)
   - [Avatar](/widget-reference/avatar)
   - [Button](/widget-reference/button)
-  - [Calendar](/widget-reference/calendar)
   - [Carousel](/widget-reference/carousel)
   - [Checkbox](/widget-reference/checkbox)
   - [Column](/widget-reference/column)
@@ -155,23 +155,8 @@
 
 - Miscellaneous
   - [External Screen](/miscellaneous/external-screen)
-  - [App Information](/miscellaneous/app-info)
 
-- Device Capabilities
-  - [checkPermission](/device-capabilities/26-checkPermission)
-  - [connectWallet](/device-capabilities/18-connectWallet)
-  - [getLocation](/device-capabilities/14-getLocation)
-  - [getPhoneContacts](/device-capabilities/25-getPhone)
-  - [invokeHaptic](/device-capabilities/23-invokeHaptic)
-  - [openCamera](/device-capabilities/3-openCamera)
-  - [openURL](/device-capabilities/10-openUrl)
-  - [pickFiles](/device-capabilities/16-pickFiles)
-  - [rateApp](/device-capabilities/28-rateApp)
-  - [requestNotification](/device-capabilities/19-requestNotificationAccess)
-  - [share](/device-capabilities/27-share)
-  - [showNotification](/device-capabilities/20-showNotification)
-  - [uploadFiles](/device-capabilities/15-uploadFiles)
-  - [storage](/device-capabilities/storage.md)
+- [Device Capabilities](/device-capabilities/index)
 
 - [Tips and Tricks](tips-and-tricks/directory)
 
