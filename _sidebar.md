@@ -157,7 +157,21 @@
   - [External Screen](/miscellaneous/external-screen)
   - [App Information](/miscellaneous/app-info)
 
-- [Device Capabilities](/device-capabilities/index)
+- Device Capabilities
+  - [checkPermission](/device-capabilities/26-checkPermission)
+  - [connectWallet](/device-capabilities/18-connectWallet)
+  - [getLocation](/device-capabilities/14-getLocation)
+  - [getPhoneContacts](/device-capabilities/25-getPhone)
+  - [invokeHaptic](/device-capabilities/23-invokeHaptic)
+  - [openCamera](/device-capabilities/3-openCamera)
+  - [openURL](/device-capabilities/10-openUrl)
+  - [pickFiles](/device-capabilities/16-pickFiles)
+  - [rateApp](/device-capabilities/28-rateApp)
+  - [requestNotification](/device-capabilities/19-requestNotificationAccess)
+  - [share](/device-capabilities/27-share)
+  - [showNotification](/device-capabilities/20-showNotification)
+  - [uploadFiles](/device-capabilities/15-uploadFiles)
+  - [storage](/device-capabilities/storage.md)
 
 - [Tips and Tricks](tips-and-tricks/directory)
 
