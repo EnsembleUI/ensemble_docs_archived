@@ -132,6 +132,7 @@
   - [Lottie Animation](/widget-reference/lottie)
   - [Map](/widget-reference/Map)
   - [Markdown](/widget-reference/markdown)
+  - [Multi-Child Layout](/widget-reference/multi-child-layouts)
   - [PasswordInput](/widget-reference/passwordinput)
   - [Progress Indicator](/widget-reference/progressindicator)
   - [Profile Image](/widget-reference/profile-image)
