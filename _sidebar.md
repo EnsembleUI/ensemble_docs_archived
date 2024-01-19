@@ -104,7 +104,6 @@
   - [Globals](javascript-reference/Global)
   - [Math](javascript-reference/Math)
   - [JSON](javascript-reference/JSON)
-  - [JsonPath](javascript-reference/JsonPath)
 
 - Widget Reference
 
