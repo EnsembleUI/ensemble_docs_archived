@@ -70,6 +70,7 @@
   - [navigateBack](/actions/7-navigateBack)
   - [navigateModalScreen](/actions/9-navigateModalScreen)
   - [navigateScreen](/actions/8-navigateScreen)
+  - [navigateViewGroup](/actions/29-navigateViewGroup)
   - [notification](/actions/21-notification)
   - [openCamera](/actions/3-openCamera)
   - [openPlaidLink](/actions/21-openPlaidLink)
