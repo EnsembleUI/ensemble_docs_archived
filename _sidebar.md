@@ -70,6 +70,7 @@
   - [navigateBack](/actions/7-navigateBack)
   - [navigateModalScreen](/actions/9-navigateModalScreen)
   - [navigateScreen](/actions/8-navigateScreen)
+  - [navigateViewGroup](/actions/29-navigateViewGroup)
   - [notification](/actions/21-notification)
   - [openCamera](/actions/3-openCamera)
   - [openPlaidLink](/actions/21-openPlaidLink)
@@ -104,14 +105,13 @@
   - [Globals](javascript-reference/Global)
   - [Math](javascript-reference/Math)
   - [JSON](javascript-reference/JSON)
-  - [JsonPath](javascript-reference/JsonPath)
 
 - Widget Reference
 
   - [Index](/widget-reference/directory)
   - [Avatar](/widget-reference/avatar)
   - [Button](/widget-reference/button)
-  - [Calendar](/widget-reference/calendar)
+  - [Calendar](/widget-reference/calendar.md)
   - [Carousel](/widget-reference/carousel)
   - [Checkbox](/widget-reference/checkbox)
   - [Column](/widget-reference/column)
@@ -133,6 +133,7 @@
   - [Lottie Animation](/widget-reference/lottie)
   - [Map](/widget-reference/Map)
   - [Markdown](/widget-reference/markdown)
+  - [Multi-Child Layout](/widget-reference/multi-child-layouts)
   - [PasswordInput](/widget-reference/passwordinput)
   - [Progress Indicator](/widget-reference/progressindicator)
   - [Profile Image](/widget-reference/profile-image)
@@ -157,21 +158,7 @@
   - [External Screen](/miscellaneous/external-screen)
   - [App Information](/miscellaneous/app-info)
 
-- Device Capabilities
-  - [checkPermission](/device-capabilities/26-checkPermission)
-  - [connectWallet](/device-capabilities/18-connectWallet)
-  - [getLocation](/device-capabilities/14-getLocation)
-  - [getPhoneContacts](/device-capabilities/25-getPhone)
-  - [invokeHaptic](/device-capabilities/23-invokeHaptic)
-  - [openCamera](/device-capabilities/3-openCamera)
-  - [openURL](/device-capabilities/10-openUrl)
-  - [pickFiles](/device-capabilities/16-pickFiles)
-  - [rateApp](/device-capabilities/28-rateApp)
-  - [requestNotification](/device-capabilities/19-requestNotificationAccess)
-  - [share](/device-capabilities/27-share)
-  - [showNotification](/device-capabilities/20-showNotification)
-  - [uploadFiles](/device-capabilities/15-uploadFiles)
-  - [storage](/device-capabilities/storage.md)
+- [Device Capabilities](/device-capabilities/index)
 
 - [Tips and Tricks](tips-and-tricks/directory)
 

@@ -21,3 +21,5 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [InvokeHaptic](/tips-and-tricks/invoke-haptic.md)
 - [Lottie Animations](/tips-and-tricks/lottie-animations.md)
 - [HTML Widget](/tips-and-tricks/html-widget.md)
+- [Push Notification](/tips-and-tricks/push-notification.md)
+

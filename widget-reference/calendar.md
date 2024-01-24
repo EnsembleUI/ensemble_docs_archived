@@ -16,6 +16,7 @@
 | disableCell        | Defines the style of disabled cells in the calendar, typically with a line-through decoration.|
 | rowSpans           | Configures the display of events spanning across multiple days, providing a clickable button.  |
 
+
 ### Row Span in detail
 
 Row spans are widget, this widget span across multiple cell (Date). 

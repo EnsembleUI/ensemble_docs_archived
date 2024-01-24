@@ -13,4 +13,3 @@
 - [share](/actions/27-share)
 - [showNotification](/actions/20-showNotification)
 - [uploadFiles](/actions/15-uploadFiles)
-- [storage](/javascript-reference/storage.md)

@@ -157,15 +157,6 @@ var date = new Date();
 var dayOfWeek = date.getDay();
 console.log(dayOfWeek); // Example output: 4 (for Thursday)
 ```
-### setTime(timeValue)
-Sets the Date object to the time represented by the number of milliseconds since January 1, 1970, 00:00:00 UTC.
-
-Example:
-```js
-var date = new Date();
-date.setTime(1622633347521);
-console.log(date.toString()); // Example output: "Fri Jun 02 2022 12:49:07 GMT+0200 (Central European Summer Time)"
-```
 ### toJSON()
 Returns the Date object as an ISO 8601 formatted string in UTC.
 
@@ -195,10 +186,138 @@ var event = new Date('2023-11-02 17:07:35.053068');
 var str = date.toISOString()
 console.log(str); // Example output: "2023-11-03T00:07:35.053068Z"
 ```
+### setTime(timeValue)
+Sets the Date object to the time represented by the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+Example:
+```js
+var date = new Date();
+date.setTime(1622633347521);
+console.log(date.toString()); // Example output: "Fri Jun 02 2022 12:49:07 GMT+0200 (Central European Summer Time)"
+```
+### setDate()
+Description: Sets the day of the month for a specified date according to local time.
+Syntax: dateObj.setDate(dayValue)
+Parameters:
+dayValue: An integer from 1 to 31, representing the day of the month.
+Example:
+```js
+var date = new Date();
+date.setDate(15);
+```
+### setMonth()
+Description: Sets the month for a specified date according to local time.
+Syntax: dateObj.setMonth(monthValue)
+Parameters:
+monthValue: An integer from 0 (January) to 11 (December) representing the month.
+Example:
+```js
+var date = new Date();
+date.setMonth(5); // Sets the month to June
+```
+### setFullYear()
+Description: Sets the full year for a specified date according to local time.
+Syntax: dateObj.setFullYear(yearValue)
+Parameters:
+yearValue: An integer specifying the numeric value of the year, e.g., 1995.
+Example:
+```js
+var date = new Date();
+date.setFullYear(2024);
+```
+### setHours()
+Description: Sets the hours for a specified date according to local time.
+Syntax: dateObj.setHours(hoursValue)
+Parameters:
+hoursValue: An integer from 0 to 23, representing the hour.
+Example:
+```js
+var date = new Date();
+date.setHours(13);
+```
+### setMinutes()
+Description: Sets the minutes for a specified date according to local time.
+Syntax: dateObj.setMinutes(minutesValue)
+Parameters:
+minutesValue: An integer from 0 to 59, representing the minutes.
+Example:
+```js
+var date = new Date();
+date.setMinutes(45);
+```
+### setUTCDate()
+Description: Sets the day of the month for a specified date according to UTC.
+Syntax: dateObj.setUTCDate(dayValue)
+Parameters:
+dayValue: An integer from 1 to 31, representing the day of the month.
+Example:
+```js
+var date = new Date();
+date.setUTCDate(15);
+```
+### setUTCMonth()
+Description: Sets the month for a specified date according to UTC.
+Syntax: dateObj.setUTCMonth(monthValue)
+Parameters:
+monthValue: An integer from 0 (January) to 11 (December) representing the month.
+Example:
+```js
+var date = new Date();
+date.setUTCMonth(5); // Sets the month to June
+```
+### setUTCFullYear()
+Description: Sets the full year for a specified date according to UTC.
+Syntax: dateObj.setUTCFullYear(yearValue)
+Parameters:
+yearValue: An integer specifying the numeric value of the year, e.g., 1995.
+Example:
+```js
+var date = new Date();
+date.setUTCFullYear(2024);
+```
+### setUTCHours()
+Description: Sets the hours for a specified date according to UTC.
+Syntax: dateObj.setUTCHours(hoursValue)
+Parameters:
+hoursValue: An integer from 0 to 23, representing the hour.
+Example:
+```js
+var date = new Date();
+date.setUTCHours(13);
+```
+### setUTCMinutes()
+Description: Sets the minutes for a specified date according to UTC.
+Syntax: dateObj.setUTCMinutes(minutesValue)
+Parameters:
+minutesValue: An integer from 0 to 59, representing the minutes.
+Example:
+```js
+var date = new Date();
+date.setUTCMinutes(45);
+```
+### setUTCSeconds()
+Description: Sets the seconds for a specified date according to UTC.
+Syntax: dateObj.setUTCSeconds(secondsValue)
+Parameters:
+secondsValue: An integer from 0 to 59, representing the seconds.
+Example:
+```js
+var date = new Date();
+date.setUTCSeconds(30);
+```
+### setUTCMilliseconds()
+Description: Sets the milliseconds for a specified date according to UTC.
+Syntax: dateObj.setUTCMilliseconds(millisecondsValue)
+Parameters:
+millisecondsValue: An integer from 0 to 999, representing the milliseconds.
+Example:
+```js
+var date = new Date();
+date.setUTCMilliseconds(500);
+```
 
 ## UTC Methods
 These methods are similar to their local-time counterparts but use UTC time instead of local time.
-
 ### getUTCFullYear()
 Example:
 ```js

@@ -12,6 +12,47 @@ Like any other action, navigateScreen may be called in YAML or in the JS code.
 | inputs         | object | Specify the key/value pairs to pass into the next Screen                                |
 | options        | object | [see properties]()                                                                      |
 | onNavigateBack | action | triggers when users returns back to a screen it previously visited using navigateScreen |
+| transition | Map | [Screen transition](#screen-transition) , [Screen transition example](#screen-transition-example)
+
+#### Screen Transition
+Animate screen transition from one to another.
+
+| Property       | Type   | Description |
+| :--- | :--- | :---|
+| type | string | [transition type](#transition-type)
+| alignment | string | [transition alignment](#transition-alignment)
+| duration | integer| duration of transition in millisecond 
+
+#### transition-type
+| name |
+| :--- |
+|fade |
+|rightToLeft |
+|leftToRight |
+|topToBottom |
+|bottomToTop |
+|scale |
+|rotate |
+|size |
+|rightToLeftWithFade |
+|leftToRightWithFade |
+|leftToRightPop |
+|rightToLeftPop |
+|topToBottomPop |
+|bottomToTopPop |
+
+#### transition-alignment
+|name|
+|:---|
+|topLeft|
+|topCenter|
+|topRight|
+|centerLeft|
+|center|
+|centerRight|
+|bottomLeft|
+|bottomCenter|
+|bottomRight|
 
 #### properties.options
 
@@ -205,4 +246,23 @@ View:
             //@code
             console.log("navigated back to main screen");
             console.log(event.data);
+```
+
+#### Screen Transition Example
+
+```yaml
+View:
+  header:
+    title: Screen Transition
+
+  body:
+    Button:
+      label: Navigate transition
+      onTap:
+        navigateScreen:
+          name: <write-your-screen-name-here>
+          transition: 
+            type: rotate
+            duration: 1000
+            alignment: center
 ```
