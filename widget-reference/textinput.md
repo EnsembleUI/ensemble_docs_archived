@@ -33,6 +33,7 @@ The TextInput Widget enables the rendering of interactive text input fields, all
 | multiline               | boolean                                        | Specifies if this TextInput can span multiple lines. (default False)                                                                                                                                                              |
 | minLines                | integer                                        | Specifies the minimum number of lines to start out (applicable for multiline)                                                                                                                                                     |
 | maxLines                | integer                                        | Specifies the maximum number of lines to visually expand to. This will also enable multi-line if this number is greater than 1 and the 'multiline' property is not set.                                                           |
+| floatLabel | boolean | [floating label example](#floating-label-example)
 
 ### Actions
 
@@ -124,3 +125,16 @@ The TextInput Widget enables the rendering of interactive text input fields, all
 | :-------- | :------------------------------------------------------------------------------------------------------------------- |
 | box       | draw a Box border around this input widget. This property can be defined in the theme to apply to all Input widgets. |
 | underline | draw an Underline below this input widget. This property can be defined in the theme to apply to all Input widgets.  |
+
+--- 
+#### Floating Label Example
+Making `TextInput` label float inside the border, we can use a floatLabel attribute like following.
+
+```yaml
+TextInput:
+    label: User name
+    floatLabel: true
+    icon: person
+```
+![Foating](float-label-input.png)
+---
