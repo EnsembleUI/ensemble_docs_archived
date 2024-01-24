@@ -37,6 +37,7 @@ Row spans are widget, this widget span across multiple cell (Date).
 | Function | Args |  Description | 
 | ---| ---| --- |
 |update() | | Refresh the calendar if required. Note calendar will automatically on calling any below functions |
+| clearRange() |  | Clear range entire range selection with this function. |
 |selectCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as selected |
 |selectStartEndCell(startDate, endDate) | Start Date (string, DateTime), End Date (string, DateTime) | Mark start, end and every date in between as selected|
 |unSelectCell(dates) | Single Date (string, DateTime), List of Dates (string, DateTime) | Mark given date as un-selected |
