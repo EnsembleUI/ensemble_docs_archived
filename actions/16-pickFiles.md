@@ -11,6 +11,23 @@ pickFiles action enables users to select files from their device for further pro
 | allowCompression  | boolean | It will allow media to apply the default OS compression (default True)                                           |
 | allowedExtensions | array   | Allow files with specific extension e.g jpg, png, pdf                                                            |
 
+
+### Ensemble File object
+The files picked using `pickFiles` or created using camera using `openCamera` all shared the same following object.
+
+
+| Property | Type | Description | 
+|:---|:---|:---|
+| name | string | name of the file, could be null |
+| size | integer | size of file in bytes, could be null |
+| ext | string | extension of the file, could be null |
+| path | string | file path, null on web, available in native mobile app |
+| bytes | dynamic | if path is null i.e for web, we'll have bytes of files |
+
+> [NOTE]  
+> Path will be null when you are developing in the web studio. You'll have the path in your native mobile build or ensemble preview / go app.
+
+
 **Example**
 
 <div class="code-container" markdown=1>
