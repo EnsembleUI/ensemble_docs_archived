@@ -145,7 +145,7 @@
   - [Stack](/widget-reference/stack)
   - [Staggered Grid](/widget-reference/staggeredgrid)
   - [Switch](/widget-reference/switch)
-  - [TripleStateSwitch](/widget-reference/triple-state-switch)
+  - [TripleSwitch](/widget-reference/triple-state-switch)
   - [TabBar](/widget-reference/tabbar)
   - [Text](/widget-reference/text)
   - [TextInput](/widget-reference/textinput)
