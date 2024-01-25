@@ -60,11 +60,13 @@
 - Action Reference
 
   - [Index](/actions/directory)
+  - [checkPermission](/actions/26-checkPermission)
   - [closeAllDialogs](/actions/12-closeAllDialogs)
   - [connectWallet](/actions/18-connectWallet)
   - [copyToClipboard](/actions/17-copyToClipboard)
   - [executeCode](/actions/2-executeCode)
   - [getLocation](/actions/14-getLocation)
+  - [getPhoneContacts](/actions/25-getPhone)
   - [invokeAPI](/actions/1-invokeAPI)
   - [invokeHaptic](/actions/23-invokeHaptic)
   - [navigateBack](/actions/7-navigateBack)
@@ -77,7 +79,9 @@
   - [openUrl](/actions/4-openUrl)
   - [pickFiles](/actions/16-pickFiles)
   - [pullToRefresh](/actions/24-pulltorefresh)
+  - [rateApp](/actions/28-rateApp)
   - [requestNotificationAccess](/actions/19-requestNotificationAccess)
+  - [share](/actions/27-share)
   - [showDialog](/actions/11-showDialog)
   - [showNotification](/actions/20-showNotification)
   - [showToast](/actions/6-showToast)
@@ -93,6 +97,7 @@
   - [Access API response](/APIs/access-api-response)
   - [Handle API errors](/APIs/on-error)
   - [GraphQL APIs](/APIs/graphql)
+  - [WebSockets](/APIs/websocket)
 
 - Define logic using Javascript
 
@@ -153,6 +158,7 @@
   - [Time](/widget-reference/time)
   - [Video](/widget-reference/video)
   - [Webview](/widget-reference/webview)
+  - [Youtube](/widget-reference/youtube)
   - [Types Reference](/widget-reference/types)
 
 - Miscellaneous
