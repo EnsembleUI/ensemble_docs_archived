@@ -30,7 +30,7 @@ Users can set the playback rate and volume using the provided text input fields:
 
 ## Example Configuration
 ```yaml
-- TextInput:
+    - TextInput:
             hintText: Set playback rate
             id: playback
         - TextInput:
