@@ -20,7 +20,7 @@ View:
         gap: 16
         padding: 24
       children:
-       - Text:
+        - Text:
             text: "${appInfo.appId}"
         - Text:
             text: "${appInfo.appName}"
