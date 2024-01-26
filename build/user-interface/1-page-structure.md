@@ -373,7 +373,7 @@ You can also check live example [here](https://studio.ensembleui.com/app/e24402c
 
 ## Body
 
-The View requires a single widget defined as its child. This will act as the body content, and can only be a Column, Row, Flex, or Stack widget.
+The View requires a single widget defined as its child. This will act as the body content, and can only be a Column, Row, Flex, FittedColumn, or Stack widget.
 
 ## API
 
