@@ -57,6 +57,8 @@
   - [Deploy to Google Play Store](deploy/5-android-play-store)
   - [Prepare for production](deploy/6-prepare-for-production)
   - [Making your app work when offline](deploy/7-offline-mode)
+  - [Google Play API Key](8-google-play-api-key)
+  - [Appstore Connect API Key](9-appstore-connect-api-key)
 
 - Action Reference
 
