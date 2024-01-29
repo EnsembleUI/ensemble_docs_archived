@@ -4,9 +4,9 @@
 App headers serve as a crucial element in your application's user interface, providing navigation options, branding, and contextual information. Here's how you can create and use app headers effectively in your application:
 
 They typically include:
-    - Title
-    - Navigation Icons/Buttons
-    - Styling
+- Title
+- Navigation Icons/Buttons
+- Styling
 ```yaml
     header:
         title: App Header
@@ -21,8 +21,8 @@ To explore additional header properties and styles, please refer to this [docume
 Footers play a pivotal role in providing additional information, navigation options, or actions within your application.
 
 They typically include: 
-    - Components
-    - Styling
+- Components
+- Styling
 ```yaml
     footer:
         styles:
