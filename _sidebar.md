@@ -121,6 +121,7 @@
   - [Checkbox](/widget-reference/checkbox)
   - [Column](/widget-reference/column)
   - [Conditional](/widget-reference/conditional)
+  - [Custom Footers and Headers](/widget-reference/custom-foot-head)
   - [Data Grid](/widget-reference/datagrid)
   - [Date](/widget-reference/date)
   - [Divider](/widget-reference/divider)
