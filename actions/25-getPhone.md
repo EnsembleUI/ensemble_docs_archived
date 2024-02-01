@@ -43,6 +43,15 @@ UserContact:
     getPhoneContactPhoto:
       id: contactPhotoId
       contactId: ${contact.id}
+
+    # Using JS Code
+
+    # //@code
+    # ensemble.getPhoneContactPhoto({
+    #    id: "contactPhotoId",
+    #   contactId: contact.id
+    # });
+
   body:
     Column:
       styles: { gap: 2 }
