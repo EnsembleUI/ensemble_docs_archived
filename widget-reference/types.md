@@ -40,7 +40,13 @@ This property defines the weight (thickness) of the font used in text styling. I
 | w100-w900  | Font weight from 100-900 (light to bold). |
 
 ## Color
-This property defines the color based on a pre-defined names or a hex value (prefixed with 0xFF for full opacity e.g., #FF000000).
+This property defines the color based on a pre-defined names (see the supported names below) or as hexdecimal numbers that represent color codes. 
+
+You can use color codes in one of the two ways -
+- HTML/CSS format as a string with quotes around it. Starts with # and contains 6 or 8 characters after it. For example, '#FF5733' for orange
+- The common programming language format without quotes. Starts with 0x and has 8 characters after it. For example, 0xFFFF5733 for orange.
+
+Either way works fine and internally color codes are automatically converted to the programming language format. 
 
 | Name        | Description      |
 |-------------|------------------|
