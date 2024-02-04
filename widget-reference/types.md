@@ -43,7 +43,7 @@ This property defines the weight (thickness) of the font used in text styling. I
 This property defines the color based on a pre-defined names (see the supported names below) or as hexdecimal numbers that represent color codes. 
 
 You can use color codes in one of the two ways -
-- HTML/CSS format as a string with quotes around it. Starts with # and contains 6 or 8 characters after it. For example, '#FF5733' for orange
+- HTML/CSS format as a string with quotes around it. Starts with # and contains 6 or 8 characters after it. For example, '#FF5733' for orange. `Remember to put quotes around it as # is a comment character in yaml`.
 - The common programming language format without quotes. Starts with 0x and has 8 characters after it. For example, 0xFFFF5733 for orange.
 
 Either way works fine and internally color codes are automatically converted to the programming language format. 
