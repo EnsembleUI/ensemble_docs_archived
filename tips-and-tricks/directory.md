@@ -4,6 +4,8 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 
 # Index
 
+
+- [Getting help from Ensemble team](/tips-and-tricks/getting-help)
 - [Custom BottomNavBar item styling](/tips-and-tricks/custom-navbar-items)
 - [Making the UI responsive](/build/user-interface/6-responsive)
 - [Use device's camera for updating profile picture](/tips-and-tricks/user-profile-picture)
