@@ -104,6 +104,7 @@
 - Define logic using Javascript
 
   - [Intro - Limitations, When and How to use](javascript-reference/README)
+  - [Reuse code across app](javascript-reference/global-scripts)
   - [The `ensemble` object](javascript-reference/Ensemble)
   - [String](javascript-reference/String)
   - [Numbers](javascript-reference/Numbers)
