@@ -4,41 +4,75 @@
 Remix, Default, fontAwesome
 
 ## **Remix Library**
-[Find supported images here!](https://remixicon.com)
+
 ```yaml
-- Text:
-    text: Example 4 using Remix
 - Icon:
-    name: time_line
+    name: account_circle_line
     library: remix
-    styles: 
-        size: 80
 ```
 
 | Icon Name            |
 | -------------------- |
-| time_line            |
-| first_aid_kit_line   |
-| image_2_line         |
-| thermometer_line     |
-| shield_check_line    |
-| road_map_line        |
-| add_circle_line      |
-| user_line            |
-| questionnaire_line  |
-| stack_line           |
-| focus_3_line         |
+| account_circle_line |
+| add_circle_line |
+| arrow_down_s_line |
+| arrow_left_s_line |
+| arrow_right_up_line |
+| arrow_right_s_line |
+| arrow_up_s_line |
+| bar_chart_2_line |
+| camera_line |
+| camera_off_line |
+| cash_line |
+| close_line |
+| customer_service_2_line |
+| eye_line |
+| first_aid_kit_line |
+| flashlight_fill |
+| focus_3_line |
+| group_line |
+| hand_heart_line |
+| home_line |
+| home_4_line |
+| image_2_line |
+| image_edit_line |
+| list_check |
+| map_pin_line |
+| medal_2_line |
+| megaphone_line |
+| more_fill |
+| more_line |
+| more_2_line |
+| movie_line |
+| pencil_line |
+| qr_code_line |
+| questionnaire_line |
+| shield_check_line |
+| search_line |
+| stack_line |
+| road_map_line |
+| team_line |
+| thermometer_line |
+| time_line |
+| trophy_line |
+| twitch_line |
+| user_follow_line |
+| user_line |
+| user_star_line |
+| user_unfollow_line |
+| verified_badge_fill |
+| verified_badge_line |
+
 
 
 ## **Default Library**
 
+Specifying the library is not required when using default.
+
 ```yaml
-- Text:
-    text: Example 3 using Default
 - Icon:
     name: alarm
-    styles: 
-        size: 60
+    library: default
 ```
 
 | Icon Name                 |
