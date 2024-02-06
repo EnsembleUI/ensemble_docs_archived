@@ -1,6 +1,7 @@
 # ensemble.RatingStars widget
 
 The `ensemble.RatingStars` widget in Ensemble provides an intuitive solution for displaying star ratings with customizable attributes. It is fixed at 5 stars. 
+[See this widget in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/Ywo5qN6fAbx0pC3l5aLZ)
 
 **Input Parameters**
 Required:
