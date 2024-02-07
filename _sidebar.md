@@ -165,6 +165,8 @@
   - [Youtube](/widget-reference/youtube)
   - [Types Reference](/widget-reference/types)
 
+- [Composite Widgets](./composite-widgets/index)
+
 - Miscellaneous
   - [External Screen](/miscellaneous/external-screen)
   - [App Information](/miscellaneous/app-info)
