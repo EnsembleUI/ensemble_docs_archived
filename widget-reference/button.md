@@ -43,16 +43,16 @@ This widget also inherits these styles
 
 | Property | Type    | Description                                        |
 | :------- | :------ | :------------------------------------------------- |
-| name     |         | The name of the icon                               |
+| name     | string  | The name of the icon                               |
 | library  | string  | Which icon library to use. `default` `fontAwesome` |
-| color    |         |                                                    |
+| color    | color   | (/widget-reference/types#Color)                    |
 | size     | integer |                                                    |
 
 ##### endingIcon
 
 | Property | Type    | Description                                        |
 | :------- | :------ | :------------------------------------------------- |
-| name     |         | The name of the icon                               |
+| name     | string  | The name of the icon                               |
 | library  | string  | Which icon library to use. `default` `fontAwesome` |
-| color    |         |                                                    |
+| color    | color   | (/widget-reference/types#Color)                    |
 | size     | integer |                                                    |
