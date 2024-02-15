@@ -1,2 +1,0 @@
-#Action: executeActionGroup
-`executeActionGroup` is an Action and can be used like any other action. A group of actions that are executed sequentially in order but without waiting for an action to finish.
