@@ -90,6 +90,8 @@
   - [startTimer](/actions/5-startTimer)
   - [stopTimer](/actions/13-stopTimer)
   - [uploadFiles](/actions/15-uploadFiles)
+  - [executeConditionalAction](/actions/3-executeConditionalAction)
+  - [executeActionGroup](/actions/3-executeActionGroup)
 
 - APIs
 
