@@ -1,6 +1,6 @@
-# TabBar
+# TabBar & TabBarOnly
 
-The TabBar Widget enables the creation of tab bars, providing a convenient and visually appealing way to navigate between different sections or views within your application.
+The ```TabBar``` Widget enables the creation of tab bars, providing a convenient and visually appealing way to navigate between different sections or views within your application. ```TabBarOnly``` widget works exactly like ```TabBar``` but manually need to display the tab content based on the tab selected index, see the TabBarOnly example to know more about it.
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/cebd491d-7d90-43f4-9f17-b8575de441ca)
 
