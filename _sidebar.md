@@ -26,6 +26,7 @@
     - [Local Storage](build/handle-data/local-storage/1-local-storage)
     - [Interaction with API](build/handle-data/item-template/1-interaction-with-api)
     - [Filter Data](build/handle-data/item-template/2-filter-data)
+    - [Mocking API responses](build/use-mock-api-response)
 
   - Authentication
 
