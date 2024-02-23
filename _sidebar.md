@@ -93,6 +93,7 @@
   - [uploadFiles](/actions/15-uploadFiles)
   - [executeConditionalAction](/actions/3-executeConditionalAction)
   - [executeActionGroup](/actions/3-executeActionGroup)
+  - [dispatchEvent](/actions/dispatchEvent)
 
 - APIs
 
