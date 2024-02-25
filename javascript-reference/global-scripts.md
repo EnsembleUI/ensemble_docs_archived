@@ -1,8 +1,26 @@
-# Reusing javascript code across your app
+# Defining and Re-using Javascript Code
 
-You can define variables and functions in scripts and reuse them across screens and widgets. This is different from the `Global` script block that you can define within a screen. The `Global` script block (despite it's name) is limited to that particular screen only and cannot be used by other screens or widgets. 
+There are two ways to re-use js code as follows - 
 
-Js Code libraries, however, can be imported on any screen or widget across the app by simply doing - 
+- `Global` block within a screen definition. This, despite its name, is limited to the screen it is defined in and cannot be referenced in other screens
+- `Scripts` a script that is defined independent of a screen (see video below) may be used anywhere in the app by simply importing it. 
+
+In both cases above, you can define javascript variables (only `var` is supported as this is ES5, see [here](README.md)) or functions. 
+
+## Example of `Global` code block within a screen
+
+```yaml
+View:
+  #your screen definition
+Global: |-
+  //code block
+  function sum(a,b) {
+    return a + b;
+  }
+```
+
+## Example of re-usable `Script` defined outside a screen and imported in any screen or widget
+A script defined outside a screen, however, can be imported on any screen or widget across the app by simply doing - 
 
 ```yaml
 Import:
