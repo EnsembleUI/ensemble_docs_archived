@@ -1,25 +1,25 @@
-# Dynamic Color Modification in JavaScript
+# Using device width and height
 
-**Objective**
+You have access to device width and height through:
 
-To dynamically change the color of a Text widget based on a JavaScript variable. The goal is to customize the color property of the Text widget's style.
+```
+device.width
+device.height
+```
 
-To achieve this, consider the following steps:
+You can use them to set width and height of a widget. Note that when doing calculations that might result in doubles, you must round the number. E.g. if you divide the width by two, on some devices, the result might be a double such as `190.5`. Use `Math.floor` to round it down to `190`.
 
-1. Access Text Widget:
-    Obtain a reference to the Text widget that you want to modify. In the provided example, it can be accessed using the identifier (id).
-    ```yaml
-    - Text:
-        text: Hi there!
-        styles:
-            textStyle:
-            fontSize: 24
-            color: blue
-        id: helloUser
-    ```
 
-2. Modify Color Property:
-    Directly modify the color property of the Text widget's style using the assigned identifier.
-    ```javascript
-    helloUser.color = 'red';
-    ```
+```yaml
+View:
+  body:
+    Column:
+      children:
+        - Shape:
+            type: rectangle
+            styles:
+              width: ${Math.floor(device.width / 2)}
+              height: ${Math.floor(device.height / 2)}
+              backgroundColor: yellow
+```
+
