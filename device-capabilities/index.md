@@ -9,6 +9,7 @@
 - [openURL](/actions/10-openUrl)
 - [pickFiles](/actions/16-pickFiles)
 - [rateApp](/actions/28-rateApp)
+- [receiveIntent](/actions/29-receiveIntent)
 - [requestNotification](/actions/19-requestNotificationAccess)
 - [share](/actions/27-share)
 - [showNotification](/actions/20-showNotification)
