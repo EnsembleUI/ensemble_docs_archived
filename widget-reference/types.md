@@ -24,8 +24,8 @@ TextStyle allows customization of font, size, color, decoration, and more to enh
 
 | Property | Type                                           | Description                                                                                                |
 |:---------|:-----------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| colors   | list of [Color](#Color)                        | An array of colors used for the gradient.                                                                  |
-| stops    | list of numbers                                | An array of numbers indicating the position of each gradient color, ranging from 0.0 (start) to 1.0 (end). |
+| colors   | [Color[]](#Color)                              | An array of colors used for the gradient.                                                                  |
+| stops    | number[]                                       | The list of numbers from 0.0 (where the gradient starts) to 1.0 (where the gradient ends), one for each colors specified                         |
 | start    | [Alignment](/widget-reference/types#Alignment) | The starting position of the gradient.                                                                     |
 | end      | [Alignment](/widget-reference/types#Alignment) | The ending position of the gradient.                                                                       |
 

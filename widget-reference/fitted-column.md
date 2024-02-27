@@ -1,4 +1,5 @@
-# FittedColumn
+# FittedColumn (deprecated)
+This widget is deprecated. Please use [FlexColumn](/widget-reference/flex-column.md) instead.
 
 Stretch to fit the parent (the parent is required to have a predetermined height), then distribute the vertical spaces evenly among its children. You can override the space distribution via 'childrenFits' attribute.
 

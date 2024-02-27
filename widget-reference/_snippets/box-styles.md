@@ -17,3 +17,4 @@
 | shadowOffset   | array             | The values in the array define the horizontal and vertical offset of the shadow. Example: if the shadowOffset is set to [2, 4], the shadow will be offset by 2 pixels horizontally and 4 pixels vertically from its original position.                   |
 | shadowRadius   | string or integer | The border radius of the widget. This can be specified using CSS-like notation with 1 to 4 integers. Minimum value: 0.                                                               |
 | shadowStyle    | string            | The blur style to apply on the shadow: normal, solid, outer, inner.                                                                                                                   |
+

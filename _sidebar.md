@@ -136,6 +136,8 @@
   - [Fitted Column](/widget-reference/fitted-column)
   - [Fitted Row](/widget-reference/fitted-row)
   - [Flex](/widget-reference/flex)
+  - [FlexColumn](/widget-reference/flex-column)
+  - [FlexRow](/widget-reference/flex-row)
   - [Flow](/widget-reference/flow)
   - [Form](/widget-reference/form)
   - [Grid View](/widget-reference/gridview)

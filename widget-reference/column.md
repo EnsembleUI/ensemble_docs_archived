@@ -4,15 +4,16 @@ The Column Widget facilitates easy vertical layout of children elements, allowin
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/90a8e4df-5eab-4473-ba10-2ecffc9596b0)
 
-## Properties
+## Reference
+#### Properties
 
-| Property      | Type   | Description                      |
-| :------------ | :----- | :------------------------------- |
-| item-template | object | [See properties](#item-template) |
-| children      | array  | List of widgets                  |
-| styles        | object | [See properties](#styles)        |
+| Property      | Type                                   | Description                                             |
+| :------------ |:---------------------------------------|:--------------------------------------------------------|
+| children      | [Widget[]](widget-reference/directory) | List of child widgets                                   |
+| item-template | [ItemTemplate](#item-template)         | List of templated widgets, appearing after the children |
+| styles        | object                                 | [See properties](#styles)                               |
 
-### item-template
+#### item-template
 
 | Property | Type   | Description                                                        |
 | :------- | :----- | :----------------------------------------------------------------- |
@@ -20,7 +21,7 @@ The Column Widget facilitates easy vertical layout of children elements, allowin
 | name     | string | Set the name to reference as you iterate through the array of data |
 | template | widget | The widget to render for each item                                 |
 
-### styles
+#### styles
 
 | Property                     | Type              | Description                                                                                                                                                                                                                                                                                                                       |
 | :--------------------------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -60,30 +61,4 @@ The Column Widget facilitates easy vertical layout of children elements, allowin
 | alignment                    | string            | The alignment of the widget relative to its parent. `topLeft`, `topCenter`, `topRight`, `centerLeft`, `center`, `centerRight`, `bottomLeft`, `bottomCenter`, `bottomRight`                                                                                                                                                        |
 | visible                      | boolean           | Toggle a widget visibility on/off. Note that an invisible widget will not occupy UI space, unless the visibilityTransitionDuration is specified.                                                                                                                                                                                  |
 
-### styles.backgroundGradient
 
-| Property | Type   | Description                                                                                                                                                                                    |
-| :------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| colors   | array  | The list of colors used for the gradient. Colors can be represented in different formats. It can be specified as a number, a predefined color name, or a hexadecimal value starting with '0x'. |
-| start    | string | The starting position of the gradient                                                                                                                                                          |
-| end      | string | The ending position of the gradient                                                                                                                                                            |
-
-### styles.backgroundImage
-
-| Property  | Type   | Description                                                                                                                                        |
-| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| source    | string | The Image URL to fill the background                                                                                                               |
-| fit       | string | How to fit the image within our width/height or our parent (if dimension is not specified) . [see options](#fit-options-for-stylesbackgroundimage) |
-| alignment | string | Alignment of the background image                                                                                                                  |
-
-#### Fit options for styles.backgroundImage
-
-| Option    | Description                                                                                         |
-| :-------- | :-------------------------------------------------------------------------------------------------- |
-| fill      | Stretch our image to fill the dimension, and distorting the aspect ratio if needed                  |
-| contain   | Scale the image such that the entire image is contained within our dimension                        |
-| cover     | Scale the image to fill our dimension, clipping the image as needed                                 |
-| fitWidth  | Scale the image to fit the width, and clipping the height if needed                                 |
-| fitHeight | Scale the image to fit the height, and clipping the width if needed                                 |
-| none      | Center-Align the original image size, clipping the content if needed                                |
-| scaleDown | Center-Align the image and only scale down to fit. Image will not be scaled up to bigger dimension. |
