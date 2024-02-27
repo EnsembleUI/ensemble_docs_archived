@@ -5,7 +5,7 @@ FlexRow is designed to lay out child widgets horizontally and proportionally fro
 ## Best Practices
 - Use FlexRow when you need a horizontal layout with proportional space distribution among the children.
 - **Avoid** using FlexRow in a scrollable parent, such as scrollable Row, without a fixed width, as it will lead to layout issues. FlexRow and its children need to be constrained to a definite size to properly calculate the flex distribution.
-- **Avoid** using FlexRow in another Row. Row does not constrain its children's dimensions, which FlexRow requires to calculate the flex distribution. Instead consider giving the FlexRow a height or use all FlexRow(s) up the parent chain. 
+- **Avoid** using FlexRow in another Row. Row does not constrain its children's dimensions, which FlexRow requires to calculate the flex distribution. Instead consider giving the FlexRow a width or use all FlexRow(s) up the parent chain. 
 
 ## Key Concepts
 
