@@ -153,6 +153,7 @@
   - [Progress Indicator](/widget-reference/progressindicator)
   - [Profile Image](/widget-reference/profile-image)
   - [QRCode](/widget-reference/qrcode)
+  - [QRCodeScanner](/widget-reference/qrcode-scanner)
   - [Rating Stars](/widget-reference/rating-widget)
   - [Row](/widget-reference/row)
   - [Shape](/widget-reference/shape)
