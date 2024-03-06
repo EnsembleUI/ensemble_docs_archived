@@ -264,8 +264,8 @@ View:
     receiveIntent:
       onReceive: |
         //@code
-        if (event.data.media.length != 0) {
-          var myJSON = JSON.stringify(event.data.media[0]);
+        if (receiveIntentData.medias.length != 0) {
+          var myJSON = JSON.stringify(receiveIntentData.medias[0]);
           var mediaItem = JSON.parse(myJSON);
           console.log("Type: "+mediaItem.type);
           console.log("MimeType: "+mediaItem.mimeType);
@@ -295,7 +295,7 @@ View:
 
               Get datas such as text, images, videos from other apps.
 
-              Received data can be accessed using ```event.data.medias```
+              Received data can be accessed using ```receiveIntentData.medias```
 
         - Text:
             styles:
