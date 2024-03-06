@@ -10,6 +10,94 @@ You can find the theme on Left-Side of the panel in ensemble studio after you ha
 
 For instance in my case for Ensemble Kitchen Sink as you can see the Theme selected in the picture above.
 
+## Parts of a Theme
+
+- Tokens (optional)
+- Styles (in precedence order)
+  - Inline - specified directly on the widget
+  - Style Classes - specified as `class` attribute on a widget. One or more space delimited classes
+  - ID based - specified with `#` before the name in the Theme.Styles
+  - Widget type - specified for the widget type such as Button in the Theme.Styles
+ 
+## Parts of a Theme in Ensemble
+
+Ensemble themes allow you to define the visual appearance of your application using a structured approach. Here's an explanation of the different parts of a theme:
+
+**1. Tokens (Optional):**
+
+Tokens are named collections of values typically used for colors, fonts, and spacing. They provide a way to define reusable values across your theme and avoid code duplication. These tokens are then used inside the `Styles` with the expression syntax, for example `${Colors.gray['200']}`
+
+**Example:**
+
+```yaml
+Light:
+  label: Light Theme
+  description: This theme turns everything light as in white background and is default
+  inheritsFrom: Common
+  Tokens:
+    Colors:
+      teal:
+        '900': '#014451'
+        '800': '#05505C'
+        '700': '#036672'
+        '600': '#047481'
+        '500': '#0694A2'
+        '400': '#16BDCA'
+        '300': '#7EDCE2'
+        '200': '#AFECEF'
+        '100': '#D5F5F6'
+        '50': '#EDFAFA'      
+  Styles:
+    Button:
+      borderRadius: 20
+    .submit:
+      backgroundColor: ${Colors.teal['800']}
+      labelStyle:
+        color: white
+        fontFamily: ${Typography.fontFamily}
+```
+
+**2. Styles (Precedence Order):**
+
+Styles define how different UI elements will appear. Ensemble applies styles based on their **precedence**, with higher precedence styles overriding lower ones. Here's the order of precedence, from highest to lowest:
+
+* **Inline Styles:** Styles defined directly on the widget using the `style` attribute.
+* **Style Classes:** Styles defined in the theme and applied to a widget using the `class` attribute (space-separated list of classes). 
+* **ID-based Styles:** Styles defined in the theme using an ID selector (preceded by `#`).
+* **Widget Type Styles:** Styles defined for a specific widget type (e.g., `Button`).
+
+**Example of Styles defined in a Theme:**
+
+```yaml
+Light:
+ Styles:
+  # ID-based style
+  '#heading':
+    fontSize: 24
+    fontWeight: bold
+
+  # Widget type style
+  Button:
+    backgroundColor: ${Colors.primary}
+    color: white
+
+  # Style class
+  .error:
+    color: red
+```
+**Example of Inline styles and specifying classes**
+```yaml
+Button:
+  styles:
+    backgroundColor: red
+  class: commonButton submitButton #here two classes are applied in order i.e. the styles defines in the list of classes are merged in the order they are specified.
+```
+**Specificity:**
+
+Similar to CSS, styles in Ensemble with higher specificity will override those with lower specificity. Specificity is determined by the number and type of selectors used in the style definition. Inline styles and styles specified by the ID-based styles have the highest specificity, followed by classes and then widget type styles.
+
+By understanding the different parts of a theme and how inheritance and specificity work, you can create well-structured, maintainable, and reusable themes for your Ensemble applications.
+
 ## Theme Inheritance in Ensemble
 
 Ensemble allows you to create reusable and organized themes using inheritance, similar to how CSS works. This lets you define common styles in a base theme and then have other themes inherit and modify those styles as needed.
@@ -75,6 +163,8 @@ Light:
 * Other styles from `Common` (like `.topView`) are still applied to the `Light` theme.
 
 This example demonstrates how you can define a common base theme and then create specific themes like `Light` and `Dark` that inherit and modify styles as needed.
+
+
 
 ### Properties
 
