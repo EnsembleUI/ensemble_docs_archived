@@ -12,6 +12,26 @@ You can find the theme on Left-Side of the panel in ensemble studio after you ha
 
 For instance in my case for Ensemble Kitchen Sink as you can see the Theme selected in the picture above.
 
+## Text Styles are automatically inherited unless overriden
+All text styles (for example - `fontSize`, `fontFamily`, `color` etc) can be defined at the `View`, `Column`, `Row` or any of the top widget level and will automatically be inherited by all `Text` widgets. Note that labels for `Button` etc do not inherit these styles. 
+
+**Example:**
+```yaml
+View:
+  class: topView
+#rest of your screen definition
+```
+And over in your Theme
+```yaml
+  Styles:
+    .topView:
+      backgroundColor: ${Colors.gray['200']}
+      textStyle:
+        fontWeight: ${Typography.fontWeight['700']}
+        fontSize: ${Typography.fontSize['xl']}
+```
+All `Text` in the screen will inherit these text styles. You can specify the style at the `View` node and then all Text widgets across your whole app would inherit those text styles
+
 ## Parts of a Theme
 
 - Tokens (optional)
@@ -21,9 +41,7 @@ For instance in my case for Ensemble Kitchen Sink as you can see the Theme selec
   - ID based - specified with `#` before the name in the Theme.Styles
   - Widget type - specified for the widget type such as Button in the Theme.Styles
  
-## Parts of a Theme in Ensemble
-
-Ensemble themes allow you to define the visual appearance of your application using a structured approach. Here's an explanation of the different parts of a theme:
+Here's an explanation of the different parts of a theme:
 
 **1. Tokens (Optional):**
 
