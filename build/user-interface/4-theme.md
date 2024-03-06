@@ -37,9 +37,10 @@ All `Text` in the screen will inherit these text styles. You can specify the sty
 - Tokens (optional)
 - Styles (in precedence order)
   - Inline - specified directly on the widget
-  - Style Classes - specified as `class` attribute on a widget. One or more space delimited classes
   - ID based - specified with `#` before the name in the Theme.Styles
+  - Style Classes - specified as `class` attribute on a widget. One or more space delimited classes
   - Widget type - specified for the widget type such as Button in the Theme.Styles
+  - Inherited from parent - these are limited to `textStyle` only (see above)
  
 Here's an explanation of the different parts of a theme:
 
