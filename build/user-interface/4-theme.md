@@ -2,13 +2,79 @@
 
 Welcome to our Theme page, your gateway to a world of visual customization! Here, we'll explore the powerful elements that make up our platform's themes. From color schemes to typography, widgets, and transition options, our comprehensive range of theme elements allows you to effortlessly personalize your app. Discover how themes can transform your online presence, create a cohesive brand identity, and provide a delightful user experience. Unlock the full potential of your app with our versatile and user-friendly theme customization features. Let's wait no further and jump right into the details.
 
-### Where to find it ?
+## Where to find it ?
 
 You can find the theme on Left-Side of the panel in ensemble studio after you have selected your App.
 
 ![Alt text](image-5.png)
 
 For instance in my case for Ensemble Kitchen Sink as you can see the Theme selected in the picture above.
+
+## Theme Inheritance in Ensemble
+
+Ensemble allows you to create reusable and organized themes using inheritance, similar to how CSS works. This lets you define common styles in a base theme and then have other themes inherit and modify those styles as needed.
+
+### Benefits of Theme Inheritance
+
+* **Reduces code duplication:** Define common styles once in a base theme and avoid repeating them in other themes.
+* **Improved maintainability:** Makes changes to common styles easier to manage as they are centralized in the base theme.
+* **Theming hierarchy:** Build a clear hierarchy of themes, making it easier to understand how styles are applied.
+
+### How Inheritance Works
+
+1. **Base Theme:** Define a theme (e.g., `Common`) containing the styles you want to share with other themes. You can define multiple base themes
+2. **Inheriting Theme:** Define another theme (e.g., `Light`) and specify the base theme it inherits from using the `inheritsFrom` property. A base theme may inherit from another theme forming a chain
+3. **Overriding Styles:** The inheriting theme can override any styles from the base theme by defining the same styles with different values.
+
+### Example
+
+Here's an example demonstrating theme inheritance:
+
+**Common Theme:**
+
+```yaml
+Common:
+  label: Common theme
+  Tokens:
+    Colors:
+      primary: '#0077B8'
+      gray:
+        '200': '#f2f2f2'
+        '300': '#e0e0e0'
+  Styles:
+    .topView:
+      backgroundColor: ${Colors.gray['200']}
+    Button:
+      borderRadius: 20
+      backgroundColor: red
+```
+
+**Light Theme (inherits from Common):**
+
+```yaml
+Light:
+  label: Light Theme
+  description: Light theme with white background
+  inheritsFrom: Common
+  Tokens:
+    Colors:
+      teal:  # New color palette for Light theme
+        '500': '#0694A2'
+  Styles:
+    Button:
+      backgroundColor: ${Colors.teal['500']}  # Inherits primary from Common and overrides with teal
+      labelStyle:
+        color: white
+```
+
+**Explanation:**
+
+* `Light` theme inherits styles and tokens from the `Common` theme.
+* `Light` theme overrides the `backgroundColor` of the `Button` style with its own `teal` color.
+* `Light` theme's `Button` inherits the `borderRadius` from `Common` theme
+* Other styles from `Common` (like `.topView`) are still applied to the `Light` theme.
+
+This example demonstrates how you can define a common base theme and then create specific themes like `Light` and `Dark` that inherit and modify styles as needed.
 
 ### Properties
 
