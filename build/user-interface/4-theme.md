@@ -12,6 +12,13 @@ You can find the theme on Left-Side of the panel in ensemble studio after you ha
 
 For instance in my case for Ensemble Kitchen Sink as you can see the Theme selected in the picture above.
 
+## Checking and Switching Themes in Javascript
+```javascript
+var themes = app.themes; //returns a list of all configured themes
+var currentTheme = app.theme; //currently applied theme
+app.theme = 'newTheme'; //change themes dynamically. The theme name must be in the list of Themes in the theme definition.
+```
+
 ## Text Styles are automatically inherited unless overriden
 All text styles (for example - `fontSize`, `fontFamily`, `color` etc) can be defined at the `View`, `Column`, `Row` or any of the top widget level and will automatically be inherited by all `Text` widgets. Note that labels for `Button` etc do not inherit these styles. 
 
