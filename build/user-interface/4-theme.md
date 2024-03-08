@@ -2,13 +2,190 @@
 
 Welcome to our Theme page, your gateway to a world of visual customization! Here, we'll explore the powerful elements that make up our platform's themes. From color schemes to typography, widgets, and transition options, our comprehensive range of theme elements allows you to effortlessly personalize your app. Discover how themes can transform your online presence, create a cohesive brand identity, and provide a delightful user experience. Unlock the full potential of your app with our versatile and user-friendly theme customization features. Let's wait no further and jump right into the details.
 
-### Where to find it ?
+[Kitchen Sink Example](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/theme)
+
+## Where to find it ?
 
 You can find the theme on Left-Side of the panel in ensemble studio after you have selected your App.
 
 ![Alt text](image-5.png)
 
 For instance in my case for Ensemble Kitchen Sink as you can see the Theme selected in the picture above.
+
+## Text Styles are automatically inherited unless overriden
+All text styles (for example - `fontSize`, `fontFamily`, `color` etc) can be defined at the `View`, `Column`, `Row` or any of the top widget level and will automatically be inherited by all `Text` widgets. Note that labels for `Button` etc do not inherit these styles. 
+
+**Example:**
+```yaml
+View:
+  class: topView
+#rest of your screen definition
+```
+And over in your Theme
+```yaml
+  Styles:
+    .topView:
+      backgroundColor: ${Colors.gray['200']}
+      textStyle:
+        fontWeight: ${Typography.fontWeight['700']}
+        fontSize: ${Typography.fontSize['xl']}
+```
+All `Text` in the screen will inherit these text styles. You can specify the style at the `View` node and then all Text widgets across your whole app would inherit those text styles
+
+## Parts of a Theme
+
+- Tokens (optional)
+- Styles (in precedence order)
+  - Inline - specified directly on the widget
+  - ID based - specified with `#` before the name in the Theme.Styles
+  - Style Classes - specified as `class` attribute on a widget. One or more space delimited classes
+  - Widget type - specified for the widget type such as Button in the Theme.Styles
+  - Inherited from parent - these are limited to `textStyle` only (see above)
+ 
+Here's an explanation of the different parts of a theme:
+
+**1. Tokens (Optional):**
+
+Tokens are named collections of values typically used for colors, fonts, and spacing. They provide a way to define reusable values across your theme and avoid code duplication. These tokens are then used inside the `Styles` with the expression syntax, for example `${Colors.gray['200']}`
+
+**Example:**
+
+```yaml
+Light:
+  label: Light Theme
+  description: This theme turns everything light as in white background and is default
+  inheritsFrom: Common
+  Tokens:
+    Colors:
+      teal:
+        '900': '#014451'
+        '800': '#05505C'
+        '700': '#036672'
+        '600': '#047481'
+        '500': '#0694A2'
+        '400': '#16BDCA'
+        '300': '#7EDCE2'
+        '200': '#AFECEF'
+        '100': '#D5F5F6'
+        '50': '#EDFAFA'      
+  Styles:
+    Button:
+      borderRadius: 20
+    .submit:
+      backgroundColor: ${Colors.teal['800']}
+      labelStyle:
+        color: white
+        fontFamily: ${Typography.fontFamily}
+```
+
+**2. Styles (Precedence Order):**
+
+Styles define how different UI elements will appear. Ensemble applies styles based on their **precedence**, with higher precedence styles overriding lower ones. Here's the order of precedence, from highest to lowest:
+
+* **Inline Styles:** Styles defined directly on the widget using the `style` attribute.
+* **Style Classes:** Styles defined in the theme and applied to a widget using the `class` attribute (space-separated list of classes). 
+* **ID-based Styles:** Styles defined in the theme using an ID selector (preceded by `#`).
+* **Widget Type Styles:** Styles defined for a specific widget type (e.g., `Button`).
+
+**Example of Styles defined in a Theme:**
+
+```yaml
+Light:
+ Styles:
+  # ID-based style
+  '#heading':
+    fontSize: 24
+    fontWeight: bold
+
+  # Widget type style
+  Button:
+    backgroundColor: ${Colors.primary}
+    color: white
+
+  # Style class
+  .error:
+    color: red
+```
+**Example of Inline styles and specifying classes**
+```yaml
+Button:
+  styles:
+    backgroundColor: red
+  class: commonButton submitButton #here two classes are applied in order i.e. the styles defines in the list of classes are merged in the order they are specified.
+```
+**Specificity:**
+
+Similar to CSS, styles in Ensemble with higher specificity will override those with lower specificity. Specificity is determined by the number and type of selectors used in the style definition. Inline styles and styles specified by the ID-based styles have the highest specificity, followed by classes and then widget type styles.
+
+By understanding the different parts of a theme and how inheritance and specificity work, you can create well-structured, maintainable, and reusable themes for your Ensemble applications.
+
+## Theme Inheritance in Ensemble
+
+Ensemble allows you to create reusable and organized themes using inheritance, similar to how CSS works. This lets you define common styles in a base theme and then have other themes inherit and modify those styles as needed.
+
+### Benefits of Theme Inheritance
+
+* **Reduces code duplication:** Define common styles once in a base theme and avoid repeating them in other themes.
+* **Improved maintainability:** Makes changes to common styles easier to manage as they are centralized in the base theme.
+* **Theming hierarchy:** Build a clear hierarchy of themes, making it easier to understand how styles are applied.
+
+### How Inheritance Works
+
+1. **Base Theme:** Define a theme (e.g., `Common`) containing the styles you want to share with other themes. You can define multiple base themes
+2. **Inheriting Theme:** Define another theme (e.g., `Light`) and specify the base theme it inherits from using the `inheritsFrom` property. A base theme may inherit from another theme forming a chain
+3. **Overriding Styles:** The inheriting theme can override any styles from the base theme by defining the same styles with different values.
+
+### Example
+
+Here's an example demonstrating theme inheritance:
+
+**Common Theme:**
+
+```yaml
+Common:
+  label: Common theme
+  Tokens:
+    Colors:
+      primary: '#0077B8'
+      gray:
+        '200': '#f2f2f2'
+        '300': '#e0e0e0'
+  Styles:
+    .topView:
+      backgroundColor: ${Colors.gray['200']}
+    Button:
+      borderRadius: 20
+      backgroundColor: red
+```
+
+**Light Theme (inherits from Common):**
+
+```yaml
+Light:
+  label: Light Theme
+  description: Light theme with white background
+  inheritsFrom: Common
+  Tokens:
+    Colors:
+      teal:  # New color palette for Light theme
+        '500': '#0694A2'
+  Styles:
+    Button:
+      backgroundColor: ${Colors.teal['500']}  # Inherits primary from Common and overrides with teal
+      labelStyle:
+        color: white
+```
+
+**Explanation:**
+
+* `Light` theme inherits styles and tokens from the `Common` theme.
+* `Light` theme overrides the `backgroundColor` of the `Button` style with its own `teal` color.
+* `Light` theme's `Button` inherits the `borderRadius` from `Common` theme
+* Other styles from `Common` (like `.topView`) are still applied to the `Light` theme.
+
+This example demonstrates how you can define a common base theme and then create specific themes like `Light` and `Dark` that inherit and modify styles as needed.
+
+
 
 ### Properties
 
