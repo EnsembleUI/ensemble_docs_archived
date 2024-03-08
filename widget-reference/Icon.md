@@ -4,6 +4,10 @@ The Icon Widget enables easy integration of icons from popular libraries like Fo
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/e7c686f5-b8a2-4670-9e6e-8fdb0fea768e)
 
+
+[List of supported icons](/widget-reference/icon2.md)
+
+
 ## Properties
 
 | Property | Type   | Description                                                                                                                                                                                                                                                                                                                                                             |
