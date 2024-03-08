@@ -26,7 +26,6 @@
             loadSidebar: true,
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md',
-                '/Documentation': '/',
             },
             sidebarDisplayLevel: 1,
             homepage: 'getting-started/home.md',
@@ -52,7 +51,8 @@
                 errorText: 'Error',
                 successText: 'Copied'
             },
-            routerMode: 'history',
+            // Github Pages don't support history mode. We are stuck with the # in the URL for now
+            // routerMode: 'history',
         }
     </script>
     <script src="//unpkg.com/docsify-edit-link@^1"></script>
