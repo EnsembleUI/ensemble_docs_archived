@@ -25,7 +25,7 @@ All text styles (for example - `fontSize`, `fontFamily`, `color` etc) can be def
 **Example:**
 ```yaml
 View:
-  class: topView
+  className: topView
 #rest of your screen definition
 ```
 And over in your Theme
@@ -45,7 +45,7 @@ All `Text` in the screen will inherit these text styles. You can specify the sty
 - Styles (in precedence order)
   - Inline - specified directly on the widget
   - ID based - specified with `#` before the name in the Theme.Styles
-  - Style Classes - specified as `class` attribute on a widget. One or more space delimited classes
+  - Style Classes - specified as `className` attribute on a widget. One or more space delimited classes
   - Widget type - specified for the widget type such as Button in the Theme.Styles
   - Inherited from parent - these are limited to `textStyle` only (see above)
  
@@ -90,7 +90,7 @@ Light:
 Styles define how different UI elements will appear. Ensemble applies styles based on their **precedence**, with higher precedence styles overriding lower ones. Here's the order of precedence, from highest to lowest:
 
 * **Inline Styles:** Styles defined directly on the widget using the `style` attribute.
-* **Style Classes:** Styles defined in the theme and applied to a widget using the `class` attribute (space-separated list of classes). 
+* **Style Classes:** Styles defined in the theme and applied to a widget using the `className` attribute (space-separated list of classes). 
 * **ID-based Styles:** Styles defined in the theme using an ID selector (preceded by `#`).
 * **Widget Type Styles:** Styles defined for a specific widget type (e.g., `Button`).
 
@@ -118,7 +118,7 @@ Light:
 Button:
   styles:
     backgroundColor: red
-  class: commonButton submitButton #here two classes are applied in order i.e. the styles defines in the list of classes are merged in the order they are specified.
+  className: commonButton submitButton #here two classes are applied in order i.e. the styles defines in the list of classes are merged in the order they are specified.
 ```
 **Specificity:**
 
