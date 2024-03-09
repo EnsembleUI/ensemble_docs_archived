@@ -18,6 +18,21 @@ var themes = app.themes; //returns a list of all configured themes
 var currentTheme = app.theme; //currently applied theme
 app.theme = 'newTheme'; //change themes dynamically. The theme name must be in the list of Themes in the theme definition.
 ```
+## Savings themes in storage so they can be applied across application sessions
+A common requirement from theming is to be able to persist a theme that user has selected across multiple application sessions i.e. even when the user kills the app and relaunches, the theme s/he selected should automatically apply. Ensemble provides that capability by storing themes in local storage. 
+
+At application startup time, Ensemble platform checks if there is a saved theme and if that theme exists in the list of theme definitions. If both conditions are true, it automatically applies the saved theme instead of the default theme configured in the app. 
+
+Application developers have the following functions available to them. 
+```javascript
+//save theme in storage, this will automatically be applied by the platform on startup
+//note that saveTheme does NOT apply a theme, it merely saves it. use app.theme = 'myNewTheme'; to change themes dynamically, 
+app.saveTheme('myNewTheme');
+//retrieve the saved theme
+var savedTheme = app.getSavedTheme(); //there can only be one saved theme
+//or remove the saved theme from storage
+app.removeSavedTheme();
+```
 
 ## Text Styles are automatically inherited unless overriden
 All text styles (for example - `fontSize`, `fontFamily`, `color` etc) can be defined at the `View`, `Column`, `Row` or any of the top widget level and will automatically be inherited by all `Text` widgets. Note that labels for `Button` etc do not inherit these styles. 
