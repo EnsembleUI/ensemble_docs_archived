@@ -18,6 +18,22 @@ var themes = app.themes; //returns a list of all configured themes
 var currentTheme = app.theme; //currently applied theme
 app.theme = 'newTheme'; //change themes dynamically. The theme name must be in the list of Themes in the theme definition.
 ```
+In the following EDL, a `DropDown` widget is bound to the list of `themes` that have been configured in the app and allows user to swtich from one theme to another. 
+
+**Example:**
+
+Bind the `themes` to a dropdown and let user switch themes from all the available themes. 
+```yaml
+        - Dropdown:
+            label: Pick a Theme
+            items: ${app.themes}
+            value: ${app.theme}
+            onChange:
+              executeCode:
+                body: |
+                  app.theme = this.value;
+```
+
 ## Savings themes in storage so they can be applied across application sessions
 A common requirement from theming is to be able to persist a theme that user has selected across multiple application sessions i.e. even when the user kills the app and relaunches, the theme s/he selected should automatically apply. Ensemble provides that capability by storing themes in local storage. 
 
