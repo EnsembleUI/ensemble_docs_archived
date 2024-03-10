@@ -16,7 +16,7 @@ or in js -
 var url = app.baseUrl;
 ```
 ### useMockResponse
-Sets or Returns the value of `useMockResponse`. 
+Sets or Returns the value of `useMockResponse`. See [this](https://docs.ensembleui.com/#/build/use-mock-api-response?id=mocking-api-responses-to-develop-and-test-your-app) for details on how to mock responses for your APIs during development or testing. 
 ```js
 app.useMockResponse = true;
 var isInMockResponseMode = app.useMockResponse; //returns true
