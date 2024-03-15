@@ -4,6 +4,55 @@ The Map widget enables the display of _location markers_ and _overlays_, providi
 
 [Test in Kitchen Sink](https://studio.ensembleui.com/app/e24402cb-75e2-404c-866c-29e6c3dd7992/screen/36e52d1a-39c5-4a6b-b064-2be6cfe3cf7b)
 
+
+## Adjusting border radius and padding of a map
+
+Wrap your map inside a Column to apply additional styling.
+
+```yaml
+View:
+
+  onLoad:
+    invokeAPI:
+      name: getVenue
+
+  body:
+    Column:
+      styles:
+        padding: 40 16
+      children:
+        - Column:
+            styles:
+              padding: 0 16 24 16
+              borderRadius: 24
+              clipContent: true
+            children:
+              - Map:
+                  styles:
+                    autoZoom: true
+                    includeCurrentLocationInAutoZoom: false
+                    locationEnabled: true
+                    showToolbar: false
+                    height: 180
+                  markers:
+                    data: ${getVenue.body.location} 
+                    name: location
+                    location: ${location.lat} ${location.lng}
+
+API:
+  getVenue:
+    uri: https://dummyjson.com/users/1
+    method: GET
+    onResponse: |-
+      response.body = {
+        "location": [{
+          "lat": 33.8120918,
+          "lng": -117.9215491
+        }]
+      };
+
+```
+
 ## Properties
 
 | Property     | Type   | Description                                                                                                                                        |
