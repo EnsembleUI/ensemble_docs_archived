@@ -42,6 +42,7 @@
   - [Using local assets](build/local-assets)
   - [Adding custom fonts](build/custom-fonts)
   - [Application Secrets](build/secrets)
+  - [Device info](build/device-info)
 
 - Test
 
