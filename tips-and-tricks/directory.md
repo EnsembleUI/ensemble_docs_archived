@@ -25,4 +25,4 @@ Welcome to our Tips and Tricks page! Here, you'll find a collection of expert in
 - [HTML Widget](/tips-and-tricks/html-widget.md)
 - [Push Notification](/tips-and-tricks/push-notification.md)
 - [Using device width and height](/tips-and-tricks/using-device-dimentions.md)
-
+- [Floating Button](/tips-and-tricks/floatingButton.md)
